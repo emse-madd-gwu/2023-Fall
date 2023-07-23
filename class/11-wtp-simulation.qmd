@@ -1,0 +1,9 @@
+---
+title: "WTP & Simulations"
+params:
+  class: "11-wtp-simulation"
+  logitrcars: TRUE
+  formr4conjoint: FALSE
+---
+
+Coming soon!

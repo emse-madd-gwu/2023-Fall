@@ -1,0 +1,9 @@
+---
+title: "DOE & Power Analysis"
+params:
+  class: "10-doe-power-analysis"
+  logitrcars: FALSE
+  formr4conjoint: FALSE
+---
+
+Coming soon!

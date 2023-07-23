@@ -1,0 +1,9 @@
+---
+title: "Conjoint Questions"
+params:
+  class: "6-conjoint-questions"
+  logitrcars: FALSE
+  formr4conjoint: FALSE
+---
+
+Coming soon!

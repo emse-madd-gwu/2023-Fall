@@ -1,0 +1,8 @@
+---
+title: "Optimization & MLE"
+params:
+  number: 6
+  purpose: "The purpose of this assignment is to introduce the concept of maximum likelihood estimation, which is the estimation approach we'll be using in class to estimate our choice models."
+---
+
+Coming soon!

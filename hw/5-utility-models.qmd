@@ -1,0 +1,8 @@
+---
+title: "Utility Models"
+params:
+  number: 5
+  purpose: "The purpose of this assignment is to get familiar with utility models, which will be the underyling modeling framework we will use for constructing choice models."
+---
+
+Coming soon!

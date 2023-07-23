@@ -1,0 +1,9 @@
+---
+title: "Optimization & MLE"
+params:
+  class: "8-optimization-mle"
+  logitrcars: TRUE
+  formr4conjoint: TRUE
+---
+
+Coming soon!
