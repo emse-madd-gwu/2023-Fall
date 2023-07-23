@@ -1,0 +1,13 @@
+order,category,label,rating,maxPoints,points,description
+1,organization,Organization & Formatting,Excellent,5,5,All formatting guidelines are followed.
+1,organization,Organization & Formatting,Good,5,4,Most formatting guidelines are followed; only one or two components from the template are missing.
+1,organization,Organization & Formatting,Needs work,5,3,Most formatting guidelines are followed; several components from the template are missing or incomplete.
+2,pilotAnalysis,Pilot Analysis,Excellent,10,10 / 9,"All analysis guidelines are followed, including data cleaning, modeling, and a power analysis. Code in related files runs without error and results can be fully reproduced."
+2,pilotAnalysis,Pilot Analysis,Good,10,8 / 7 / 6,"Most analysis guidelines are followed, including data cleaning, modeling, and a power analysis. Code in related files might have a few errors, but the results can still be reproduced with a few fixes."
+2,pilotAnalysis,Pilot Analysis,Needs work,10,5 / 4 / 3,"Some of the analysis guidelines components are incomplete or missing, including data cleaning, modeling, and a power analysis. Code in related files has multiple significant errors and results cannot be reproduced, even with efforts to correct errors."
+3,report,Report Contents,Excellent,15,15 / 14,"All report guidelines are followed, including descriptions of the survey design, the pilot analysis results, and changes that will be made to the final survey."
+3,report,Report Contents,Good,15,13 / 12 / 11,"Most report guidelines are followed, including descriptions of the survey design, the pilot analysis results, and changes that will be made to the final survey. Some may be unclear or missing important details."
+3,report,Report Contents,Needs work,15,10 / 9 / 8 / 7,"Several report guidelines are not followed, including descriptions of the survey design, the pilot analysis results, and changes that will be made to the final survey. Some components are incomplete or missing."
+4,appendix,Appendix,Excellent,5,5,Appendix of the full survey is included.
+4,appendix,Appendix,Good,5,4,"Appendix of the full survey is included, but some parts of the survey may be missing."
+4,appendix,Appendix,Needs work,5,3,No appendix of survey included
