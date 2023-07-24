@@ -45,31 +45,31 @@ website:
       - text: Schedule
         icon: table
         href: schedule.qmd
-      - text: Project
-        icon: list-check
-        href: project.qmd
       - section: Project
         icon: question-circle-fill
         contents:
           - text: Overview
-            href: 0-overview.qmd
+            href: project/0-overview.qmd
           - text: Proposal (Due Sep 25)
-            href: 1-proposal.qmd
+            href: project/1-proposal.qmd
           - text: Survey Plan (Due Oct 04)
-            href: 2-survey-plan.qmd
+            href: project/2-survey-plan.qmd
           - text: Pilot Survey (Due Oct 18)
-            href: 3-pilot-survey.qmd
+            href: project/3-pilot-survey.qmd
           - text: Pilot Analysis (Due Nov 06)
-            href: 4-pilot-analysis.qmd
+            href: project/4-pilot-analysis.qmd
           - text: Final Survey (Due Nov 20)
-            href: 5-final-survey.qmd
+            href: project/5-final-survey.qmd
           - text: Final Analysis (Due Dec 11)
-            href: 6-final-analysis.qmd
+            href: project/6-final-analysis.qmd
           - text: Final Presentation (On Dec 14)
-            href: 7-final-presentation.qmd
+            href: project/7-final-presentation.qmd
           - text: Examples
             icon: file-earmark-medical
-            href: help/example-projects.qmd
+            href: project/examples.qmd
+      - text: Software
+        icon: download
+        href: software.qmd
       - text: Getting Help
         icon: question-circle
         href: help/getting-help.qmd
