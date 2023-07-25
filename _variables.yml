@@ -7,9 +7,9 @@ semester: Fall 2023
 weekday: "Wednesdays"
 dates: "Aug. 30 - Dec 13, 2023"
 time: "6:10PM - 8:40PM EST"
-room: 'Phillips Hall 415'
-room_address: 725 21st Street NW
-room_url: "https://acadtech.gwu.edu/location?id=382&campus=FB&type=building&selection=37"
+room: 'Bell Hall 109'
+room_address: 2029 G St NW
+room_url: "https://acadtech.gwu.edu/main-classroom-search/bell-hall-109"
 slack: "https://emse-madd-f23.slack.com"
 repo: "https://github.com/emse-madd-gwu/2023-Fall"
 site_url: "https://madd.seas.gwu.edu/2023-Fall/"
