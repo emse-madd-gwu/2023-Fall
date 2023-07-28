@@ -3,7 +3,7 @@
 blockquote {
   background-color: #ecf0f1;
   padding: 20px;
-  border-color: #2296f3;
+  border-color: #dd4814;
   border-radius: 5px;
 }
 blockquote h3 {
@@ -35,7 +35,7 @@ tr:last-child {
 }
 
 .btn-slides {
-  background-color: #2296f3;
+  background-color: #dd4814;
   color: #fff;
   font-weight: bold;
   font-size: 16px;
@@ -74,3 +74,6 @@ tr:last-child {
   color: #cbcccc;
 }
  
+div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents, nav.sidebar.sidebar-navigation:not(.rollup) {
+    background-color: #373a3c;
+}
