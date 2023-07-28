@@ -1,0 +1,611 @@
+[
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Instructor\nCourse\n\n\n\n\n John Paul Helveston\n Wednesdays\n\n\n Science & Engineering Hall, 2830\n Bell Hall 109\n\n\n +1 (202) 994-7173\n Aug. 30 - Dec 13, 2023\n\n\n jph@gwu.edu\n 6:10PM - 8:40PM EST\n\n\n @JohnHelveston\n Slack\n\n\n\n\n\n\nThis course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions.\n\n\n\nThis course requires prior exposure to:\n\nProbability theory\nMultivariable calculus\nLinear algebra\nRegression\n\nEach of these concepts will be applied throughout the course, and no time will be spent reviewing the foundational elements of each concept.\nIn addition, we will work in the R programming language throughout the course, but no prior programming experience is required. We will spend the first three weeks going through exercises to get up to speed in R.\nStudents are encouraged to complete this self assessment prior to registering for the course to self-assess familiarity with these concepts."
+  },
+  {
+    "objectID": "syllabus.html#course-description",
+    "href": "syllabus.html#course-description",
+    "title": "Syllabus",
+    "section": "",
+    "text": "This course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions."
+  },
+  {
+    "objectID": "syllabus.html#prerequisites",
+    "href": "syllabus.html#prerequisites",
+    "title": "Syllabus",
+    "section": "",
+    "text": "This course requires prior exposure to:\n\nProbability theory\nMultivariable calculus\nLinear algebra\nRegression\n\nEach of these concepts will be applied throughout the course, and no time will be spent reviewing the foundational elements of each concept.\nIn addition, we will work in the R programming language throughout the course, but no prior programming experience is required. We will spend the first three weeks going through exercises to get up to speed in R.\nStudents are encouraged to complete this self assessment prior to registering for the course to self-assess familiarity with these concepts."
+  },
+  {
+    "objectID": "syllabus.html#pep-talk",
+    "href": "syllabus.html#pep-talk",
+    "title": "Syllabus",
+    "section": "Pep Talk!",
+    "text": "Pep Talk!\nWorking in and learning a programming language can be as challenging as learning a new spoken language. Hadley Wickham (chief data scientist at RStudio and author of many amazing R packages you’ll be using) made this wise observation:\n\nIt’s easy when you start out programming to get really frustrated and think, “Oh it’s me, I’m really stupid,” or, “I’m not made out to program.” But, that is absolutely not the case. Everyone gets frustrated. I still get frustrated occasionally when writing R code. It’s just a natural part of programming. So, it happens to everyone and gets less and less over time. Don’t blame yourself. Just take a break, do something fun, and then come back and try again later.\n\nIf you’re finding yourself taking way too long hitting your head against a wall and not understanding, take a break, talk to classmates, ask questions in Slack, and try it again later.\nI promise, you can do this!"
+  },
+  {
+    "objectID": "syllabus.html#software",
+    "href": "syllabus.html#software",
+    "title": "Syllabus",
+    "section": "Software",
+    "text": "Software\nGo to the Course Software page for detailed instructions on how to install the software we’ll be using. Here’s a quick list:\n\nR (version 4.1.0 or later), which can be downloaded from The Comprehensive R Archive Network (CRAN)\nRStudio (Desktop Version), a free IDE for R, which can be downloaded from RStudio\nWe’ll be using Slack for most communication."
+  },
+  {
+    "objectID": "syllabus.html#participation-attendance",
+    "href": "syllabus.html#participation-attendance",
+    "title": "Syllabus",
+    "section": "Participation & Attendance",
+    "text": "Participation & Attendance\nAttendance will be taken and will be part of your participation grade.\nIn-person attendance is critical as we will spend a lot of time working on problems and writing code during class. You should plan to attend class in person each week.\nThere will be no option for remote attendance (e.g. zoom), and class sessions will not be recorded. If you have any questions or need special accommodations, send me a message on slack and we can discuss. If you must miss class for an excused absence (e.g. medical issue), please message Professor Helveston and get notes from your fellows classmates.\nMultiple absences, inappropriate or unprofessional behavior during class (such as monopolizing discussions or being rude or disruptive), not participating in classroom exercises, and not being prepared for class will result in a poor score for attendance and participation."
+  },
+  {
+    "objectID": "syllabus.html#quizzes",
+    "href": "syllabus.html#quizzes",
+    "title": "Syllabus",
+    "section": "Quizzes",
+    "text": "Quizzes\nQuizzes will be given about once every other week immediately at the beginning of class (check the schedule). Make up quizzes will not be available if you miss it (except for excused absences). Please show up on time to class each week to ensure that you do not miss a quiz. Quizzes will cover material presented in previous classes and assignments during the weeks since the most-recent quiz.\nQuizzes are short (10 minutes) and are designed to test for fluency and to demonstrate where additional study is needed. Quizzes are low-stakes - your worst one is dropped, and the rest count for a small portion of your final grade. If you do poorly on one or two, use that as feedback on where you need additional improvement.\n\nWhy quiz at all? Research shows that giving small quizzes throughout a class can dramatically help with retention. It’s a phenomenon known as the “retrieval effect” - basically, you have to practice remembering things, otherwise your brain won’t remember them. The phenomenon and research on it is explained in detail in the book “Make It Stick: The Science of Successful Learning,” by Brown, Roediger, and McDaniel."
+  },
+  {
+    "objectID": "syllabus.html#homework",
+    "href": "syllabus.html#homework",
+    "title": "Syllabus",
+    "section": "Homework",
+    "text": "Homework\nEach week, students will be assigned readings and exercises to prepare for the next class period. Students will need to submit reflections on these readings each week, which may involve answering some practice questions. These are graded using a check system:\n\n✔+ (110%): Responses shows phenomenal thought and engagement with the course content. I will not assign these often.\n✔ (100%): Responses are thoughtful, well-written, and show engagement with the course content. This is the expected level of performance.\n✔− (50%): Responses are hastily composed, too short, and/or only cursorily engages with the course content. This grade signals that you need to improve next time. I will hopefully not assign these often.\n\nNotice that this is essentially a pass/fail system. I’m not grading your writing ability and I’m not counting the number of words you write. I’m looking for thoughtful engagement, that’s all."
+  },
+  {
+    "objectID": "syllabus.html#final-project",
+    "href": "syllabus.html#final-project",
+    "title": "Syllabus",
+    "section": "Final Project",
+    "text": "Final Project\nThroughout the semester, students will work in teams of 3-4 students towards a final project. The project is broken into multiple phases with key deliverables due throughout the semester. See the Project Overview page for more details."
+  },
+  {
+    "objectID": "syllabus.html#final-exam",
+    "href": "syllabus.html#final-exam",
+    "title": "Syllabus",
+    "section": "Final Exam",
+    "text": "Final Exam\nThe final exam is a take-home exam, and we will spend a portion of the last day of class going over the solutions together."
+  },
+  {
+    "objectID": "syllabus.html#category-breakdown",
+    "href": "syllabus.html#category-breakdown",
+    "title": "Syllabus",
+    "section": "Category Breakdown",
+    "text": "Category Breakdown\nFinal grades will be calculated as follows:\n\n\n\n\nItem\nWeight\nNotes\n\n\n\n\nReflections\n30 %\nWeekly assignment (10 x 3%, lowest dropped)\n\n\nQuizzes\n9 %\n5 quizzes, lowest dropped\n\n\nProject Proposal\n6 %\nTeams of 3-4 students\n\n\nSurvey Plan\n5 %\n\n\n\nPilot Survey\n5 %\n\n\n\nPilot Analysis\n8 %\n\n\n\nFinal Survey\n5 %\n\n\n\nFinal Analysis Report\n14 %\n\n\n\nFinal Presentation\n8 %\n\n\n\nFinal Exam\n10 %\nTake home exam\n\n\n\n\nHere’s a visual breakdown by category:"
+  },
+  {
+    "objectID": "syllabus.html#grading-scale",
+    "href": "syllabus.html#grading-scale",
+    "title": "Syllabus",
+    "section": "Grading Scale",
+    "text": "Grading Scale\n\n\n\n\nGrade\nRange\nGrade\nRange\n\n\n\n\nA\n94 - 100%\nC\n74 - 76.99%\n\n\nA-\n90 - 93.99%\nC-\n70 - 73.99%\n\n\nB+\n87 - 89.99%\nD+\n67 - 69.99%\n\n\nB\n84 - 86.99%\nD\n64 - 66.99%\n\n\nB-\n80 - 83.99%\nD-\n60 - 63.99%\n\n\nC+\n77 - 79.99%\nF\n&lt; 60%\n\n\n\n\nThe course instructors may choose to change the scales at their discretion. You are guaranteed that your letter grade will never become worse as a result of changing scales."
+  },
+  {
+    "objectID": "syllabus.html#rounding",
+    "href": "syllabus.html#rounding",
+    "title": "Syllabus",
+    "section": "Rounding",
+    "text": "Rounding\nI do not round final grades. Rather, I grade generously throughout the semester. For example, if you give a quiz your best shot and completely fail it, you will likely get a 50% instead of a 0%. The 50% is for trying (if you simply don’t take it, you’ll get a 0%). As a result, I will not modify or round your final score, even if you’re very close to a different letter grade (e.g., a 93.98 is an “A-” and will not be rounded up to an “A”)."
+  },
+  {
+    "objectID": "syllabus.html#slack",
+    "href": "syllabus.html#slack",
+    "title": "Syllabus",
+    "section": "Slack",
+    "text": "Slack\nAll course communication will be managed through Slack. A link to sign up for the course slack page can be found on the one (and only) announcement on Blackboard.\nYou can use Slack to:\n\nAsk general questions.\nAsk for help with an assignment.\nSend direct, private messages to each other or the instructors (just like email…but better!)\n\n\nAsking for help on Slack: You can post questions on slack and receive quick responses. This also enables other students to see answers to common questions. Be specific - if your code has an error you don’t understand, include the code and the error message in your question."
+  },
+  {
+    "objectID": "syllabus.html#ama-hours",
+    "href": "syllabus.html#ama-hours",
+    "title": "Syllabus",
+    "section": "AMA Hours",
+    "text": "AMA Hours\nI will hold regular “Ask Me Anything” hours each week. The specific hours will be posted on the course slack. During this period, you can come to my office (SEH 2830) and ask me anything. And I mean anything. Most of the time you may just have a question related to class, but I am also happy to discuss anything else with you regarding life, important decisions, career, art, music, dance, etc.\nIf the AMA hours don’t work with your schedule, you can always schedule a zoom call with me using this link. I’m available most days of the week."
+  },
+  {
+    "objectID": "syllabus.html#tutoring-hours",
+    "href": "syllabus.html#tutoring-hours",
+    "title": "Syllabus",
+    "section": "Tutoring hours",
+    "text": "Tutoring hours\nYour class tutors will each hold a dedicated period of time each week for zoom tutoring hours. Please don’t make your tutors sit and do emails for two hours - come by and ask for help!"
+  },
+  {
+    "objectID": "syllabus.html#library-services",
+    "href": "syllabus.html#library-services",
+    "title": "Syllabus",
+    "section": "Library Services",
+    "text": "Library Services\nWhile the University Library is not a stand in for TAs, you can schedule a consultation for general help with Coding, Programming, Data, Statistical, and GIS. See more at https://academiccommons.gwu.edu/writing-research-help"
+  },
+  {
+    "objectID": "syllabus.html#tldr",
+    "href": "syllabus.html#tldr",
+    "title": "Syllabus",
+    "section": "tl;dr",
+    "text": "tl;dr\n\nBE NICE\nBE ON TIME\nBE HONEST\nDON’T CHEAT\nSERIOUSLY: DON’T CHEAT"
+  },
+  {
+    "objectID": "syllabus.html#late-policy",
+    "href": "syllabus.html#late-policy",
+    "title": "Syllabus",
+    "section": "Late Policy",
+    "text": "Late Policy\nEach students is allowed 3 late homework submission days - use them however you want, no questions asked. These are meant to cover illness, family emergencies, and religious holidays.\nBeyond those, assignments are due by 11:59pm on the assigned due date unless specified otherwise. Assignments submitted up to 24 hours past this deadline will be graded to a max of 50% of the available points. Assignments submitted beyond 24 hours past the deadline will not be graded and will be assigned a 0.\nIf you need a special accommodation such as due to an illness, family emergency, or religious holidays, contact the instructor ahead of time."
+  },
+  {
+    "objectID": "syllabus.html#cheating",
+    "href": "syllabus.html#cheating",
+    "title": "Syllabus",
+    "section": "Cheating",
+    "text": "Cheating\nCheating results in a penalty on the first offense, and failing the course on the second offense. Cheating on assignments can include:\n\nCopying or stealing any amount of code from someone currently in the class or someone who has taken the class before.\nNOTE: Copying is never okay, whether the code is provided electronically, visually, audibly, or on paper. Even if you work together on an assignment, write your own code.\nProviding code you have written for an assignment to anyone else in the class.\nPutting code solutions from the course assignments online.\nReceiving code-level assistance from any person not associated with the course.\nGetting someone else to write the assignment code for you.\nAsking questions about the assignments on any online services outside of the course office hours / Slack.\n\nCheating on quizzes, assignments, or the final project can include:\n\nReferring to any external resources while completing the assignment (phones, notes, etc.).\nCopying part of an answer off of another student’s paper, even if it is very small.\nUsing solutions provided by students who previously took the course.\n\n\nUse of chatGPT and other AI tools\nLarge language models (LLMs) are capable of producing exact solutions to some of the coding problems assigned in this class. So we all basically have a solutions manual available for free.\nWith this in mind, the use of AI tools is in general permitted, but with caveats. If you do use AI tools on assignments in this class, you must include the prompt(s) you used as well as changed to made to them to get better results to receive full credit.\nLearn to use tools like ChatGPT as a learning assistant - a tool to help you accomplish the task - rather than just a solutions manual. One version of using it makes you a better and more efficient coder, the other robs you of that.\n\n\nPenalties\nViolations will be reported to the Office of Student Rights & Responsibilities. Penalties are decided by the course instructors, and can vary based on the severity of the offense. Possible penalties include:\n\nReceiving a 0 on the assignment/quiz in question.\nReceiving a full letter grade deduction in the course.\nAutomatically failing the course.\n\nDepending on the student’s prior academic history, violations may also be accompanied by a letter to the Dean of Student Affairs, again at the instructors’ discretion. This can lead to university-level penalties, such as being suspended or expelled.\n\n\nGrace Period\nCollege is a time when you do a lot of learning. Sometimes, you might make bad decisions or mistakes. The most important thing for you to do is to learn from your mistakes, to constantly grow, and become a better person.\nSometimes, students panic and copy code right before the deadline, then regret what they did afterwards. Therefore, you may rescind any homework submission for up to 24 hours after the deadline with no questions asked. Simply email the course instructors asking to delete the submission in question, and we will do so. Deleted submissions will not be considered during plagiarism detection, though of course they will also not be graded. However, it will always be better to get a 0 (or partial credit) on an assignment than to get a cheating violation!"
+  },
+  {
+    "objectID": "syllabus.html#children-in-class",
+    "href": "syllabus.html#children-in-class",
+    "title": "Syllabus",
+    "section": "Children in class",
+    "text": "Children in class\n\n\nI applaud all of you who attend school with children! It is difficult to balance academic, work, and family commitments, and I want you to succeed. Here are my policies regarding children in class:\n\nAll breastfeeding babies are welcome in class as often as necessary.\nNon-nursing babies and older children are welcome whenever alternate arrangements cannot be made. As a parent of young children, I understand that babysitters fall through, partners have conflicting schedules, children get sick, and other issues arise that leave parents with few other options.\nIn cases where children come to class, I invite parents/caregivers to sit close to the door so as to more easily excuse yourself to attend to your child’s needs. Non-parents in the class: please reserve seats near the door for your parenting classmates.\nAll students are expected to join with me in creating a welcoming environment that is respectful of your classmates who bring children to class.\n\nI understand that sleep deprivation and exhaustion are among the most difficult aspects of parenting young children. The struggle of balancing school, work, childcare, and graduate school is tiring, and I will do my best to accommodate any such issues while maintaining the same high expectations for all students enrolled in the class. Please do not hesitate to contact me with any questions or concerns."
+  },
+  {
+    "objectID": "syllabus.html#laurens-promise",
+    "href": "syllabus.html#laurens-promise",
+    "title": "Syllabus",
+    "section": "Lauren’s Promise",
+    "text": "Lauren’s Promise\n\n\nI will listen and believe you if someone is threatening you.\nLauren McCluskey, a 21-year-old honors student athlete, was murdered on October 22, 2018 by a man she briefly dated on the University of Utah campus. We must all take action to ensure that this never happens again.\nIf you are in immediate danger, call 911 or GWU police at 202-994-6111 (GWPD).\nIf you are experiencing sexual assault, domestic violence, or stalking, if you report it to me I will listen and connect you to resources or call GWU’s Counseling and Psychological Services (202-994-5300).\nAny form of sexual harassment or violence will not be excused or tolerated at GWU. GWU has instituted procedures to respond to violations of these laws and standards, programs aimed at the prevention of such conduct, and intervention on behalf of the victims. GWU Police officers will treat victims of sexual assault, domestic violence, and stalking with respect and dignity. Advocates on campus and in the community can help with victims’ physical and emotional health, reporting options, and academic concerns."
+  },
+  {
+    "objectID": "syllabus.html#use-of-course-materials",
+    "href": "syllabus.html#use-of-course-materials",
+    "title": "Syllabus",
+    "section": "Use of Course Materials",
+    "text": "Use of Course Materials\nAll course materials available on the course website are developed open source - you are welcome to post and share them following the licensing guidelines listed in the license page.\nHowever, all solutions to assignments and quizzes are proprietary. Don’t post them online or try to sell them - this is a violation of the student code of conduct and it is also a violation of the class cheating policy."
+  },
+  {
+    "objectID": "syllabus.html#recording-in-class",
+    "href": "syllabus.html#recording-in-class",
+    "title": "Syllabus",
+    "section": "Recording in Class",
+    "text": "Recording in Class\nYou are free to record class periods (audio and / or video) for your own personal study use and only for your personal study use. If you do record a class period, you are prohibited from posting or sharing the content online or with others."
+  },
+  {
+    "objectID": "syllabus.html#what-to-do-if-the-instructor-does-not-arrive",
+    "href": "syllabus.html#what-to-do-if-the-instructor-does-not-arrive",
+    "title": "Syllabus",
+    "section": "What To Do if the Instructor Does Not Arrive",
+    "text": "What To Do if the Instructor Does Not Arrive\nWait 20 minutes, after that you’re free to leave. One member of the class should be selected to notify the EMSE Department of the Instructor’s absence by calling the EMSE Department 202-994-4892 on next business day."
+  },
+  {
+    "objectID": "syllabus.html#university-policy-on-religious-holidays",
+    "href": "syllabus.html#university-policy-on-religious-holidays",
+    "title": "Syllabus",
+    "section": "University Policy on Religious Holidays",
+    "text": "University Policy on Religious Holidays\nIn accordance with University Policy, students should notify faculty during the first week of the semester of their intention to be absent from class on their day(s) of religious observance. Official university policy here: https://students.gwu.edu/accommodations-religious-holidays\n\nStudents should notify faculty during the first week of the semester of their intention to be absent from class on their day(s) of religious observance.\nFaculty should extend to these students the courtesy of absence without penalty on such occasions, including permission to make up examinations.\nFaculty who intend to observe a religious holiday should arrange at the beginning of the semester to reschedule missed classes or to make other provisions for their course-related activities."
+  },
+  {
+    "objectID": "syllabus.html#support-for-students-outside-the-classroom",
+    "href": "syllabus.html#support-for-students-outside-the-classroom",
+    "title": "Syllabus",
+    "section": "Support for Students Outside the Classroom",
+    "text": "Support for Students Outside the Classroom\nDisability Support Services (DSS): Any student who may need an accommodation based on the potential impact of a disability should contact the Disability Support Services office at 202-994-8250 in the Rome Hall, Suite 102, to establish eligibility and to coordinate reasonable accommodations. For additional information please refer to: https://disabilitysupport.gwu.edu/\nMental Health Services (202-994-5300): The University’s Mental Health Services offers 24/7 assistance and referral to address students’ personal, social, career, and study skills problems. Services for students include: crisis and emergency mental health consultations confidential assessment, counseling services (individual and small group), and referrals. https://healthcenter.gwu.edu/counseling-and-psychological-services"
+  },
+  {
+    "objectID": "syllabus.html#academic-integrity-code",
+    "href": "syllabus.html#academic-integrity-code",
+    "title": "Syllabus",
+    "section": "Academic Integrity Code",
+    "text": "Academic Integrity Code\nAcademic dishonesty is defined as cheating of any kind, including misrepresenting one’s own work, taking credit for the work of others without crediting them and without appropriate authorization, and the fabrication of information. For the remainder of the code, see: https://studentconduct.gwu.edu/code-academic-integrity\nIn addition to the formal code of academic integrity, the instructor expects that students will treat this course with the level of professionalism required in the workplace. Remember that real firms are sponsoring student projects throughout the semester; in a workplace setting, these firms would be paying clients for the analyses being conducted. This course prepares students to succeed in the workplace, and maintaining a high degree of professionalism is expected."
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "All assignments are due by 11:59pm on the due date.\n\n\n\n\n\nWeek\nDate\nClass\nWeekly HW\nMini Projects\nFinal Projects\n\n\n\n\n1\nAug 30\nGetting Started\nClass orientation; workflow; importing data; data wrangling & plotting refresher\nHW 1\nDue: Sep 05\n\n\n\n\n2\nSep 06\nReproducible Reporting\nCombinging text and code with Quarto\nHW 2\nDue: Sep 12\n\n\n\n\n3\nSep 13\nTidy Data\nTidy data; reshaping data; data provenance; writing a research question\nHW 3\nDue: Sep 19\n\nProposal\nDue: Sep 26\n\n\n4\nSep 20\nCleaning Data\nJoins; changing data types; dealing with messy Excel files\nHW 4\nDue: Sep 26\nData Cleaning\nDue: Oct 03\n\n\n\n5\nSep 27\nCentrality & Variability\nData types & scales; centrality & spread; variation & covariation; plot types\nHW 5\nDue: Oct 03\n\n\n\n\n6\nOct 04\nCorrelation\nCorrelation metrics; outliers; visualizing correlations; linear models\nHW 6\nDue: Oct 10\n\n\n\n\n7\nOct 11\nVisualizing Information\nPsychology of graphical perception; preattentive attributes; ugly, bad, & wrong charts; chart design best practices\nHW 7\nDue: Oct 17\nExploring Data\nDue: Oct 24\n\n\n\n8\nOct 18\nFactors, Amounts, & Proportions\nManipulating factors; plotting amounts with bars, dots, and lollipops; parts of whole\nHW 8\nDue: Oct 24\n\nProgress Report\nDue: Oct 31\n\n\n9\nOct 25\nComparisons\nFacets; reference lines; dumbbells; slopes; distributions\nHW 9\nDue: Oct 31\n\n\n\n\n10\nNov 01\nTrends\nLine charts; heat maps; animation\nHW 10\nDue: Nov 07\n\n\n\n\n11\nNov 08\nPolishing Charts\nColors; annotations; scales; themes; multi-panel figures\nHW 11\nDue: Nov 14\nRe-design\nDue: Nov 28\n\n\n\n12\nNov 15\nMaps & Project Workshop\nMaps in ggplot; mapping data to maps; projections; project workshop\nHW 12\nDue: Nov 28\n\n\n\n\n13\nNov 22\nThanksgiving - no class\n\n\n\n\n\n\n14\nNov 29\nInteractivity\nPlotly; interactive tables; shiny apps\nHW 13\nDue: Dec 05\n\nFinal Report\nDue: Dec 10\n\n\n15\nDec 06\nCommunicating Results\nTelling stories; slide design; giving a talk\n\n\nPresentation\nDue: Dec 12\n\n\n16\nDec 13\nFinal Presentations\nIn-class presentation showcase w/Q&A"
+  },
+  {
+    "objectID": "project/examples.html",
+    "href": "project/examples.html",
+    "title": "Example Analyses",
+    "section": "",
+    "text": "As inspiration for your final projects, check out these prior exploratory data analyses.\n\nPrevious course showcases\n\n\n\n\n\nFall 2021 Showcase\nProjects from the fall 2021 semester of this class."
+  },
+  {
+    "objectID": "project/6-final-analysis.html",
+    "href": "project/6-final-analysis.html",
+    "title": "Final Analysis",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "project/4-pilot-analysis.html",
+    "href": "project/4-pilot-analysis.html",
+    "title": "Pilot Analysis",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "project/2-survey-plan.html",
+    "href": "project/2-survey-plan.html",
+    "title": "Survey Plan",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "project/0-overview.html",
+    "href": "project/0-overview.html",
+    "title": "Project Overview",
+    "section": "",
+    "text": "Overview\nThroughout the semester, you will work in teams of 3-4 students towards a final project. The project will have three phases:\n\nProject proposal\nPilot survey & analysis\nFinal survey & analysis\n\nTeams will apply topics covered in class to develop quantitative models of consumer choice to inform design decisions for a novel product, technology, or policy. Each team will have somewhat different tasks and areas of emphasis, depending on the product selected; however, all projects will be expected to demonstrate mastery of the topics covered in class and to address the criteria and guidelines required for project assignments.\nSummary of Deliverables: To make the overall project more manageable, it is broken down into separate “milestone” deliverables due throughout the semester, starting with a proposal.\n\n\n\n\nItem\nWeight towardsfinal grade\nDue Date(by 11:59pm)\n\n\n\n\nProject Proposal\n7 %\nSep. 25\n\n\nSurvey Plan\n4 %\nOct. 04\n\n\nPilot Survey\n4 %\nOct. 18\n\n\nPilot Analysis\n9 %\nNov. 06\n\n\nFinal Survey\n5 %\nNov. 20\n\n\nFinal Analysis Report\n14 %\nDec. 11\n\n\nFinal Presentation\n8 %\nDec. 14\n\n\n\n\n\n\nProject Selection\nI want this project to be as useful for you and your future career as possible - you’ll hopefully want to show off your final project in a portfolio or during job interviews. Accordingly, you get to choose the topic for your project, but it must meet certain guidelines.\nProjects must be selected during the first two weeks of class. Projects much be an emerging technology, product, or policy with a clearly identified market that has not yet been introduced into the mass market, such as a new invention from a research laboratory at GWU or a new product being explored by a firm. Students have the option to choose a sponsored project or propose their own project if it is approved by the instructor and meets the following criteria:\n\nInnovative / Emerging: The proposed project involves a new product or technology with attributes (e.g. price, efficiency, reliability, size, performance, color, etc.) that may be competitive in the marketplace but for which actual market adoption is still uncertain.\nWell-Defined: This course focuses on mathematical modeling to support design decision-making. There is not sufficient time in the course for conceptual design of a new product.\nIdentified Target Market: A target market has been identified for this new product or technology. Competing products in that market are known, and the attributes on which new market entrants compete can be identified. Representative potential customers can be identified for survey solicitation. If the new product or technology is a component of a larger product sold to a consumer market, students may assess the market implications for the final consumer product.\nPrior to Mass Commercialization: The new product or technology has only recently or has not yet been introduced to the mass market.\nModerate Scope and Complexity: The product or technology should involve moderate complexity. For example, a non-differentiated commodity, such as sugar, is too simple, and a complex product involving many components and manufacturing operations, such as a vehicle, is too complex.\nExpertise: If the product involves a new technology that requires specialized knowledge about its attributes, the team should have reliable access to experts who can supply the requisite knowledge.\nDecision Variables: The product should have several non-trivial design decisions. For example, choosing between two materials or topologies, setting dimensions of a component, or selecting among a set of alternative component configurations are suitable design decisions. The models developed in the project will be used to support decision-making along such dimensions.\n\n\n\nTeamwork\nThe experience of working in teams on this project will serve as preparation for teamwork throughout your careers. Some teams may experience an imbalance in team member contributions, effort, or reliability. The instructor is available to provide advice and interact in resolving team inequity and conflict; however, students should view this as a learning experience. Such situations regularly occur in any career, and learning how to handle them is a valuable skill. If you experience challenges within your team, it is a good opportunity to develop strategies and figure out how you will address such challenges in the future. One common job interview question is, “Describe a time when you experienced difficulties working in a team or experienced a team failure. What did you do about it?” This is a good chance to build a strong answer to this question."
+  },
+  {
+    "objectID": "hw/9-wtp-simulation.html",
+    "href": "hw/9-wtp-simulation.html",
+    "title": "WTP & Simulations",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/7-uncertainty.html",
+    "href": "hw/7-uncertainty.html",
+    "title": "Uncertainty",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/5-utility-models.html",
+    "href": "hw/5-utility-models.html",
+    "title": "Utility Models",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/3-intro-to-formr.html",
+    "href": "hw/3-intro-to-formr.html",
+    "title": "Intro to formr",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/11-exam.html",
+    "href": "hw/11-exam.html",
+    "title": "Exam",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/1-data-wrangling.html",
+    "href": "hw/1-data-wrangling.html",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/9-uncertainty.html",
+    "href": "class/9-uncertainty.html",
+    "title": "Uncertainty",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/7-utility-models.html",
+    "href": "class/7-utility-models.html",
+    "title": "Utility Models",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/4-intro-to-formr.html",
+    "href": "class/4-intro-to-formr.html",
+    "title": "Intro to formr",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/2-data-wrangling.html",
+    "href": "class/2-data-wrangling.html",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/14-class-review.html",
+    "href": "class/14-class-review.html",
+    "title": "Exam Review & Final Analysis Overview",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/11-wtp-simulation.html",
+    "href": "class/11-wtp-simulation.html",
+    "title": "WTP & Simulations",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/1-getting-started.html",
+    "href": "class/1-getting-started.html",
+    "title": "Getting Started",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "Licensing and copyright information",
+    "section": "",
+    "text": "The course material is licensed under the Creative Commons Attribution 4.0 International License and the course code is licensed under a MIT License by John Helveston."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions.\nThis course was first created by Dr. John Paul Helveston at the George Washington University for the Spring 2019 semester of EMSE 6035, which was previously called Marketing of Technology. See the LICENSE page for information about reusing and sharing content."
+  },
+  {
+    "objectID": "class/10-doe-power-analysis.html",
+    "href": "class/10-doe-power-analysis.html",
+    "title": "DOE & Power Analysis",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/12-heterogeneity.html",
+    "href": "class/12-heterogeneity.html",
+    "title": "Heterogeneity",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/15-exam-solutions.html",
+    "href": "class/15-exam-solutions.html",
+    "title": "Communicating Results",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/3-rmarkdown-plotting.html",
+    "href": "class/3-rmarkdown-plotting.html",
+    "title": "RMarkdown & Plotting",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/6-conjoint-questions.html",
+    "href": "class/6-conjoint-questions.html",
+    "title": "Conjoint Questions",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/8-optimization-mle.html",
+    "href": "class/8-optimization-mle.html",
+    "title": "Optimization & MLE",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/0-self-assessment.html",
+    "href": "hw/0-self-assessment.html",
+    "title": "Self Assessment",
+    "section": "",
+    "text": "This optional assignment allows you to self-assess whether you have the prerequisite knowledge required for this course. Take this three-question self-assessment quiz. It shouldn’t take more than 10-20 minutes to complete, and answers can be compared with the solutions.\nIf you have trouble answering these questions, you may find this course challenging and may want to take other courses or review refresher materials on these topics prior to taking this course."
+  },
+  {
+    "objectID": "hw/0-self-assessment.html#this-assignment-is-optional",
+    "href": "hw/0-self-assessment.html#this-assignment-is-optional",
+    "title": "Self Assessment",
+    "section": "",
+    "text": "This optional assignment allows you to self-assess whether you have the prerequisite knowledge required for this course. Take this three-question self-assessment quiz. It shouldn’t take more than 10-20 minutes to complete, and answers can be compared with the solutions.\nIf you have trouble answering these questions, you may find this course challenging and may want to take other courses or review refresher materials on these topics prior to taking this course."
+  },
+  {
+    "objectID": "hw/10-heterogeneity.html",
+    "href": "hw/10-heterogeneity.html",
+    "title": "Heterogeneity",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/2-rmarkdown-plotting.html",
+    "href": "hw/2-rmarkdown-plotting.html",
+    "title": "Plotting",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/4-conjoint-surveys-in-formr.html",
+    "href": "hw/4-conjoint-surveys-in-formr.html",
+    "title": "Conjoint Surveys in formr",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/6-optimization-mle.html",
+    "href": "hw/6-optimization-mle.html",
+    "title": "Optimization & MLE",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/8-doe-power-analysis.html",
+    "href": "hw/8-doe-power-analysis.html",
+    "title": "Design of Experiment",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "EMSE 6035:Marketing Analytics for Design Decisions(Fall 2023)",
+    "section": "",
+    "text": "Department: Engineering Management and Systems Engineering @ GWU\nCredits: 3\nDescription:\nThis course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions.\nLearning Objectives:\nHaving successfully completed this course, students will be able to:\n\nImport, wrangle, visualize, and export data in R.\nDesign surveys to obtain informative data about consumer preferences for product features.\nBuild and estimate discrete choice models.\nAnalyze consumer choice data to estimate consumer preferences for product features.\nDesign and create effective charts and presentations.\nCommunicate results in terms of design insights.\n\nPrerequisites:\nThis course requires prior exposure to:\n\nProbability theory\nMultivariable calculus\nLinear algebra\nRegression\n\nEach of these concepts will be applied throughout the course, and no time will be spent reviewing the foundational elements of each concept.\nIn addition, we will work in the R programming language throughout the course, but no prior programming experience is required. We will spend the first three weeks going through exercises to get up to speed in R.\nStudents are encouraged to complete this self assessment prior to registering for the course to self-assess familiarity with these concepts."
+  },
+  {
+    "objectID": "project/1-proposal.html",
+    "href": "project/1-proposal.html",
+    "title": "Project Proposal",
+    "section": "",
+    "text": "source(here::here(\"_common.R\"))\n\nhere() starts at /Users/runner/work/2023-Fall/2023-Fall\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nAttaching package: 'cowplot'\n\n\nThe following object is masked from 'package:lubridate':\n\n    stamp\n\n\n\nAttaching package: 'kableExtra'\n\n\nThe following object is masked from 'package:dplyr':\n\n    group_rows\n\nrubric &lt;- read_csv(here::here('rubrics', '1-proposal.csv'))\n\nRows: 21 Columns: 7\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (5): category, label, rating, points, description\ndbl (2): order, maxPoints\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\nmaxPoints &lt;- rubric %&gt;%\n    filter(rating == \"Excellent\") %&gt;%\n    summarise(max = sum(maxPoints)) %&gt;%\n    pull(max)\ndue &lt;- get_schedule() %&gt;%\n  filter(n_final == params$number) %&gt;%\n  pull(due_final) %&gt;%\n  paste0(\" by 11:59pm\")\nAs a team, write a proposal defining the scope of your project plan. Your chosen project topic should follow the project selection guidelines.\nThe course instructor will review and grade your proposal and provide feedback in team meetings the week following the due date. If your proposal is approved, you are done and can move on towards the next project task. In some cases, the instructor may ask you to submit a revised proposal, most likely by focusing / adjusting the proposal scope. Follow the guidelines below to prepare your proposal."
+  },
+  {
+    "objectID": "project/1-proposal.html#get-organized",
+    "href": "project/1-proposal.html#get-organized",
+    "title": "Project Proposal",
+    "section": "1. Get Organized",
+    "text": "1. Get Organized\nDownload and unzip this template for your proposal. Open the proposal.Rproj file and write your proposal in the proposal.Rmd file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:\n\nWrite your project title in the title field (and provide a subtitle if you wish, or delete the subtitle field).\nIn the author field, list the names of all teammates, e.g. author: Luke Skywalker, Leia Organa, and Han Solo."
+  },
+  {
+    "objectID": "project/1-proposal.html#writing-quality",
+    "href": "project/1-proposal.html#writing-quality",
+    "title": "Project Proposal",
+    "section": "2. Writing Quality",
+    "text": "2. Writing Quality\nYour proposal should be written in a clear, concise, and logically-structured manner so that a reader can easily understand the ideas presented. The proposal should be proof-read before submission to correct any grammatical or spelling errors. Spell checking can be automated by installing the spelling package and running this in the R console:\n\nspelling::spell_check_files(\"proposal.Rmd\")\n\nAll figures should be referenced in the text."
+  },
+  {
+    "objectID": "project/1-proposal.html#proposal-contents",
+    "href": "project/1-proposal.html#proposal-contents",
+    "title": "Project Proposal",
+    "section": "3. Proposal Contents",
+    "text": "3. Proposal Contents\nYour proposal should contain the following items listed as separate sections.\n\nNOTE: If your team is working on a policy project rather than a product, see the Policy Proposal Contents section below.\n\n\nAbstract\nA few sentences summarizing the overall proposal and convincing the reader why it is important. Specifically, tell the reader:\n\nWhat is the product you are studying?\nWhat key product attributes make it different than its competitors?\nWhat major design decision variables will you focus on for your analysis?\n\n\n\nIntroduction\nProvide a brief description and background of the product or technology. Include a picture or diagram of the product.\n\n\nMarket Opportunity\n\nIdentify Your Customer\nIf there are multiple potential markets, choose one to focus on for your analysis. Describe who you plan on taking your survey and how you intend to gain access to that population. You may survey customers of a “downstream” product, if appropriate (e.g. survey electric vehicle buyers to learn about preferences for electric vehicle battery attributes).\n\n\nIdentify Competitors\nWhich other products will compete with yours? Benchmark how competitors compare on your product’s attributes.\n\n\nIdentify Market Size\nEstimate the size of the annual market (expected sales in units per year) for this product and its competitors. Specify if your estimated annual market size is regional, national, or global, and provide references.\n\n\n\nProduct Attributes & Decision Variables\nA key component of your proposal is to identify the relationships between your product attributes and decision variables.\n\nProduct Attributes\nThese are the product features that consumers observe and care about. For example, price is almost always an important product attribute that influences consumer choices. You should list and describe the major product attributes you will include in your analysis. Where possible, label the product attributes on the diagram of your design. Where possible, quantify the metrics for each attribute (e.g. if one of your attributes is weight, the metric could be “kilograms”). Also list the set or range of possible levels you plan to explore for each attribute (e.g. for color you may choose the set {red, green, blue}, or for price you may choose the range $1 - $10).\n\n\nDecision Variables\nThese are key elements of the product / technology that the designers focused on in designing the product. For example, engineers might be trying to choose the best thickness for a solar cell, which affects multiple product attributes, including weight (thicker cells are heavier), price (thicker cells use more material), lifetime (cell thickness may affect how quickly a cell degrades), etc. You should discuss ~2-3 key decision variables that are related to your product’s design that you propose to consider. Discuss why you chose these variables, and label them on your diagram of the product design. For each variable, specify units and the range of potential values under consideration.\n\n\nModel Relationships Table\nInclude a clearly legible image of your model relationships table identifying relationships between your product attributes and decision variables. For now, these relationships can simply be directional (e.g. cell thickness is positively related to cell weight). Use this example as a template.\n\n\n\nQuestions\nList major outstanding questions (e.g. about the product / technology performance metrics, market opportunities, etc.) that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project."
+  },
+  {
+    "objectID": "project/1-proposal.html#knit-and-submit",
+    "href": "project/1-proposal.html#knit-and-submit",
+    "title": "Project Proposal",
+    "section": "4. Knit and submit",
+    "text": "4. Knit and submit\nClick the “knit” button to compile your proposal.Rmd file into a html web page, then create a zip file of everything in your R Project folder. Name your file proposal.zip, then go to your team Box folder and submit your zip file in the “submissions” folder. Only one person from your team should submit the report."
+  },
+  {
+    "objectID": "project/1-proposal.html#policy-proposal-contents",
+    "href": "project/1-proposal.html#policy-proposal-contents",
+    "title": "Project Proposal",
+    "section": "Policy Proposal Contents",
+    "text": "Policy Proposal Contents\nFor teams looking at a policy design rather than a product design, your proposal should contain the following sections.\n\nAbstract\nA few sentences summarizing the overall proposal and convincing the reader why it is important. Specifically, tell the reader:\n\nWhat is the problem you are trying to address?\nWhat policy options are you considering to address the problem?\nWhat is the target population of your policies? Who will be affected by them?\n\n\n\nIntroduction\nProvide a brief description and background of the problem you are trying to address and the goal of the policies you are considering.\n\n\nTarget Population\nDescribe the target population for your analysis. Who will be affected by the policies you are considering? Who are you targeting these policies towards? Who are you planning on getting to take your survey, and how you intend to gain access to that population? Include an estimate of the size of the total target population.\n\n\nPolicy Options\n\nIdentify Policy Options\nWhich policies are you considering, and what are some of the potential pros and cons of them? Are some easier / more feasible to implement or enforce than others? Are some more costly to implement than others? Include a summary table comparing some basic features of each policy, e.g.\n\n\n\nPolicy\nDescription\nPro\nCon\n\n\n\n\nPolicy 1\nBrief description\nEasily implemented\nExpensive\n\n\nPolicy 2\nBrief description\nHard to enforce\nCheap\n\n\n\n\n\nIdentify Policy Attributes\nFor each policy, identify the key attributes that your target population will observe. For example, if the policy involves a fee or tax, then the amount of that fee or tax would be a key attribute. For each attribute, specify the range of possible levels you plan to explore (e.g. for amount you may choose the range $1 - $10). You should choose levels that reflect the range of existing policies or potential policies. You may choose to include policies / attributes that have not yet been implemented as well.\n\n\n\nQuestions\nList major outstanding questions that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project."
+  },
+  {
+    "objectID": "project/3-pilot-survey.html",
+    "href": "project/3-pilot-survey.html",
+    "title": "Pilot Survey",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "project/5-final-survey.html",
+    "href": "project/5-final-survey.html",
+    "title": "Final Survey",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "project/7-final-presentation.html",
+    "href": "project/7-final-presentation.html",
+    "title": "Final Presentation",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Grolemund, Garrett. “Hands-On Programming with R” [free online], [buy on amazon]\nPeng, Roger D. “R Programming for Data Science” [online - pay what you want]\n\n\n\n\n\nGrolemund, Garrett and Wickham, Hadley. “R for Data Science” [free online], [buy on amazon]\nPeng, Roger D. “Exploratory Data Analysis with R” [online - pay what you want]\n16 HOWTO’s, by Lingyun Zhang\n\n\n\n\n\nAll cheatsheets\nData wrangling with the dplyr library\nData visualization with the ggplot2 library\nRMarkdown"
+  },
+  {
+    "objectID": "references.html#general-programming-in-r",
+    "href": "references.html#general-programming-in-r",
+    "title": "References",
+    "section": "",
+    "text": "Grolemund, Garrett. “Hands-On Programming with R” [free online], [buy on amazon]\nPeng, Roger D. “R Programming for Data Science” [online - pay what you want]"
+  },
+  {
+    "objectID": "references.html#data-analysis-in-r",
+    "href": "references.html#data-analysis-in-r",
+    "title": "References",
+    "section": "",
+    "text": "Grolemund, Garrett and Wickham, Hadley. “R for Data Science” [free online], [buy on amazon]\nPeng, Roger D. “Exploratory Data Analysis with R” [online - pay what you want]\n16 HOWTO’s, by Lingyun Zhang"
+  },
+  {
+    "objectID": "references.html#rstudio-cheatsheets",
+    "href": "references.html#rstudio-cheatsheets",
+    "title": "References",
+    "section": "",
+    "text": "All cheatsheets\nData wrangling with the dplyr library\nData visualization with the ggplot2 library\nRMarkdown"
+  },
+  {
+    "objectID": "references.html#principles-of-data-visualization",
+    "href": "references.html#principles-of-data-visualization",
+    "title": "References",
+    "section": "Principles of data visualization",
+    "text": "Principles of data visualization\n\nHealy, Kieran. “Data Visualization: A practical introduction” [free online], [buy on amazon]\nWilke, Claus O. “Fundamentals of Data Visualization” [free online], [buy on amazon]\nVideo: How Humans See Data, by John Rauser. This is probably the best overviews I’ve seen on how to exploit the psychology of how our brains interpret images to make effective visualizations."
+  },
+  {
+    "objectID": "references.html#choosing-the-right-chart",
+    "href": "references.html#choosing-the-right-chart",
+    "title": "References",
+    "section": "Choosing the right chart",
+    "text": "Choosing the right chart\nYou will want to choose different chart types depending on the relationship or message you want to convey. Fortunately, we live in the future and awesome people have created wonderful tools to help you find the most appropriate graph for your data. Take a look through some of these resources - these will come in handy when you start working on your final project:\n\n Stephen Few’s Graph Selection Matrix\nThe Data Visualisation Catalogue\nData-to-Viz\nR Graph Gallery\nVisual Vocabulary\nThe Data Viz Project"
+  },
+  {
+    "objectID": "references.html#making-plots-with-ggplot2",
+    "href": "references.html#making-plots-with-ggplot2",
+    "title": "References",
+    "section": "Making plots with ggplot2",
+    "text": "Making plots with ggplot2\n\nThe R Graph Catalog: 124 examples (with code) for making common ggplots.\nThe ggplot2 Extensions gallery: 64 registered libraries that extend the functionality of ggplot2.\nTop 50 ggplot2 visualizations\nR Cookbook for ggplot2\nRStudio ggplot2 Cheatsheet\nTidyverse ggplot2 reference guide\nggThemeAssist: Package for customizing plot themes and layout\n16 HOWTO’s, by Lingyun Zhang - super useful for making specific types of charts"
+  },
+  {
+    "objectID": "references.html#polishing-ggplot2-plots",
+    "href": "references.html#polishing-ggplot2-plots",
+    "title": "References",
+    "section": "Polishing ggplot2 plots",
+    "text": "Polishing ggplot2 plots\n\nggplot2: Elegant Graphics for Data Analysis\nFollow good design rules"
+  },
+  {
+    "objectID": "references.html#choosing-colors",
+    "href": "references.html#choosing-colors",
+    "title": "References",
+    "section": "Choosing colors",
+    "text": "Choosing colors\n\nColor wheel tool\nggplot2 book chapter 12\nR graph gallery\nCoolors.co - super nice color palette generator"
+  },
+  {
+    "objectID": "references.html#animating-ggplot2-plots",
+    "href": "references.html#animating-ggplot2-plots",
+    "title": "References",
+    "section": "Animating ggplot2 plots",
+    "text": "Animating ggplot2 plots\n\nAnimate your ggplots with gganimate\nHow to make a bar chart race"
+  },
+  {
+    "objectID": "references.html#helpful-tutorials",
+    "href": "references.html#helpful-tutorials",
+    "title": "References",
+    "section": "Helpful Tutorials",
+    "text": "Helpful Tutorials\n\nRStudio Primers\nTidyverse in R\nTransitioning from Excel to R"
+  },
+  {
+    "objectID": "references.html#inspiration",
+    "href": "references.html#inspiration",
+    "title": "References",
+    "section": "Inspiration",
+    "text": "Inspiration\n\nAn Incomplete List of Females in Data Visualization, by Stephanie Evergreen\nThe Links Between Open Science and Star Wars"
+  },
+  {
+    "objectID": "references.html#when-all-else-fails",
+    "href": "references.html#when-all-else-fails",
+    "title": "References",
+    "section": "When all else fails…",
+    "text": "When all else fails…\nYou will inevitably run into problems; things won’t work the way you expect, and you’ll get lots of confusing error messages. When this happens, many turn to the following tried and true problem-solving approaches:"
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "You should install and set everything here before the first day of class.\n\n\nSign up for Slack. You should have been sent a link to join in the course intro email. If not, email Professor Helveston for an invite link. Use your @gwu.edu email to sign up.\nInstall the Slack app on your phone and Turn notifications on!. I’ll send all course communication via Slack, so please make sure your notifications are on so you don’t miss anything.\nInstall the latest version of R and RStudio:\n\n\nDownload and install R (version 4.0.2 or higher)\nDownload and install RStudio (Desktop version)\n\n\nIf you have a Mac, install XQuartz. This is needed for making some figures and is only for Mac (if you’re on Windows or Linux, skip this step).\nSign up for Posit Cloud1 (the free version). It’s basically the same thing as RStudio, but accessible via a web browser. If things aren’t working on your computer, this is a great backup to quickly get back to working in RStudio.\nYou’ll need to install some R packages in RStudio that we will use throughout the semester. To do so, open RStudio then copy-paste this code into the console and press Return. This will install all the packages listed in the file.\n\nThat’s it - you’re all set for class!"
+  },
+  {
+    "objectID": "software.html#footnotes",
+    "href": "software.html#footnotes",
+    "title": "Software",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n“Posit” is the company that makes “RStudio”, the software we’ll use to work with R.↩︎"
+  }
+]

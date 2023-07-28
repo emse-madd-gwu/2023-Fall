@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>EMSE 6035 - Project Proposal</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="EMSE 6035 - Project Proposal">
+<meta property="og:description" content="">
+<meta property="og:site-name" content="https://madd.seas.gwu.edu/">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:title" content="EMSE 6035 - Project Proposal">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://madd.seas.gwu.edu/2023-Fall/project/images/logo-square.png">
+<meta name="twitter:creator" content="@johnhelveston">
+<meta name="twitter:site" content="@johnhelveston">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar docked">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../project/0-overview.html">Semester Project</a></li><li class="breadcrumb-item"><a href="../project/1-proposal.html">Proposal</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">EMSE 6035</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house-door-fill" role="img">
+</i> 
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus.html" class="sidebar-item-text sidebar-link"><i class="bi bi-map-fill" role="img">
+</i> 
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../schedule.html" class="sidebar-item-text sidebar-link"><i class="bi bi-table" role="img">
+</i> 
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true"><i class="bi bi-pencil-square" role="img">
+</i> 
+ <span class="menu-text">Semester Project</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project/0-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project/1-proposal.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Proposal</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project/2-survey-plan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Survey Plan</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project/3-pilot-survey.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pilot Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project/4-pilot-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pilot Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project/5-final-survey.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project/6-final-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project/7-final-presentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Presentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project/examples.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-medical" role="img">
+</i> 
+ <span class="menu-text">Examples</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../software.html" class="sidebar-item-text sidebar-link"><i class="bi bi-download" role="img">
+</i> 
+ <span class="menu-text">Software</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-fill" role="img">
+</i> 
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://emse-madd-f23.slack.com" class="sidebar-item-text sidebar-link"><i class="bi bi-slack" role="img">
+</i> 
+ <span class="menu-text">Slack</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://jhelvy.appointlet.com/b/professor-helveston" class="sidebar-item-text sidebar-link"><i class="bi bi-clock-fill" role="img">
+</i> 
+ <span class="menu-text">Schedule a call w/Prof.&nbsp;Helveston</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false"><i class="bi bi-question-circle-fill" role="img">
+</i> 
+ <span class="menu-text">Other</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link"><i class="bi bi-question-circle-fill" role="img">
+</i> 
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LICENSE.html" class="sidebar-item-text sidebar-link"><i class="bi bi-award-fill" role="img">
+</i> 
+ <span class="menu-text">License</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="mailto:jph@gwu.edu" class="sidebar-item-text sidebar-link"><i class="bi bi-envelope-fill" role="img">
+</i> 
+ <span class="menu-text">Contact</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://github.com/emse-madd-gwu/2023-Fall" class="sidebar-item-text sidebar-link"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text">Source files</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#get-organized" id="toc-get-organized" class="nav-link active" data-scroll-target="#get-organized">1. Get Organized</a></li>
+  <li><a href="#writing-quality" id="toc-writing-quality" class="nav-link" data-scroll-target="#writing-quality">2. Writing Quality</a></li>
+  <li><a href="#proposal-contents" id="toc-proposal-contents" class="nav-link" data-scroll-target="#proposal-contents">3. Proposal Contents</a>
+  <ul class="collapse">
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#market-opportunity" id="toc-market-opportunity" class="nav-link" data-scroll-target="#market-opportunity">Market Opportunity</a></li>
+  <li><a href="#product-attributes-decision-variables" id="toc-product-attributes-decision-variables" class="nav-link" data-scroll-target="#product-attributes-decision-variables">Product Attributes &amp; Decision Variables</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
+  </ul></li>
+  <li><a href="#knit-and-submit" id="toc-knit-and-submit" class="nav-link" data-scroll-target="#knit-and-submit">4. Knit and submit</a></li>
+  <li><a href="#policy-proposal-contents" id="toc-policy-proposal-contents" class="nav-link" data-scroll-target="#policy-proposal-contents">Policy Proposal Contents</a>
+  <ul class="collapse">
+  <li><a href="#abstract-1" id="toc-abstract-1" class="nav-link" data-scroll-target="#abstract-1">Abstract</a></li>
+  <li><a href="#introduction-1" id="toc-introduction-1" class="nav-link" data-scroll-target="#introduction-1">Introduction</a></li>
+  <li><a href="#target-population" id="toc-target-population" class="nav-link" data-scroll-target="#target-population">Target Population</a></li>
+  <li><a href="#policy-options" id="toc-policy-options" class="nav-link" data-scroll-target="#policy-options">Policy Options</a></li>
+  <li><a href="#questions-1" id="toc-questions-1" class="nav-link" data-scroll-target="#questions-1">Questions</a></li>
+  </ul></li>
+  <li><a href="#grading-rubric" id="toc-grading-rubric" class="nav-link" data-scroll-target="#grading-rubric">Grading Rubric</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/emse-madd-gwu/2023-Fall/edit/main/project/1-proposal.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/emse-madd-gwu/2023-Fall/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Project Proposal</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"_common.R"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>here() starts at /Users/runner/work/2023-Fall/2023-Fall</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.2     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.2     ✔ tibble    3.2.1
+✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+✔ purrr     1.0.1     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors
+
+Attaching package: 'cowplot'
+
+
+The following object is masked from 'package:lubridate':
+
+    stamp
+
+
+
+Attaching package: 'kableExtra'
+
+
+The following object is masked from 'package:dplyr':
+
+    group_rows</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>rubric <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">'rubrics'</span>, <span class="st">'1-proposal.csv'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 21 Columns: 7
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (5): category, label, rating, points, description
+dbl (2): order, maxPoints
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>maxPoints <span class="ot">&lt;-</span> rubric <span class="sc">%&gt;%</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(rating <span class="sc">==</span> <span class="st">"Excellent"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(<span class="at">max =</span> <span class="fu">sum</span>(maxPoints)) <span class="sc">%&gt;%</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(max)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>due <span class="ot">&lt;-</span> <span class="fu">get_schedule</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(n_final <span class="sc">==</span> params<span class="sc">$</span>number) <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(due_final) <span class="sc">%&gt;%</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">paste0</span>(<span class="st">" by 11:59pm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<blockquote class="blockquote">
+<p><strong>Due</strong>: Sep 26 by 11:59pm</p>
+<p><strong>Weight</strong>: This assignment is worth 7% of your final grade.</p>
+<p><strong>Assessment</strong>: Your submission will be assessed using the <a href="#grading-rubric">rubric</a> at the bottom of this page.</p>
+</blockquote>
+<p>As a team, write a proposal defining the scope of your project plan. Your chosen project topic should follow the <a href="../project/0-overview.html#Project_Selection">project selection guidelines</a>.</p>
+<p>The course instructor will review and grade your proposal and provide feedback in team meetings the week following the due date. If your proposal is approved, you are done and can move on towards the next project task. In some cases, the instructor may ask you to submit a revised proposal, most likely by focusing / adjusting the proposal scope. Follow the guidelines below to prepare your proposal.</p>
+<section id="get-organized" class="level2">
+<h2 class="anchored" data-anchor-id="get-organized">1. Get Organized</h2>
+<p>Download and unzip <a href="../templates/proposal.zip">this template</a> for your proposal. Open the <code>proposal.Rproj</code> file and write your proposal in the <code>proposal.Rmd</code> file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:</p>
+<ul>
+<li>Write your project title in the <code>title</code> field (and provide a subtitle if you wish, or delete the <code>subtitle</code> field).</li>
+<li>In the <code>author</code> field, list the names of all teammates, e.g.&nbsp;<code>author: Luke Skywalker, Leia Organa, and Han Solo</code>.</li>
+</ul>
+</section>
+<section id="writing-quality" class="level2">
+<h2 class="anchored" data-anchor-id="writing-quality">2. Writing Quality</h2>
+<p>Your proposal should be written in a clear, concise, and logically-structured manner so that a reader can easily understand the ideas presented. The proposal should be proof-read before submission to correct any grammatical or spelling errors. Spell checking can be automated by installing the <code>spelling</code> package and running this in the R console:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>spelling<span class="sc">::</span><span class="fu">spell_check_files</span>(<span class="st">"proposal.Rmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>All figures should be referenced in the text.</p>
+</section>
+<section id="proposal-contents" class="level2">
+<h2 class="anchored" data-anchor-id="proposal-contents">3. Proposal Contents</h2>
+<p>Your proposal should contain the following items listed as separate sections.</p>
+<blockquote class="blockquote">
+<p>NOTE: If your team is working on a <em>policy</em> project rather than a product, see the <a href="#policy-proposal-contents">Policy Proposal Contents</a> section below.</p>
+</blockquote>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
+<p>A few sentences summarizing the overall proposal and convincing the reader why it is important. Specifically, tell the reader:</p>
+<ol type="1">
+<li>What is the product you are studying?</li>
+<li>What key product attributes make it different than its competitors?</li>
+<li>What major design decision variables will you focus on for your analysis?</li>
+</ol>
+</section>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>Provide a brief description and background of the product or technology. Include a picture or diagram of the product.</p>
+</section>
+<section id="market-opportunity" class="level3">
+<h3 class="anchored" data-anchor-id="market-opportunity">Market Opportunity</h3>
+<section id="identify-your-customer" class="level4">
+<h4 class="anchored" data-anchor-id="identify-your-customer">Identify Your Customer</h4>
+<p>If there are multiple potential markets, choose one to focus on for your analysis. Describe who you plan on taking your survey and how you intend to gain access to that population. You may survey customers of a “downstream” product, if appropriate (e.g.&nbsp;survey electric vehicle buyers to learn about preferences for electric vehicle battery attributes).</p>
+</section>
+<section id="identify-competitors" class="level4">
+<h4 class="anchored" data-anchor-id="identify-competitors">Identify Competitors</h4>
+<p>Which other products will compete with yours? Benchmark how competitors compare on your product’s attributes.</p>
+</section>
+<section id="identify-market-size" class="level4">
+<h4 class="anchored" data-anchor-id="identify-market-size">Identify Market Size</h4>
+<p>Estimate the size of the annual market (expected sales in units per year) for this product and its competitors. Specify if your estimated annual market size is regional, national, or global, and provide references.</p>
+</section>
+</section>
+<section id="product-attributes-decision-variables" class="level3">
+<h3 class="anchored" data-anchor-id="product-attributes-decision-variables">Product Attributes &amp; Decision Variables</h3>
+<p>A key component of your proposal is to identify the relationships between your <em>product attributes</em> and <em>decision variables</em>.</p>
+<section id="product-attributes" class="level4">
+<h4 class="anchored" data-anchor-id="product-attributes">Product Attributes</h4>
+<p>These are the product features that consumers observe and care about. For example, <em>price</em> is almost always an important product attribute that influences consumer choices. You should list and describe the major product attributes you will include in your analysis. Where possible, label the product attributes on the diagram of your design. Where possible, quantify the metrics for each attribute (e.g.&nbsp;if one of your attributes is <em>weight</em>, the metric could be “kilograms”). Also list the set or range of possible levels you plan to explore for each attribute (e.g.&nbsp;for <em>color</em> you may choose the set {red, green, blue}, or for <em>price</em> you may choose the range $1 - $10).</p>
+</section>
+<section id="decision-variables" class="level4">
+<h4 class="anchored" data-anchor-id="decision-variables">Decision Variables</h4>
+<p>These are key elements of the product / technology that the designers focused on in designing the product. For example, engineers might be trying to choose the best <em>thickness</em> for a solar cell, which affects multiple product attributes, including <em>weight</em> (thicker cells are heavier), <em>price</em> (thicker cells use more material), <em>lifetime</em> (cell thickness may affect how quickly a cell degrades), etc. You should discuss ~2-3 key decision variables that are related to your product’s design that you propose to consider. Discuss why you chose these variables, and label them on your diagram of the product design. For each variable, specify units and the range of potential values under consideration.</p>
+</section>
+<section id="model-relationships-table" class="level4">
+<h4 class="anchored" data-anchor-id="model-relationships-table">Model Relationships Table</h4>
+<p>Include a clearly legible image of your model relationships table identifying relationships between your <em>product attributes</em> and <em>decision variables</em>. For now, these relationships can simply be directional (e.g.&nbsp;<em>cell thickness</em> is positively related to <em>cell weight</em>). Use <a href="https://docs.google.com/spreadsheets/d/1iwMI9cbJjB6J8wghZY6Y_fCOSt7MDsUTnSuuC58_xjU/edit?usp=sharing">this example</a> as a template.</p>
+</section>
+</section>
+<section id="questions" class="level3">
+<h3 class="anchored" data-anchor-id="questions">Questions</h3>
+<p>List major outstanding questions (e.g.&nbsp;about the product / technology performance metrics, market opportunities, etc.) that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project.</p>
+</section>
+</section>
+<section id="knit-and-submit" class="level2">
+<h2 class="anchored" data-anchor-id="knit-and-submit">4. Knit and submit</h2>
+<p>Click the “knit” button to compile your <code>proposal.Rmd</code> file into a html web page, then create a zip file of everything in your R Project folder. Name your file <code>proposal.zip</code>, then go to your team Box folder and submit your zip file in the “submissions” folder. Only one person from your team should submit the report.</p>
+<hr>
+</section>
+<section id="policy-proposal-contents" class="level2">
+<h2 class="anchored" data-anchor-id="policy-proposal-contents">Policy Proposal Contents</h2>
+<p>For teams looking at a policy design rather than a product design, your proposal should contain the following sections.</p>
+<section id="abstract-1" class="level3">
+<h3 class="anchored" data-anchor-id="abstract-1">Abstract</h3>
+<p>A few sentences summarizing the overall proposal and convincing the reader why it is important. Specifically, tell the reader:</p>
+<ol type="1">
+<li>What is the problem you are trying to address?</li>
+<li>What policy options are you considering to address the problem?</li>
+<li>What is the target population of your policies? Who will be affected by them?</li>
+</ol>
+</section>
+<section id="introduction-1" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-1">Introduction</h3>
+<p>Provide a brief description and background of the problem you are trying to address and the goal of the policies you are considering.</p>
+</section>
+<section id="target-population" class="level3">
+<h3 class="anchored" data-anchor-id="target-population">Target Population</h3>
+<p>Describe the target population for your analysis. Who will be affected by the policies you are considering? Who are you targeting these policies towards? Who are you planning on getting to take your survey, and how you intend to gain access to that population? Include an estimate of the size of the total target population.</p>
+</section>
+<section id="policy-options" class="level3">
+<h3 class="anchored" data-anchor-id="policy-options">Policy Options</h3>
+<section id="identify-policy-options" class="level4">
+<h4 class="anchored" data-anchor-id="identify-policy-options">Identify Policy Options</h4>
+<p>Which policies are you considering, and what are some of the potential pros and cons of them? Are some easier / more feasible to implement or enforce than others? Are some more costly to implement than others? Include a summary table comparing some basic features of each policy, e.g.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Policy</th>
+<th>Description</th>
+<th>Pro</th>
+<th>Con</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Policy 1</td>
+<td>Brief description</td>
+<td>Easily implemented</td>
+<td>Expensive</td>
+</tr>
+<tr class="even">
+<td>Policy 2</td>
+<td>Brief description</td>
+<td>Hard to enforce</td>
+<td>Cheap</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="identify-policy-attributes" class="level4">
+<h4 class="anchored" data-anchor-id="identify-policy-attributes">Identify Policy Attributes</h4>
+<p>For each policy, identify the key attributes that your target population will observe. For example, if the policy involves a fee or tax, then the <em>amount</em> of that fee or tax would be a key attribute. For each attribute, specify the range of possible levels you plan to explore (e.g.&nbsp;for <em>amount</em> you may choose the range $1 - $10). You should choose levels that reflect the range of existing policies or potential policies. You may choose to include policies / attributes that have not yet been implemented as well.</p>
+</section>
+</section>
+<section id="questions-1" class="level3">
+<h3 class="anchored" data-anchor-id="questions-1">Questions</h3>
+<p>List major outstanding questions that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project.</p>
+</section>
+</section>
+<section id="grading-rubric" class="level1">
+<h1>Grading Rubric</h1>
+<p><strong>45 Total Points</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<table class="table table-striped table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Category</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Excellent</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Good</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Needs work</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Organization &amp; Formatting</td>
+<td style="text-align: left;"><strong>5</strong><br>
+All formatting guidelines are followed; YAML is correct with all team members listed.</td>
+<td style="text-align: left;"><strong>4</strong><br>
+Most formatting guidelines are followed; YAML is correct with all team members listed.</td>
+<td style="text-align: left;"><strong>3</strong><br>
+Several or all formatting guidelines not followed; YAML contains elements that aren't updated from the template. Some template text / content remains in submitted proposal.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Abstract</td>
+<td style="text-align: left;"><strong>5</strong><br>
+Abstract clearly defines the product, product attributes, and design decision variables.</td>
+<td style="text-align: left;"><strong>4</strong><br>
+Abstract defines the product, product attributes, and design decision variables, but some components are unclear.</td>
+<td style="text-align: left;"><strong>3</strong><br>
+Abstract is missing a component: product, product attributes, or design decision variables.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Introduction</td>
+<td style="text-align: left;"><strong>5</strong><br>
+Includes a description of the product with some background content and a picture / diagram.</td>
+<td style="text-align: left;"><strong>4</strong><br>
+Includes a description of the product with limited background content and a poor quality picture / diagram.</td>
+<td style="text-align: left;"><strong>3</strong><br>
+Includes a description of the product with little to no background content and / or is missing a picture / diagram.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Market Opportunity</td>
+<td style="text-align: left;"><strong>10 / 9</strong><br>
+Clearly identifies customer, competitors, and estimated market size.</td>
+<td style="text-align: left;"><strong>8 / 7 / 6</strong><br>
+Identifies customer, competitors, and estimated market size, but parts are unclear.</td>
+<td style="text-align: left;"><strong>5 / 4 / 3</strong><br>
+Section is missing a key component: customer, competitors, or estimated market size.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Product Attributes &amp; Decision Variables</td>
+<td style="text-align: left;"><strong>10 / 9</strong><br>
+All product attributes and decision variables are listed; metrics and level ranges are specified; diagram is appropriately labeled; model relationships table is well-defined.</td>
+<td style="text-align: left;"><strong>8 / 7 / 6</strong><br>
+All product attributes and decision variables are listed; metrics and level ranges are not all specified; diagram is poorly labeled; model relationships table not well-defined.</td>
+<td style="text-align: left;"><strong>5 / 4 / 3</strong><br>
+Product attributes and decision variables are listed, but some key ones are missing; metrics and level ranges are not specified; diagram is not labeled; model relationships table is poorly-defined or missing.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Questions</td>
+<td style="text-align: left;"><strong>5</strong><br>
+Includes at leaset three thoughtful questions.</td>
+<td style="text-align: left;"><strong>4</strong><br>
+Includes one or two thoughtful questions.</td>
+<td style="text-align: left;"><strong>3</strong><br>
+Includes few or no questions.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Writing Quality</td>
+<td style="text-align: left;"><strong>5</strong><br>
+Writing is clear, concise, and logically-structured; ideas are easily understood.</td>
+<td style="text-align: left;"><strong>4</strong><br>
+Writing is clear but verbose and the structure could be improved; ideas are mostly easily understood.</td>
+<td style="text-align: left;"><strong>3</strong><br>
+Writing is not clear, verbose, and poorly-structured; ideas are not easily understood.</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/madd\.seas\.gwu\.edu\/2023-Fall\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © 2023 John Paul Helveston <a href="LICENSE.html"><i class="fab fa-creative-commons"></i><i class="fab fa-creative-commons-by"></i><i class="fab fa-creative-commons-sa"></i></a><br><i class="far fa-calendar-alt"></i> Wednesdays | <i class="far fa-clock"></i> 6:10PM - 8:40PM EST | <a href="https://acadtech.gwu.edu/main-classroom-search/bell-hall-109"><i class="fa fa-map-marker-alt"></i> Bell Hall 109</a> | <a href="https://www.jhelvy.com"><i class="fas fa-user"></i> Dr. John Paul Helveston</a> | <a href="mailto:jph@gwu.edu"><i class="fas fa-envelope"></i> jph@gwu.edu</a> | <a href="https://github.com/emse-madd-gwu/2023-Fall"><i class="fab fa-github"></i></a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

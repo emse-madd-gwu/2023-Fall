@@ -1,8 +1,0 @@
----
-title: "Data Wrangling"
-params:
-  number: 1
-  purpose: 'The purpose of this assignment is to get more familiar with R and RStudio and to develop some basic strategies for working with data in R.'
----
-
-Coming soon!

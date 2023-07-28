@@ -1,7 +1,0 @@
----
-title: "Exam"
-params:
-  number: 11
----
-
-Coming soon!
