@@ -1,11 +1,8 @@
-```{r echo=FALSE}
-library(tidyverse)
-
+```{r}
 due <- get_schedule() %>%
-  mutate(project_due = format(final_due, format = "%b %d")) %>%
-  filter(final_n == params$number) %>%
-  pull(project_due)
-due <- paste0(due, " by 11:59pm")
+  filter(n_final == params$number) %>%
+  pull(due_final) %>%
+  paste0(" by 11:59pm")
 ```
 
 > **Due**: `r due`

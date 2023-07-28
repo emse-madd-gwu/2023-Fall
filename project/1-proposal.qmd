@@ -8,9 +8,12 @@ params:
   weight: '7%'
 ---
 
-```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
-# Read in rubric data
-rubric <- read_csv(here::here('rubrics', 'proposal.csv'))
+```{r}
+#| label: setup
+
+source(here::here("_common.R"))
+
+rubric <- read_csv(here::here('rubrics', '1-proposal.csv'))
 maxPoints <- rubric %>%
     filter(rating == "Excellent") %>%
     summarise(max = sum(maxPoints)) %>%
