@@ -1,13 +1,16 @@
 set.seed(5678)
 
-options(
-    dplyr.width = Inf,
-    dplyr.print_min = 6,
-    dplyr.print_max = 6,
-    stringr.view_n = 10,
-    pillar.bold = TRUE,
-    width = 77 # 80 - 3 for #> comment
-)
+# Load libraries and options
+library(knitr)
+library(here)
+library(tidyverse)
+library(fontawesome)
+library(cowplot)
+library(kableExtra)
+library(lubridate)
+
+options(dplyr.width = Inf)
+options(knitr.kable.NA = '')
 
 knitr::opts_chunk$set(
     message = FALSE,
@@ -21,35 +24,36 @@ knitr::opts_chunk$set(
     fig.path   = "figs/"
 )
 
+clean_schedule_name <- function(x) {
+    x <- x %>%
+        str_to_lower() %>%
+        str_replace_all(" & ", "-") %>%
+        str_replace_all(" ", "-")
+    return(x)
+}
+
+# Load custom functions
+
 get_schedule <- function() {
     
-    schedule_raw <- read_csv(here::here('schedule.csv'))
-    
+    # Get raw schedule
+
+    df <- read_csv(here::here('schedule.csv'))
+
     # Quiz vars
-    quiz <- schedule_raw %>%
+
+    quiz <- df %>%
         mutate(
             quiz = ifelse(
                 is.na(quiz),
                 "",
-                paste0('Quiz ', quiz, ":<br><em>", quiz_coverage, "</em>"))
+                paste0('Quiz ', quiz, ":<br><em>", quiz_content, "</em>"))
         ) %>%
-        select(week, quiz)
-    
-    # Weekly assignment vars
-    assignments <- schedule_raw %>%
-        mutate(
-            due_assign = format(due_assign, format = "%b %d"),
-            assignments = ifelse(
-                is.na(due_assign),
-                "",
-                paste0(
-                    '<a href="hw/', n_assign, "-", stub_assign, '.html"><b>HW ',
-                    n_assign, "</b></a><br>Due: ", due_assign))
-        ) %>%
-        select(week, assignments)
-    
+        select(week, ends_with('quiz'))
+
     # Class vars
-    class <- schedule_raw %>%
+
+    class <- df %>%
         mutate(
             description_class = ifelse(
                 is.na(description_class),
@@ -63,48 +67,63 @@ get_schedule <- function() {
                     name_class, "</b></a><br> ",
                     description_class)),
         ) %>%
-        select(week, class)
+        select(week, ends_with('class'))
     
-    # Reading vars
-    reading <- schedule_raw %>%
-        select(week, ends_with("_reading"), reading) %>%
-        rename(name = name_reading, stub = stub_reading) %>%
+    # Weekly assignment vars
+
+    assignments <- df %>%
         mutate(
-            name = str_split(name, '\n'),
-            stub = str_split(stub, '\n')
-        )
+            due_assign = format(due_assign, format = "%b %d"),
+            assignments = ifelse(
+                is.na(due_assign),
+                "",
+                paste0(
+                    '<a href="hw/', n_assign, "-", stub_assign, '.html"><b>HW ',
+                    n_assign, "</b></a><br>Due: ", due_assign))
+        ) %>%
+        select(week, ends_with('assignments'))
     
-    # Fix reading names
-    reading_root <- 'https://p4a.jhelvy.com/'
-    reading$readings <- ""
-    for (i in 1:nrow(reading)) {
-        name <- reading[i,]$name[[1]]
-        if (any(is.na(unlist(name)))) {
-            result <- ''
-        } else {
-            stub <- reading[i,]$stub[[1]]
-            result <- paste0(
-                '<a href=', reading_root, stub ,'.html target="_blank"><b>',
-                name, "</b></a>")
-            result <- paste(result, collapse = '<br>')
-            
-        }
-        reading$readings[i] <- result
-    }
-    reading$name <- NULL
-    reading$stub <- NULL
-    reading <- reading %>% 
-        mutate(readings = ifelse(!is.na(reading), reading, readings))
+    # Mini project vars
+
+    mini <- df %>%
+        mutate(
+            due_mini = format(due_mini, format = "%b %d"),
+            mini = ifelse(
+                is.na(due_mini),
+                "",
+                paste0(
+                    '<a href="mini/', n_mini, "-", stub_mini, '.html"><b>',
+                    name_mini, "</b></a><br>Due: ", due_mini))
+        ) %>%
+        select(week, ends_with('mini'))
+
+    # Final project vars
+
+    final <- df %>%
+        mutate(
+            due_final = format(due_final, format = "%b %d"),
+            final = ifelse(
+                is.na(due_final),
+                "",
+                paste0(
+                    '<a href="final/', n_final, "-", stub_final, '.html"><b>',
+                    name_final, "</b></a><br>Due: ", due_final))
+        ) %>%
+        select(week, ends_with('final'))
+
     
     # Final schedule data frame
-    schedule <- schedule_raw %>%
-        select(week, date, n_assign, due_assign) %>%
-        mutate(date_md = format(date, format = "%b %d")) %>%
+
+    schedule <- df %>% 
+        select(week, date, theme) %>% 
+        mutate(date_md = format(date, format = "%b %d")) %>% 
+        left_join(class, by = "week") %>% 
         left_join(quiz, by = "week") %>%
-        left_join(class, by = "week") %>%
-        left_join(assignments, by = "week") %>%
-        left_join(reading, by = "week") %>% 
+        left_join(assignments, by = "week") %>% 
+        left_join(mini, by = "week") %>% 
+        left_join(final, by = "week") %>% 
         ungroup()
     
     return(schedule)
+
 }
