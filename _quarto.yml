@@ -10,8 +10,10 @@ project:
   resources:
     - "class/"
     - "rubrics/"
-    - "slides/"
     - "data/"
+    - "content/"
+    - "project/"
+    - "templates/"
 
 website:
   title: EMSE 6035
@@ -45,24 +47,24 @@ website:
       - text: Schedule
         icon: table
         href: schedule.qmd
-      - section: Project
-        icon: question-circle-fill
+      - section: Semester Project
+        icon: pencil-square
         contents:
           - text: Overview
             href: project/0-overview.qmd
-          - text: Proposal (Due Sep 25)
+          - text: Proposal
             href: project/1-proposal.qmd
-          - text: Survey Plan (Due Oct 04)
+          - text: Survey Plan
             href: project/2-survey-plan.qmd
-          - text: Pilot Survey (Due Oct 18)
+          - text: Pilot Survey
             href: project/3-pilot-survey.qmd
-          - text: Pilot Analysis (Due Nov 06)
+          - text: Pilot Analysis
             href: project/4-pilot-analysis.qmd
-          - text: Final Survey (Due Nov 20)
+          - text: Final Survey
             href: project/5-final-survey.qmd
-          - text: Final Analysis (Due Dec 11)
+          - text: Final Analysis
             href: project/6-final-analysis.qmd
-          - text: Final Presentation (On Dec 14)
+          - text: Final Presentation
             href: project/7-final-presentation.qmd
           - text: Examples
             icon: file-earmark-medical
@@ -70,9 +72,6 @@ website:
       - text: Software
         icon: download
         href: software.qmd
-      - text: Getting Help
-        icon: question-circle
-        href: help/getting-help.qmd
       - text: References
         icon: bookmark-fill
         href: references.qmd
@@ -103,7 +102,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: united
     css: styles.css
     anchor-sections: true
     smooth-scroll: true

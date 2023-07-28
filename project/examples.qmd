@@ -1,0 +1,28 @@
+---
+title: "Example Analyses"
+toc: true
+toc-title: Table of contents
+toc-location: left
+---
+
+As inspiration for your final projects, check out these prior exploratory data analyses.
+
+# Previous course showcases
+
+::: {.grid}
+
+::: {.g-col-4}
+
+<img src="https://eda.seas.gwu.edu/showcase/2021-Spring/thumbnails/poverty_emissions.png" width=100%>
+
+:::
+
+::: {.g-col-8}
+
+### [Fall 2021 Showcase](https://madd.seas.gwu.edu/showcase-2021-fall.html)
+
+Projects from the fall 2021 semester of this class.
+
+:::
+
+:::
