@@ -148,7 +148,7 @@ List major outstanding questions that you will need to know to conduct your anal
 
 **`r maxPoints` Total Points**
 
-```{r, echo=FALSE}
+```{r}
 rubric %>%
   mutate(description = paste0("<b>", points, '</b><br>', description)) %>%
   select(-points) %>%
