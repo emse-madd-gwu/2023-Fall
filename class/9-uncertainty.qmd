@@ -1,9 +1,0 @@
----
-title: "Uncertainty"
-params:
-  class: "9-uncertainty"
-  logitrcars: TRUE
-  formr4conjoint: TRUE
----
-
-Coming soon!

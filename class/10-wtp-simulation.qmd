@@ -1,7 +1,12 @@
 ---
 title: "WTP & Simulations"
+toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
 params:
-  class: "11-wtp-simulation"
+  class: "10-wtp-simulation"
   logitrcars: TRUE
   formr4conjoint: FALSE
 ---

@@ -47,7 +47,7 @@ website:
       - text: Schedule
         icon: table
         href: schedule.qmd
-      - section: Semester Project
+      - section: Final Project
         icon: pencil-square
         contents:
           - text: Overview

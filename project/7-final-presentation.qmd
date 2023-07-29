@@ -1,8 +1,11 @@
 ---
 title: "Final Presentation"
 toc: true
-toc-title: Table of contents
-toc-location: left
+toc-location: right
+execute:
+  echo: false
+  warning: false
+  message: false
 params:
   number: 7
   weight: '8%'

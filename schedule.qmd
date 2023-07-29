@@ -20,18 +20,16 @@ schedule <- get_schedule()
 names(schedule) <- str_to_title(names(schedule))
 done <- schedule %>%
   rename(
-      `Mini Projects` = Mini,
-      `Final Projects` = Final,
+      `Final Projects` = Project,
       `Weekly HW` = Assignments
   ) %>%
   select(
-      Week, Date = Date_md, Class, `Weekly HW`, `Mini Projects`,
-      `Final Projects`
+      Week, Date = Date_md, Class, `Weekly HW`, `Final Projects`
   ) %>%
   kable(format = 'html', escape = FALSE,
-        align = c('c', 'c', 'l', 'l', 'l', 'l')) %>%
+        align = c('c', 'c', 'l', 'l', 'l')) %>%
   kable_styling(full_width = F, bootstrap_options = c("striped", "hover")) %>%
-  column_spec(column = 3, width = '19em') 
+  column_spec(column = 3, width = '22em') 
 
 # Add highlighting based on current week if we're still in the semester
 highlight <- which(Sys.Date() > (schedule$Date))

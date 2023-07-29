@@ -1,14 +1,14 @@
 ---
-title: "Data Wrangling"
+title: "Uncertainty"
 toc: false
 execute:
   echo: false
   warning: false
   message: false
 params:
-  class: "2-data-wrangling"
-  logitrcars: FALSE
-  formr4conjoint: FALSE
+  class: "8-uncertainty"
+  logitrcars: TRUE
+  formr4conjoint: TRUE
 ---
 
 Coming soon!

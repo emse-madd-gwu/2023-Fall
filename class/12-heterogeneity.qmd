@@ -1,9 +1,0 @@
----
-title: "Heterogeneity"
-params:
-  class: "12-heterogeneity"
-  logitrcars: TRUE
-  formr4conjoint: FALSE
----
-
-Coming soon!

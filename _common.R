@@ -83,45 +83,30 @@ get_schedule <- function() {
         ) %>%
         select(week, ends_with('assignments'))
     
-    # Mini project vars
-
-    mini <- df %>%
-        mutate(
-            due_mini = format(due_mini, format = "%b %d"),
-            mini = ifelse(
-                is.na(due_mini),
-                "",
-                paste0(
-                    '<a href="mini/', n_mini, "-", stub_mini, '.html"><b>',
-                    name_mini, "</b></a><br>Due: ", due_mini))
-        ) %>%
-        select(week, ends_with('mini'))
-
     # Final project vars
 
-    final <- df %>%
+    project <- df %>%
         mutate(
-            due_final = format(due_final, format = "%b %d"),
-            final = ifelse(
-                is.na(due_final),
+            due_project = format(due_project, format = "%b %d"),
+            project = ifelse(
+                is.na(due_project),
                 "",
                 paste0(
-                    '<a href="final/', n_final, "-", stub_final, '.html"><b>',
-                    name_final, "</b></a><br>Due: ", due_final))
+                    '<a href="project/', n_project, "-", stub_project, '.html"><b>',
+                    name_project, "</b></a><br>Due: ", due_project))
         ) %>%
-        select(week, ends_with('final'))
+        select(week, ends_with('project'))
 
     
     # Final schedule data frame
 
     schedule <- df %>% 
-        select(week, date, theme) %>% 
+        select(week, date) %>% 
         mutate(date_md = format(date, format = "%b %d")) %>% 
         left_join(class, by = "week") %>% 
         left_join(quiz, by = "week") %>%
         left_join(assignments, by = "week") %>% 
-        left_join(mini, by = "week") %>% 
-        left_join(final, by = "week") %>% 
+        left_join(project, by = "week") %>% 
         ungroup()
     
     return(schedule)
