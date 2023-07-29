@@ -1,11 +1,12 @@
 ---
 title: "Project Overview"
 toc: true
-toc-title: Table of contents
-toc-location: left
+toc-location: right
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
-
-# Overview
 
 Throughout the semester, you will work in teams of 3-4 students towards a final project. The project will have three phases:
 

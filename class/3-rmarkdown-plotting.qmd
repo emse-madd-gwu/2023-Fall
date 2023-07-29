@@ -1,5 +1,10 @@
 ---
 title: "RMarkdown & Plotting"
+toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
 params:
   class: "3-rmarkdown-plotting"
   logitrcars: FALSE

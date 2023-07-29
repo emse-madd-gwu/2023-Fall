@@ -1,8 +1,11 @@
 ---
 title: "Project Proposal"
 toc: true
-toc-title: Table of contents
-toc-location: left
+toc-location: right
+execute:
+  echo: false
+  warning: false
+  message: false
 params:
   number: 1
   weight: '7%'
@@ -23,7 +26,7 @@ maxPoints <- rubric %>%
 ```{r child = here::here("fragments", "project.qmd")}
 ```
 
-As a team, write a proposal defining the scope of your project plan. Your chosen project topic should follow the [project selection guidelines](../project/0-overview.html#Project_Selection).
+As a team, write a proposal defining the scope of your project plan. Your chosen project topic should follow the [project selection guidelines](../project/0-overview.html#project-selection).
 
 The course instructor will review and grade your proposal and provide feedback in team meetings the week following the due date. If your proposal is approved, you are done and can move on towards the next project task. In some cases, the instructor may ask you to submit a revised proposal, most likely by focusing / adjusting the proposal scope. Follow the guidelines below to prepare your proposal.
 

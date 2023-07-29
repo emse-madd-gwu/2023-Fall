@@ -1,8 +1,11 @@
 ---
 title: "Example Analyses"
 toc: true
-toc-title: Table of contents
-toc-location: left
+toc-location: right
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
 
 As inspiration for your final projects, check out these prior exploratory data analyses.
@@ -13,7 +16,7 @@ As inspiration for your final projects, check out these prior exploratory data a
 
 ::: {.g-col-4}
 
-<img src="https://eda.seas.gwu.edu/showcase/2021-Spring/thumbnails/poverty_emissions.png" width=100%>
+<img src="https://madd.seas.gwu.edu/showcase/2021-Fall/seltzer.png" width=100%>
 
 :::
 
@@ -22,6 +25,24 @@ As inspiration for your final projects, check out these prior exploratory data a
 ### [Fall 2021 Showcase](https://madd.seas.gwu.edu/showcase-2021-fall.html)
 
 Projects from the fall 2021 semester of this class.
+
+:::
+
+:::
+
+::: {.grid}
+
+::: {.g-col-4}
+
+<img src="https://madd.seas.gwu.edu/showcase/2022-Fall/leaf-blowers.png" width=100%>
+
+:::
+
+::: {.g-col-8}
+
+### [Fall 2022 Showcase](https://madd.seas.gwu.edu/showcase-2022-fall.html)
+
+Projects from the fall 2022 semester of this class.
 
 :::
 

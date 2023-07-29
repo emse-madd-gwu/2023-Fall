@@ -1,7 +1,12 @@
 ---
 title: "DOE & Power Analysis"
+toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
 params:
-  class: "10-doe-power-analysis"
+  class: "9-doe-power-analysis"
   logitrcars: FALSE
   formr4conjoint: FALSE
 ---

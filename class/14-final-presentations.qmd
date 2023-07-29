@@ -1,12 +1,12 @@
 ---
-title: "Getting Started"
+title: "Final Presentations"
 toc: false
 execute:
   echo: false
   warning: false
   message: false
 params:
-  class: "1-getting-started"
+  class: "14-final-presentations"
   logitrcars: FALSE
   formr4conjoint: FALSE
 ---

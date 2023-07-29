@@ -200,14 +200,14 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "All assignments are due by 11:59pm on the due date.\n\n\n\n\n\nWeek\nDate\nClass\nWeekly HW\nMini Projects\nFinal Projects\n\n\n\n\n1\nAug 30\nGetting Started\nClass orientation; workflow; importing data; data wrangling & plotting refresher\nHW 1\nDue: Sep 05\n\n\n\n\n2\nSep 06\nReproducible Reporting\nCombinging text and code with Quarto\nHW 2\nDue: Sep 12\n\n\n\n\n3\nSep 13\nTidy Data\nTidy data; reshaping data; data provenance; writing a research question\nHW 3\nDue: Sep 19\n\nProposal\nDue: Sep 26\n\n\n4\nSep 20\nCleaning Data\nJoins; changing data types; dealing with messy Excel files\nHW 4\nDue: Sep 26\nData Cleaning\nDue: Oct 03\n\n\n\n5\nSep 27\nCentrality & Variability\nData types & scales; centrality & spread; variation & covariation; plot types\nHW 5\nDue: Oct 03\n\n\n\n\n6\nOct 04\nCorrelation\nCorrelation metrics; outliers; visualizing correlations; linear models\nHW 6\nDue: Oct 10\n\n\n\n\n7\nOct 11\nVisualizing Information\nPsychology of graphical perception; preattentive attributes; ugly, bad, & wrong charts; chart design best practices\nHW 7\nDue: Oct 17\nExploring Data\nDue: Oct 24\n\n\n\n8\nOct 18\nFactors, Amounts, & Proportions\nManipulating factors; plotting amounts with bars, dots, and lollipops; parts of whole\nHW 8\nDue: Oct 24\n\nProgress Report\nDue: Oct 31\n\n\n9\nOct 25\nComparisons\nFacets; reference lines; dumbbells; slopes; distributions\nHW 9\nDue: Oct 31\n\n\n\n\n10\nNov 01\nTrends\nLine charts; heat maps; animation\nHW 10\nDue: Nov 07\n\n\n\n\n11\nNov 08\nPolishing Charts\nColors; annotations; scales; themes; multi-panel figures\nHW 11\nDue: Nov 14\nRe-design\nDue: Nov 28\n\n\n\n12\nNov 15\nMaps & Project Workshop\nMaps in ggplot; mapping data to maps; projections; project workshop\nHW 12\nDue: Nov 28\n\n\n\n\n13\nNov 22\nThanksgiving - no class\n\n\n\n\n\n\n14\nNov 29\nInteractivity\nPlotly; interactive tables; shiny apps\nHW 13\nDue: Dec 05\n\nFinal Report\nDue: Dec 10\n\n\n15\nDec 06\nCommunicating Results\nTelling stories; slide design; giving a talk\n\n\nPresentation\nDue: Dec 12\n\n\n16\nDec 13\nFinal Presentations\nIn-class presentation showcase w/Q&A"
+    "text": "All assignments are due by 11:59pm on the due date.\n\n\n\n\n\nWeek\nDate\nClass\nWeekly HW\nFinal Projects\n\n\n\n\n1\nAug 30\nGetting Started\nClass orientation, intro to R, workflow, packages\nHW 1\nDue: Sep 05\n\n\n\n2\nSep 06\nData Wrangling\nImporting, wrangling, and summarizing data in R\nHW 2\nDue: Sep 12\n\n\n\n3\nSep 13\nRMarkdown & Plotting\nIntro to \"literate programming\" with RMarkdown and plotting with {ggplot2}\nHW 3\nDue: Sep 19\nProposal\nDue: Sep 24\n\n\n4\nSep 20\nIntro to formr\nDesigning and implementing surveys in formr\n\n\n\n\n5\nSep 27\nNo Class - Team Meetings, Proposal Feedback\n\nHW 4\nDue: Oct 03\nSurvey Plan\nDue: Oct 03\n\n\n6\nOct 04\nConjoint Questions\nGenerating conjoint questions in R, implementing in formr\nHW 5\nDue: Oct 10\nPilot Survey\nDue: Oct 17\n\n\n7\nOct 11\nUtility Models\nIntro to utility models, discrete vs. continuous parameters, parameter coding\nHW 6\nDue: Oct 17\n\n\n\n8\nOct 18\nOptimization & MLE\nOptimization, maximum likelihood estimation\nHW 7\nDue: Oct 24\n\n\n\n9\nOct 25\nUncertainty\nComputing uncertainty in coefficient estimates\nHW 8\nDue: Oct 31\nPilot Analysis\nDue: Nov 05\n\n\n10\nNov 01\nDOE & Power Analysis\nDesigning your survey to reduce error\nHW 9\nDue: Nov 07\n\n\n\n11\nNov 08\nWTP & Simulation\nComputing WTP, WTP space models, market simulations\nHW 10\nDue: Nov 14\nFinal Survey\nDue: Nov 19\n\n\n12\nNov 15\nHeterogeneity\nModeling differences in preferences across sample population\n\n\n\n\n13\nNov 22\nThanksgiving - no class\n\n\n\n\n\n14\nNov 29\nClass Review\nOverview of course concepts\nHW 11\nDue: Dec 03\nFinal Analysis\nDue: Dec 10\n\n\n15\nDec 06\nCommunicating Results\nGo over exam solutions and also discuss tips for giving a good presentation\n\n\n\n\n16\nDec 13\nFinal Presentations\nIn-class presentation showcase w/Q&A\n\nFinal Presentation\nDue: Dec 12"
   },
   {
     "objectID": "project/examples.html",
     "href": "project/examples.html",
     "title": "Example Analyses",
     "section": "",
-    "text": "As inspiration for your final projects, check out these prior exploratory data analyses.\n\nPrevious course showcases\n\n\n\n\n\nFall 2021 Showcase\nProjects from the fall 2021 semester of this class."
+    "text": "As inspiration for your final projects, check out these prior exploratory data analyses.\n\nPrevious course showcases\n\n\n\n\n\nFall 2021 Showcase\nProjects from the fall 2021 semester of this class.\n\n\n\n\n\n\n\nFall 2022 Showcase\nProjects from the fall 2022 semester of this class."
   },
   {
     "objectID": "project/6-final-analysis.html",
@@ -235,7 +235,7 @@
     "href": "project/0-overview.html",
     "title": "Project Overview",
     "section": "",
-    "text": "Overview\nThroughout the semester, you will work in teams of 3-4 students towards a final project. The project will have three phases:\n\nProject proposal\nPilot survey & analysis\nFinal survey & analysis\n\nTeams will apply topics covered in class to develop quantitative models of consumer choice to inform design decisions for a novel product, technology, or policy. Each team will have somewhat different tasks and areas of emphasis, depending on the product selected; however, all projects will be expected to demonstrate mastery of the topics covered in class and to address the criteria and guidelines required for project assignments.\nSummary of Deliverables: To make the overall project more manageable, it is broken down into separate “milestone” deliverables due throughout the semester, starting with a proposal.\n\n\n\n\nItem\nWeight towardsfinal grade\nDue Date(by 11:59pm)\n\n\n\n\nProject Proposal\n7 %\nSep. 25\n\n\nSurvey Plan\n4 %\nOct. 04\n\n\nPilot Survey\n4 %\nOct. 18\n\n\nPilot Analysis\n9 %\nNov. 06\n\n\nFinal Survey\n5 %\nNov. 20\n\n\nFinal Analysis Report\n14 %\nDec. 11\n\n\nFinal Presentation\n8 %\nDec. 14\n\n\n\n\n\n\nProject Selection\nI want this project to be as useful for you and your future career as possible - you’ll hopefully want to show off your final project in a portfolio or during job interviews. Accordingly, you get to choose the topic for your project, but it must meet certain guidelines.\nProjects must be selected during the first two weeks of class. Projects much be an emerging technology, product, or policy with a clearly identified market that has not yet been introduced into the mass market, such as a new invention from a research laboratory at GWU or a new product being explored by a firm. Students have the option to choose a sponsored project or propose their own project if it is approved by the instructor and meets the following criteria:\n\nInnovative / Emerging: The proposed project involves a new product or technology with attributes (e.g. price, efficiency, reliability, size, performance, color, etc.) that may be competitive in the marketplace but for which actual market adoption is still uncertain.\nWell-Defined: This course focuses on mathematical modeling to support design decision-making. There is not sufficient time in the course for conceptual design of a new product.\nIdentified Target Market: A target market has been identified for this new product or technology. Competing products in that market are known, and the attributes on which new market entrants compete can be identified. Representative potential customers can be identified for survey solicitation. If the new product or technology is a component of a larger product sold to a consumer market, students may assess the market implications for the final consumer product.\nPrior to Mass Commercialization: The new product or technology has only recently or has not yet been introduced to the mass market.\nModerate Scope and Complexity: The product or technology should involve moderate complexity. For example, a non-differentiated commodity, such as sugar, is too simple, and a complex product involving many components and manufacturing operations, such as a vehicle, is too complex.\nExpertise: If the product involves a new technology that requires specialized knowledge about its attributes, the team should have reliable access to experts who can supply the requisite knowledge.\nDecision Variables: The product should have several non-trivial design decisions. For example, choosing between two materials or topologies, setting dimensions of a component, or selecting among a set of alternative component configurations are suitable design decisions. The models developed in the project will be used to support decision-making along such dimensions.\n\n\n\nTeamwork\nThe experience of working in teams on this project will serve as preparation for teamwork throughout your careers. Some teams may experience an imbalance in team member contributions, effort, or reliability. The instructor is available to provide advice and interact in resolving team inequity and conflict; however, students should view this as a learning experience. Such situations regularly occur in any career, and learning how to handle them is a valuable skill. If you experience challenges within your team, it is a good opportunity to develop strategies and figure out how you will address such challenges in the future. One common job interview question is, “Describe a time when you experienced difficulties working in a team or experienced a team failure. What did you do about it?” This is a good chance to build a strong answer to this question."
+    "text": "Throughout the semester, you will work in teams of 3-4 students towards a final project. The project will have three phases:\n\nProject proposal\nPilot survey & analysis\nFinal survey & analysis\n\nTeams will apply topics covered in class to develop quantitative models of consumer choice to inform design decisions for a novel product, technology, or policy. Each team will have somewhat different tasks and areas of emphasis, depending on the product selected; however, all projects will be expected to demonstrate mastery of the topics covered in class and to address the criteria and guidelines required for project assignments.\nSummary of Deliverables: To make the overall project more manageable, it is broken down into separate “milestone” deliverables due throughout the semester, starting with a proposal.\n\n\n\n\nItem\nWeight towardsfinal grade\nDue Date(by 11:59pm)\n\n\n\n\nProject Proposal\n7 %\nSep. 25\n\n\nSurvey Plan\n4 %\nOct. 04\n\n\nPilot Survey\n4 %\nOct. 18\n\n\nPilot Analysis\n9 %\nNov. 06\n\n\nFinal Survey\n5 %\nNov. 20\n\n\nFinal Analysis Report\n14 %\nDec. 11\n\n\nFinal Presentation\n8 %\nDec. 14\n\n\n\n\n\nProject Selection\nI want this project to be as useful for you and your future career as possible - you’ll hopefully want to show off your final project in a portfolio or during job interviews. Accordingly, you get to choose the topic for your project, but it must meet certain guidelines.\nProjects must be selected during the first two weeks of class. Projects much be an emerging technology, product, or policy with a clearly identified market that has not yet been introduced into the mass market, such as a new invention from a research laboratory at GWU or a new product being explored by a firm. Students have the option to choose a sponsored project or propose their own project if it is approved by the instructor and meets the following criteria:\n\nInnovative / Emerging: The proposed project involves a new product or technology with attributes (e.g. price, efficiency, reliability, size, performance, color, etc.) that may be competitive in the marketplace but for which actual market adoption is still uncertain.\nWell-Defined: This course focuses on mathematical modeling to support design decision-making. There is not sufficient time in the course for conceptual design of a new product.\nIdentified Target Market: A target market has been identified for this new product or technology. Competing products in that market are known, and the attributes on which new market entrants compete can be identified. Representative potential customers can be identified for survey solicitation. If the new product or technology is a component of a larger product sold to a consumer market, students may assess the market implications for the final consumer product.\nPrior to Mass Commercialization: The new product or technology has only recently or has not yet been introduced to the mass market.\nModerate Scope and Complexity: The product or technology should involve moderate complexity. For example, a non-differentiated commodity, such as sugar, is too simple, and a complex product involving many components and manufacturing operations, such as a vehicle, is too complex.\nExpertise: If the product involves a new technology that requires specialized knowledge about its attributes, the team should have reliable access to experts who can supply the requisite knowledge.\nDecision Variables: The product should have several non-trivial design decisions. For example, choosing between two materials or topologies, setting dimensions of a component, or selecting among a set of alternative component configurations are suitable design decisions. The models developed in the project will be used to support decision-making along such dimensions.\n\n\n\nTeamwork\nThe experience of working in teams on this project will serve as preparation for teamwork throughout your careers. Some teams may experience an imbalance in team member contributions, effort, or reliability. The instructor is available to provide advice and interact in resolving team inequity and conflict; however, students should view this as a learning experience. Such situations regularly occur in any career, and learning how to handle them is a valuable skill. If you experience challenges within your team, it is a good opportunity to develop strategies and figure out how you will address such challenges in the future. One common job interview question is, “Describe a time when you experienced difficulties working in a team or experienced a team failure. What did you do about it?” This is a good chance to build a strong answer to this question."
   },
   {
     "objectID": "hw/9-wtp-simulation.html",
@@ -280,86 +280,23 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/9-uncertainty.html",
-    "href": "class/9-uncertainty.html",
-    "title": "Uncertainty",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/7-utility-models.html",
-    "href": "class/7-utility-models.html",
-    "title": "Utility Models",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/4-intro-to-formr.html",
-    "href": "class/4-intro-to-formr.html",
-    "title": "Intro to formr",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/2-data-wrangling.html",
-    "href": "class/2-data-wrangling.html",
-    "title": "Data Wrangling",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/14-class-review.html",
-    "href": "class/14-class-review.html",
-    "title": "Exam Review & Final Analysis Overview",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/11-wtp-simulation.html",
-    "href": "class/11-wtp-simulation.html",
-    "title": "WTP & Simulations",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/1-getting-started.html",
-    "href": "class/1-getting-started.html",
-    "title": "Getting Started",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "Licensing and copyright information",
-    "section": "",
-    "text": "The course material is licensed under the Creative Commons Attribution 4.0 International License and the course code is licensed under a MIT License by John Helveston."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions.\nThis course was first created by Dr. John Paul Helveston at the George Washington University for the Spring 2019 semester of EMSE 6035, which was previously called Marketing of Technology. See the LICENSE page for information about reusing and sharing content."
-  },
-  {
-    "objectID": "class/10-doe-power-analysis.html",
-    "href": "class/10-doe-power-analysis.html",
+    "objectID": "class/9-doe-power-analysis.html",
+    "href": "class/9-doe-power-analysis.html",
     "title": "DOE & Power Analysis",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/12-heterogeneity.html",
-    "href": "class/12-heterogeneity.html",
-    "title": "Heterogeneity",
+    "objectID": "class/7-optimization-mle.html",
+    "href": "class/7-optimization-mle.html",
+    "title": "Optimization & MLE",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/15-exam-solutions.html",
-    "href": "class/15-exam-solutions.html",
-    "title": "Communicating Results",
+    "objectID": "class/5-conjoint-questions.html",
+    "href": "class/5-conjoint-questions.html",
+    "title": "Conjoint Questions",
     "section": "",
     "text": "Coming soon!"
   },
@@ -371,16 +308,86 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/6-conjoint-questions.html",
-    "href": "class/6-conjoint-questions.html",
-    "title": "Conjoint Questions",
+    "objectID": "class/14-final-presentations.html",
+    "href": "class/14-final-presentations.html",
+    "title": "Final Presentations",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/8-optimization-mle.html",
-    "href": "class/8-optimization-mle.html",
-    "title": "Optimization & MLE",
+    "objectID": "class/12-class-review.html",
+    "href": "class/12-class-review.html",
+    "title": "Exam Review & Final Analysis Overview",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/10-wtp-simulation.html",
+    "href": "class/10-wtp-simulation.html",
+    "title": "WTP & Simulations",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions.\nThis course was first created by Dr. John Paul Helveston at the George Washington University for the Spring 2019 semester of EMSE 6035, which was previously called Marketing of Technology. See the LICENSE page for information about reusing and sharing content."
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "Licensing and copyright information",
+    "section": "",
+    "text": "The course material is licensed under the Creative Commons Attribution 4.0 International License and the course code is licensed under a MIT License by John Helveston."
+  },
+  {
+    "objectID": "class/1-getting-started.html",
+    "href": "class/1-getting-started.html",
+    "title": "Getting Started",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/11-heterogeneity.html",
+    "href": "class/11-heterogeneity.html",
+    "title": "Heterogeneity",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/13-communicating-results.html",
+    "href": "class/13-communicating-results.html",
+    "title": "Communicating Results",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/2-data-wrangling.html",
+    "href": "class/2-data-wrangling.html",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/4-intro-to-formr.html",
+    "href": "class/4-intro-to-formr.html",
+    "title": "Intro to formr",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/6-utility-models.html",
+    "href": "class/6-utility-models.html",
+    "title": "Utility Models",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/8-uncertainty.html",
+    "href": "class/8-uncertainty.html",
+    "title": "Uncertainty",
     "section": "",
     "text": "Coming soon!"
   },
@@ -413,8 +420,8 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "hw/4-conjoint-surveys-in-formr.html",
-    "href": "hw/4-conjoint-surveys-in-formr.html",
+    "objectID": "hw/4-conjoint-questions.html",
+    "href": "hw/4-conjoint-questions.html",
     "title": "Conjoint Surveys in formr",
     "section": "",
     "text": "Coming soon!"
@@ -445,7 +452,7 @@
     "href": "project/1-proposal.html",
     "title": "Project Proposal",
     "section": "",
-    "text": "source(here::here(\"_common.R\"))\n\nhere() starts at /Users/runner/work/2023-Fall/2023-Fall\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nAttaching package: 'cowplot'\n\n\nThe following object is masked from 'package:lubridate':\n\n    stamp\n\n\n\nAttaching package: 'kableExtra'\n\n\nThe following object is masked from 'package:dplyr':\n\n    group_rows\n\nrubric &lt;- read_csv(here::here('rubrics', '1-proposal.csv'))\n\nRows: 21 Columns: 7\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (5): category, label, rating, points, description\ndbl (2): order, maxPoints\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\nmaxPoints &lt;- rubric %&gt;%\n    filter(rating == \"Excellent\") %&gt;%\n    summarise(max = sum(maxPoints)) %&gt;%\n    pull(max)\ndue &lt;- get_schedule() %&gt;%\n  filter(n_final == params$number) %&gt;%\n  pull(due_final) %&gt;%\n  paste0(\" by 11:59pm\")\nAs a team, write a proposal defining the scope of your project plan. Your chosen project topic should follow the project selection guidelines.\nThe course instructor will review and grade your proposal and provide feedback in team meetings the week following the due date. If your proposal is approved, you are done and can move on towards the next project task. In some cases, the instructor may ask you to submit a revised proposal, most likely by focusing / adjusting the proposal scope. Follow the guidelines below to prepare your proposal."
+    "text": "Due: Sep 24 by 11:59pm\nWeight: This assignment is worth 7% of your final grade.\nAssessment: Your submission will be assessed using the rubric at the bottom of this page.\nAs a team, write a proposal defining the scope of your project plan. Your chosen project topic should follow the project selection guidelines.\nThe course instructor will review and grade your proposal and provide feedback in team meetings the week following the due date. If your proposal is approved, you are done and can move on towards the next project task. In some cases, the instructor may ask you to submit a revised proposal, most likely by focusing / adjusting the proposal scope. Follow the guidelines below to prepare your proposal."
   },
   {
     "objectID": "project/1-proposal.html#get-organized",
@@ -459,7 +466,7 @@
     "href": "project/1-proposal.html#writing-quality",
     "title": "Project Proposal",
     "section": "2. Writing Quality",
-    "text": "2. Writing Quality\nYour proposal should be written in a clear, concise, and logically-structured manner so that a reader can easily understand the ideas presented. The proposal should be proof-read before submission to correct any grammatical or spelling errors. Spell checking can be automated by installing the spelling package and running this in the R console:\n\nspelling::spell_check_files(\"proposal.Rmd\")\n\nAll figures should be referenced in the text."
+    "text": "2. Writing Quality\nYour proposal should be written in a clear, concise, and logically-structured manner so that a reader can easily understand the ideas presented. The proposal should be proof-read before submission to correct any grammatical or spelling errors. Spell checking can be automated by installing the spelling package and running this in the R console:\nAll figures should be referenced in the text."
   },
   {
     "objectID": "project/1-proposal.html#proposal-contents",
