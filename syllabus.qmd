@@ -105,16 +105,17 @@ Final grades will be calculated as follows:
 
 Item                  | Weight | Notes
 ----------------------|--------|-------------------------------------
+Participation / Attendance | 5%     | (Yes, I take attendance)
 Reflections           | 30 %   | Weekly assignment (10 x 3%, lowest dropped)
-Quizzes               | 9 %    | 5 quizzes, lowest dropped
-Project Proposal      | 6 %    | Teams of 3-4 students
+Quizzes               | 10 %    | 5 quizzes, lowest dropped
+Final Exam            | 10 %   | Take home exam
+Project Proposal      | 5 %    | Teams of 3-4 students
 Survey Plan           | 5 %    |
 Pilot Survey          | 5 %    |
-Pilot Analysis        | 8 %    |
+Pilot Analysis        | 5 %    |
 Final Survey          | 5 %    |
-Final Analysis Report | 14 %   |
-Final Presentation    | 8 %    |
-Final Exam            | 10 %   | Take home exam
+Final Analysis Report | 15 %   |
+Final Presentation    | 5 %    |
 
 </div>
 
