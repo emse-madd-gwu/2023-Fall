@@ -203,86 +203,212 @@
     "text": "Academic Integrity Code\nAcademic dishonesty is defined as cheating of any kind, including misrepresenting one’s own work, taking credit for the work of others without crediting them and without appropriate authorization, and the fabrication of information. For the remainder of the code, see: https://studentconduct.gwu.edu/code-academic-integrity\nIn addition to the formal code of academic integrity, the instructor expects that students will treat this course with the level of professionalism required in the workplace. Remember that real firms are sponsoring student projects throughout the semester; in a workplace setting, these firms would be paying clients for the analyses being conducted. This course prepares students to succeed in the workplace, and maintaining a high degree of professionalism is expected."
   },
   {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
+    "objectID": "self-assessment.html",
+    "href": "self-assessment.html",
+    "title": "Self Assessment",
     "section": "",
-    "text": "All assignments are due by 11:59pm on the due date.\n\n\n\n\n\nWeek\nDate\nClass\nWeekly HW\nFinal Projects\n\n\n\n\n1\nAug 30\nGetting Started\nClass orientation, intro to R, workflow, packages\nHW 1\nDue: Sep 05\n\n\n\n2\nSep 06\nData Wrangling\nImporting, wrangling, and summarizing data in R\nHW 2\nDue: Sep 12\n\n\n\n3\nSep 13\nRMarkdown & Plotting\nIntro to \"literate programming\" with RMarkdown and plotting with {ggplot2}\nHW 3\nDue: Sep 19\nProposal\nDue: Sep 24\n\n\n4\nSep 20\nIntro to formr\nDesigning and implementing surveys in formr\n\n\n\n\n5\nSep 27\nNo Class - Team Meetings, Proposal Feedback\n\nHW 4\nDue: Oct 03\nSurvey Plan\nDue: Oct 03\n\n\n6\nOct 04\nConjoint Questions\nGenerating conjoint questions in R, implementing in formr\nHW 5\nDue: Oct 10\nPilot Survey\nDue: Oct 17\n\n\n7\nOct 11\nUtility Models\nIntro to utility models, discrete vs. continuous parameters, parameter coding\nHW 6\nDue: Oct 17\n\n\n\n8\nOct 18\nOptimization & MLE\nOptimization, maximum likelihood estimation\nHW 7\nDue: Oct 24\n\n\n\n9\nOct 25\nUncertainty\nComputing uncertainty in coefficient estimates\nHW 8\nDue: Oct 31\nPilot Analysis\nDue: Nov 05\n\n\n10\nNov 01\nDOE & Power Analysis\nDesigning your survey to reduce error\nHW 9\nDue: Nov 07\n\n\n\n11\nNov 08\nWTP & Simulation\nComputing WTP, WTP space models, market simulations\nHW 10\nDue: Nov 14\nFinal Survey\nDue: Nov 19\n\n\n12\nNov 15\nHeterogeneity\nModeling differences in preferences across sample population\n\n\n\n\n13\nNov 22\nThanksgiving - no class\n\n\n\n\n\n14\nNov 29\nClass Review\nOverview of course concepts\nHW 11\nDue: Dec 03\nFinal Analysis\nDue: Dec 10\n\n\n15\nDec 06\nCommunicating Results\nGo over exam solutions and also discuss tips for giving a good presentation\n\n\n\n\n16\nDec 13\nFinal Presentations\nIn-class presentation showcase w/Q&A\n\nFinal Presentation\nDue: Dec 12"
+    "text": "This optional assignment allows you to self-assess whether you have the prerequisite knowledge required for this course. Take this three-question self-assessment quiz. It shouldn’t take more than 10-20 minutes to complete, and answers can be compared with the solutions.\nIf you have trouble answering these questions, you may find this course challenging and may want to take other courses or review refresher materials on these topics prior to taking this course."
   },
   {
-    "objectID": "project/examples.html",
-    "href": "project/examples.html",
-    "title": "Example Analyses",
+    "objectID": "self-assessment.html#this-assignment-is-optional",
+    "href": "self-assessment.html#this-assignment-is-optional",
+    "title": "Self Assessment",
     "section": "",
-    "text": "As inspiration for your final projects, check out these prior exploratory data analyses.\n\nPrevious course showcases\n\n\n\n\n\nFall 2021 Showcase\nProjects from the fall 2021 semester of this class.\n\n\n\n\n\n\n\nFall 2022 Showcase\nProjects from the fall 2022 semester of this class."
+    "text": "This optional assignment allows you to self-assess whether you have the prerequisite knowledge required for this course. Take this three-question self-assessment quiz. It shouldn’t take more than 10-20 minutes to complete, and answers can be compared with the solutions.\nIf you have trouble answering these questions, you may find this course challenging and may want to take other courses or review refresher materials on these topics prior to taking this course."
   },
   {
-    "objectID": "project/6-final-analysis.html",
-    "href": "project/6-final-analysis.html",
-    "title": "Final Analysis",
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Grolemund, Garrett. “Hands-On Programming with R” [free online], [buy on amazon]\nPeng, Roger D. “R Programming for Data Science” [online - pay what you want]\n\n\n\n\n\nGrolemund, Garrett and Wickham, Hadley. “R for Data Science” [free online], [buy on amazon]\nPeng, Roger D. “Exploratory Data Analysis with R” [online - pay what you want]\n16 HOWTO’s, by Lingyun Zhang\n\n\n\n\n\nAll cheatsheets\nData wrangling with the dplyr library\nData visualization with the ggplot2 library\nRMarkdown"
+  },
+  {
+    "objectID": "references.html#general-programming-in-r",
+    "href": "references.html#general-programming-in-r",
+    "title": "References",
+    "section": "",
+    "text": "Grolemund, Garrett. “Hands-On Programming with R” [free online], [buy on amazon]\nPeng, Roger D. “R Programming for Data Science” [online - pay what you want]"
+  },
+  {
+    "objectID": "references.html#data-analysis-in-r",
+    "href": "references.html#data-analysis-in-r",
+    "title": "References",
+    "section": "",
+    "text": "Grolemund, Garrett and Wickham, Hadley. “R for Data Science” [free online], [buy on amazon]\nPeng, Roger D. “Exploratory Data Analysis with R” [online - pay what you want]\n16 HOWTO’s, by Lingyun Zhang"
+  },
+  {
+    "objectID": "references.html#rstudio-cheatsheets",
+    "href": "references.html#rstudio-cheatsheets",
+    "title": "References",
+    "section": "",
+    "text": "All cheatsheets\nData wrangling with the dplyr library\nData visualization with the ggplot2 library\nRMarkdown"
+  },
+  {
+    "objectID": "references.html#principles-of-data-visualization",
+    "href": "references.html#principles-of-data-visualization",
+    "title": "References",
+    "section": "Principles of data visualization",
+    "text": "Principles of data visualization\n\nHealy, Kieran. “Data Visualization: A practical introduction” [free online], [buy on amazon]\nWilke, Claus O. “Fundamentals of Data Visualization” [free online], [buy on amazon]\nVideo: How Humans See Data, by John Rauser. This is probably the best overviews I’ve seen on how to exploit the psychology of how our brains interpret images to make effective visualizations."
+  },
+  {
+    "objectID": "references.html#choosing-the-right-chart",
+    "href": "references.html#choosing-the-right-chart",
+    "title": "References",
+    "section": "Choosing the right chart",
+    "text": "Choosing the right chart\nYou will want to choose different chart types depending on the relationship or message you want to convey. Fortunately, we live in the future and awesome people have created wonderful tools to help you find the most appropriate graph for your data. Take a look through some of these resources - these will come in handy when you start working on your final project:\n\n Stephen Few’s Graph Selection Matrix\nThe Data Visualisation Catalogue\nData-to-Viz\nR Graph Gallery\nVisual Vocabulary\nThe Data Viz Project"
+  },
+  {
+    "objectID": "references.html#making-plots-with-ggplot2",
+    "href": "references.html#making-plots-with-ggplot2",
+    "title": "References",
+    "section": "Making plots with ggplot2",
+    "text": "Making plots with ggplot2\n\nThe R Graph Catalog: 124 examples (with code) for making common ggplots.\nThe ggplot2 Extensions gallery: 64 registered libraries that extend the functionality of ggplot2.\nTop 50 ggplot2 visualizations\nR Cookbook for ggplot2\nRStudio ggplot2 Cheatsheet\nTidyverse ggplot2 reference guide\nggThemeAssist: Package for customizing plot themes and layout\n16 HOWTO’s, by Lingyun Zhang - super useful for making specific types of charts"
+  },
+  {
+    "objectID": "references.html#polishing-ggplot2-plots",
+    "href": "references.html#polishing-ggplot2-plots",
+    "title": "References",
+    "section": "Polishing ggplot2 plots",
+    "text": "Polishing ggplot2 plots\n\nggplot2: Elegant Graphics for Data Analysis\nFollow good design rules"
+  },
+  {
+    "objectID": "references.html#choosing-colors",
+    "href": "references.html#choosing-colors",
+    "title": "References",
+    "section": "Choosing colors",
+    "text": "Choosing colors\n\nColor wheel tool\nggplot2 book chapter 12\nR graph gallery\nCoolors.co - super nice color palette generator"
+  },
+  {
+    "objectID": "references.html#animating-ggplot2-plots",
+    "href": "references.html#animating-ggplot2-plots",
+    "title": "References",
+    "section": "Animating ggplot2 plots",
+    "text": "Animating ggplot2 plots\n\nAnimate your ggplots with gganimate\nHow to make a bar chart race"
+  },
+  {
+    "objectID": "references.html#helpful-tutorials",
+    "href": "references.html#helpful-tutorials",
+    "title": "References",
+    "section": "Helpful Tutorials",
+    "text": "Helpful Tutorials\n\nRStudio Primers\nTidyverse in R\nTransitioning from Excel to R"
+  },
+  {
+    "objectID": "references.html#inspiration",
+    "href": "references.html#inspiration",
+    "title": "References",
+    "section": "Inspiration",
+    "text": "Inspiration\n\nAn Incomplete List of Females in Data Visualization, by Stephanie Evergreen\nThe Links Between Open Science and Star Wars"
+  },
+  {
+    "objectID": "references.html#when-all-else-fails",
+    "href": "references.html#when-all-else-fails",
+    "title": "References",
+    "section": "When all else fails…",
+    "text": "When all else fails…\nYou will inevitably run into problems; things won’t work the way you expect, and you’ll get lots of confusing error messages. When this happens, many turn to the following tried and true problem-solving approaches:"
+  },
+  {
+    "objectID": "project/7-final-presentation.html",
+    "href": "project/7-final-presentation.html",
+    "title": "Final Presentation",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "project/4-pilot-analysis.html",
-    "href": "project/4-pilot-analysis.html",
-    "title": "Pilot Analysis",
+    "objectID": "project/5-final-survey.html",
+    "href": "project/5-final-survey.html",
+    "title": "Final Survey",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "project/2-survey-plan.html",
-    "href": "project/2-survey-plan.html",
-    "title": "Survey Plan",
+    "objectID": "project/3-pilot-survey.html",
+    "href": "project/3-pilot-survey.html",
+    "title": "Pilot Survey",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "project/0-overview.html",
-    "href": "project/0-overview.html",
-    "title": "Project Overview",
+    "objectID": "project/1-proposal.html",
+    "href": "project/1-proposal.html",
+    "title": "Project Proposal",
     "section": "",
-    "text": "Throughout the semester, you will work in teams of 3-4 students towards a final project. The project will have three phases:\n\nProject proposal\nPilot survey & analysis\nFinal survey & analysis\n\nTeams will apply topics covered in class to develop quantitative models of consumer choice to inform design decisions for a novel product, technology, or policy. Each team will have somewhat different tasks and areas of emphasis, depending on the product selected; however, all projects will be expected to demonstrate mastery of the topics covered in class and to address the criteria and guidelines required for project assignments.\nSummary of Deliverables: To make the overall project more manageable, it is broken down into separate “milestone” deliverables due throughout the semester, starting with a proposal.\n\n\n\n\nItem\nWeight towardsfinal grade\nDue Date(by 11:59pm)\n\n\n\n\nProject Proposal\n5 %\nSep. 24\n\n\nSurvey Plan\n5 %\nOct. 03\n\n\nPilot Survey\n5 %\nOct. 17\n\n\nPilot Analysis\n5 %\nNov. 05\n\n\nFinal Survey\n5 %\nNov. 19\n\n\nFinal Analysis Report\n15 %\nDec. 10\n\n\nFinal Presentation\n5 %\nDec. 12\n\n\n\n\n\nProject Selection\nI want this project to be as useful for you and your future career as possible - you’ll hopefully want to show off your final project in a portfolio or during job interviews. Accordingly, you get to choose the topic for your project, but it must meet certain guidelines.\nProjects must be selected during the first two weeks of class. Projects much be an emerging technology, product, or policy with a clearly identified market that has not yet been introduced into the mass market, such as a new invention from a research laboratory at GWU or a new product being explored by a firm. Students have the option to choose a sponsored project or propose their own project if it is approved by the instructor and meets the following criteria:\n\nInnovative / Emerging: The proposed project involves a new product or technology with attributes (e.g. price, efficiency, reliability, size, performance, color, etc.) that may be competitive in the marketplace but for which actual market adoption is still uncertain.\nWell-Defined: This course focuses on mathematical modeling to support design decision-making. There is not sufficient time in the course for conceptual design of a new product.\nIdentified Target Market: A target market has been identified for this new product or technology. Competing products in that market are known, and the attributes on which new market entrants compete can be identified. Representative potential customers can be identified for survey solicitation. If the new product or technology is a component of a larger product sold to a consumer market, students may assess the market implications for the final consumer product.\nPrior to Mass Commercialization: The new product or technology has only recently or has not yet been introduced to the mass market.\nModerate Scope and Complexity: The product or technology should involve moderate complexity. For example, a non-differentiated commodity, such as sugar, is too simple, and a complex product involving many components and manufacturing operations, such as a vehicle, is too complex.\nExpertise: If the product involves a new technology that requires specialized knowledge about its attributes, the team should have reliable access to experts who can supply the requisite knowledge.\nDecision Variables: The product should have several non-trivial design decisions. For example, choosing between two materials or topologies, setting dimensions of a component, or selecting among a set of alternative component configurations are suitable design decisions. The models developed in the project will be used to support decision-making along such dimensions.\n\n\n\nTeamwork\nThe experience of working in teams on this project will serve as preparation for teamwork throughout your careers. Some teams may experience an imbalance in team member contributions, effort, or reliability. The instructor is available to provide advice and interact in resolving team inequity and conflict; however, students should view this as a learning experience. Such situations regularly occur in any career, and learning how to handle them is a valuable skill. If you experience challenges within your team, it is a good opportunity to develop strategies and figure out how you will address such challenges in the future. One common job interview question is, “Describe a time when you experienced difficulties working in a team or experienced a team failure. What did you do about it?” This is a good chance to build a strong answer to this question."
+    "text": "Due: Sep 24 by 11:59pm\nWeight: This assignment is worth 5% of your final grade.\nAssessment: Your submission will be assessed using the rubric at the bottom of this page.\nAs a team, write a proposal defining the scope of your project plan. Your chosen project topic should follow the project selection guidelines.\nThe course instructor will review and grade your proposal and provide feedback in team meetings the week following the due date. If your proposal is approved, you are done and can move on towards the next project task. In some cases, the instructor may ask you to submit a revised proposal, most likely by focusing / adjusting the proposal scope. Follow the guidelines below to prepare your proposal."
   },
   {
-    "objectID": "hw/9-wtp-simulation.html",
-    "href": "hw/9-wtp-simulation.html",
-    "title": "WTP & Simulations",
+    "objectID": "project/1-proposal.html#get-organized",
+    "href": "project/1-proposal.html#get-organized",
+    "title": "Project Proposal",
+    "section": "1. Get Organized",
+    "text": "1. Get Organized\nDownload and unzip this template for your proposal. Open the proposal.Rproj file and write your proposal in the proposal.Rmd file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:\n\nWrite your project title in the title field (and provide a subtitle if you wish, or delete the subtitle field).\nIn the author field, list the names of all teammates, e.g. author: Luke Skywalker, Leia Organa, and Han Solo."
+  },
+  {
+    "objectID": "project/1-proposal.html#writing-quality",
+    "href": "project/1-proposal.html#writing-quality",
+    "title": "Project Proposal",
+    "section": "2. Writing Quality",
+    "text": "2. Writing Quality\nYour proposal should be written in a clear, concise, and logically-structured manner so that a reader can easily understand the ideas presented. The proposal should be proof-read before submission to correct any grammatical or spelling errors. Spell checking can be automated by installing the spelling package and running this in the R console:\nAll figures should be referenced in the text."
+  },
+  {
+    "objectID": "project/1-proposal.html#proposal-contents",
+    "href": "project/1-proposal.html#proposal-contents",
+    "title": "Project Proposal",
+    "section": "3. Proposal Contents",
+    "text": "3. Proposal Contents\nYour proposal should contain the following items listed as separate sections.\n\nNOTE: If your team is working on a policy project rather than a product, see the Policy Proposal Contents section below.\n\n\nAbstract\nA few sentences summarizing the overall proposal and convincing the reader why it is important. Specifically, tell the reader:\n\nWhat is the product you are studying?\nWhat key product attributes make it different than its competitors?\nWhat major design decision variables will you focus on for your analysis?\n\n\n\nIntroduction\nProvide a brief description and background of the product or technology. Include a picture or diagram of the product.\n\n\nMarket Opportunity\n\nIdentify Your Customer\nIf there are multiple potential markets, choose one to focus on for your analysis. Describe who you plan on taking your survey and how you intend to gain access to that population. You may survey customers of a “downstream” product, if appropriate (e.g. survey electric vehicle buyers to learn about preferences for electric vehicle battery attributes).\n\n\nIdentify Competitors\nWhich other products will compete with yours? Benchmark how competitors compare on your product’s attributes.\n\n\nIdentify Market Size\nEstimate the size of the annual market (expected sales in units per year) for this product and its competitors. Specify if your estimated annual market size is regional, national, or global, and provide references.\n\n\n\nProduct Attributes & Decision Variables\nA key component of your proposal is to identify the relationships between your product attributes and decision variables.\n\nProduct Attributes\nThese are the product features that consumers observe and care about. For example, price is almost always an important product attribute that influences consumer choices. You should list and describe the major product attributes you will include in your analysis. Where possible, label the product attributes on the diagram of your design. Where possible, quantify the metrics for each attribute (e.g. if one of your attributes is weight, the metric could be “kilograms”). Also list the set or range of possible levels you plan to explore for each attribute (e.g. for color you may choose the set {red, green, blue}, or for price you may choose the range $1 - $10).\n\n\nDecision Variables\nThese are key elements of the product / technology that the designers focused on in designing the product. For example, engineers might be trying to choose the best thickness for a solar cell, which affects multiple product attributes, including weight (thicker cells are heavier), price (thicker cells use more material), lifetime (cell thickness may affect how quickly a cell degrades), etc. You should discuss ~2-3 key decision variables that are related to your product’s design that you propose to consider. Discuss why you chose these variables, and label them on your diagram of the product design. For each variable, specify units and the range of potential values under consideration.\n\n\nModel Relationships Table\nInclude a clearly legible image of your model relationships table identifying relationships between your product attributes and decision variables. For now, these relationships can simply be directional (e.g. cell thickness is positively related to cell weight). Use this example as a template.\n\n\n\nQuestions\nList major outstanding questions (e.g. about the product / technology performance metrics, market opportunities, etc.) that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project."
+  },
+  {
+    "objectID": "project/1-proposal.html#knit-and-submit",
+    "href": "project/1-proposal.html#knit-and-submit",
+    "title": "Project Proposal",
+    "section": "4. Knit and submit",
+    "text": "4. Knit and submit\nClick the “knit” button to compile your proposal.Rmd file into a html web page, then create a zip file of everything in your R Project folder. Name your file proposal.zip, then go to your team Box folder and submit your zip file in the “submissions” folder. Only one person from your team should submit the report."
+  },
+  {
+    "objectID": "project/1-proposal.html#policy-proposal-contents",
+    "href": "project/1-proposal.html#policy-proposal-contents",
+    "title": "Project Proposal",
+    "section": "Policy Proposal Contents",
+    "text": "Policy Proposal Contents\nFor teams looking at a policy design rather than a product design, your proposal should contain the following sections.\n\nAbstract\nA few sentences summarizing the overall proposal and convincing the reader why it is important. Specifically, tell the reader:\n\nWhat is the problem you are trying to address?\nWhat policy options are you considering to address the problem?\nWhat is the target population of your policies? Who will be affected by them?\n\n\n\nIntroduction\nProvide a brief description and background of the problem you are trying to address and the goal of the policies you are considering.\n\n\nTarget Population\nDescribe the target population for your analysis. Who will be affected by the policies you are considering? Who are you targeting these policies towards? Who are you planning on getting to take your survey, and how you intend to gain access to that population? Include an estimate of the size of the total target population.\n\n\nPolicy Options\n\nIdentify Policy Options\nWhich policies are you considering, and what are some of the potential pros and cons of them? Are some easier / more feasible to implement or enforce than others? Are some more costly to implement than others? Include a summary table comparing some basic features of each policy, e.g.\n\n\n\nPolicy\nDescription\nPro\nCon\n\n\n\n\nPolicy 1\nBrief description\nEasily implemented\nExpensive\n\n\nPolicy 2\nBrief description\nHard to enforce\nCheap\n\n\n\n\n\nIdentify Policy Attributes\nFor each policy, identify the key attributes that your target population will observe. For example, if the policy involves a fee or tax, then the amount of that fee or tax would be a key attribute. For each attribute, specify the range of possible levels you plan to explore (e.g. for amount you may choose the range $1 - $10). You should choose levels that reflect the range of existing policies or potential policies. You may choose to include policies / attributes that have not yet been implemented as well.\n\n\n\nQuestions\nList major outstanding questions that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "EMSE 6035:Marketing Analytics for Design Decisions(Fall 2023)",
+    "section": "",
+    "text": "Department: Engineering Management and Systems Engineering @ GWU\nCredits: 3\nDescription:\nThis course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions.\nLearning Objectives:\nHaving successfully completed this course, students will be able to:\n\nImport, wrangle, visualize, and export data in R.\nDesign surveys to obtain informative data about consumer preferences for product features.\nBuild and estimate discrete choice models.\nAnalyze consumer choice data to estimate consumer preferences for product features.\nDesign and create effective charts and presentations.\nCommunicate results in terms of design insights.\n\nPrerequisites:\nThis course requires prior exposure to:\n\nProbability theory\nMultivariable calculus\nLinear algebra\nRegression\n\nEach of these concepts will be applied throughout the course, and no time will be spent reviewing the foundational elements of each concept.\nIn addition, we will work in the R programming language throughout the course, but no prior programming experience is required. We will spend the first three weeks going through exercises to get up to speed in R.\nStudents are encouraged to complete this self assessment prior to registering for the course to self-assess familiarity with these concepts."
+  },
+  {
+    "objectID": "hw/8-doe-power-analysis.html",
+    "href": "hw/8-doe-power-analysis.html",
+    "title": "Design of Experiment",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "hw/7-uncertainty.html",
-    "href": "hw/7-uncertainty.html",
-    "title": "Uncertainty",
+    "objectID": "hw/6-optimization-mle.html",
+    "href": "hw/6-optimization-mle.html",
+    "title": "Optimization & MLE",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "hw/5-utility-models.html",
-    "href": "hw/5-utility-models.html",
-    "title": "Utility Models",
+    "objectID": "hw/4-conjoint-questions.html",
+    "href": "hw/4-conjoint-questions.html",
+    "title": "Conjoint Surveys in formr",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "hw/3-intro-to-formr.html",
-    "href": "hw/3-intro-to-formr.html",
-    "title": "Intro to formr",
+    "objectID": "hw/2-rmarkdown-plotting.html",
+    "href": "hw/2-rmarkdown-plotting.html",
+    "title": "Plotting",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "hw/11-exam.html",
-    "href": "hw/11-exam.html",
-    "title": "Exam",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "hw/1-data-wrangling.html",
-    "href": "hw/1-data-wrangling.html",
-    "title": "Data Wrangling",
+    "objectID": "hw/10-heterogeneity.html",
+    "href": "hw/10-heterogeneity.html",
+    "title": "Heterogeneity",
     "section": "",
     "text": "Coming soon!"
   },
@@ -399,214 +525,88 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "hw/0-self-assessment.html",
-    "href": "hw/0-self-assessment.html",
-    "title": "Self Assessment",
-    "section": "",
-    "text": "This optional assignment allows you to self-assess whether you have the prerequisite knowledge required for this course. Take this three-question self-assessment quiz. It shouldn’t take more than 10-20 minutes to complete, and answers can be compared with the solutions.\nIf you have trouble answering these questions, you may find this course challenging and may want to take other courses or review refresher materials on these topics prior to taking this course."
-  },
-  {
-    "objectID": "hw/0-self-assessment.html#this-assignment-is-optional",
-    "href": "hw/0-self-assessment.html#this-assignment-is-optional",
-    "title": "Self Assessment",
-    "section": "",
-    "text": "This optional assignment allows you to self-assess whether you have the prerequisite knowledge required for this course. Take this three-question self-assessment quiz. It shouldn’t take more than 10-20 minutes to complete, and answers can be compared with the solutions.\nIf you have trouble answering these questions, you may find this course challenging and may want to take other courses or review refresher materials on these topics prior to taking this course."
-  },
-  {
-    "objectID": "hw/10-heterogeneity.html",
-    "href": "hw/10-heterogeneity.html",
-    "title": "Heterogeneity",
+    "objectID": "hw/1-data-wrangling.html",
+    "href": "hw/1-data-wrangling.html",
+    "title": "Data Wrangling",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "hw/2-rmarkdown-plotting.html",
-    "href": "hw/2-rmarkdown-plotting.html",
-    "title": "Plotting",
+    "objectID": "hw/11-exam.html",
+    "href": "hw/11-exam.html",
+    "title": "Exam",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "hw/4-conjoint-questions.html",
-    "href": "hw/4-conjoint-questions.html",
-    "title": "Conjoint Surveys in formr",
+    "objectID": "hw/3-intro-to-formr.html",
+    "href": "hw/3-intro-to-formr.html",
+    "title": "Intro to formr",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "hw/6-optimization-mle.html",
-    "href": "hw/6-optimization-mle.html",
-    "title": "Optimization & MLE",
+    "objectID": "hw/5-utility-models.html",
+    "href": "hw/5-utility-models.html",
+    "title": "Utility Models",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "hw/8-doe-power-analysis.html",
-    "href": "hw/8-doe-power-analysis.html",
-    "title": "Design of Experiment",
+    "objectID": "hw/7-uncertainty.html",
+    "href": "hw/7-uncertainty.html",
+    "title": "Uncertainty",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "EMSE 6035:Marketing Analytics for Design Decisions(Fall 2023)",
-    "section": "",
-    "text": "Department: Engineering Management and Systems Engineering @ GWU\nCredits: 3\nDescription:\nThis course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions.\nLearning Objectives:\nHaving successfully completed this course, students will be able to:\n\nImport, wrangle, visualize, and export data in R.\nDesign surveys to obtain informative data about consumer preferences for product features.\nBuild and estimate discrete choice models.\nAnalyze consumer choice data to estimate consumer preferences for product features.\nDesign and create effective charts and presentations.\nCommunicate results in terms of design insights.\n\nPrerequisites:\nThis course requires prior exposure to:\n\nProbability theory\nMultivariable calculus\nLinear algebra\nRegression\n\nEach of these concepts will be applied throughout the course, and no time will be spent reviewing the foundational elements of each concept.\nIn addition, we will work in the R programming language throughout the course, but no prior programming experience is required. We will spend the first three weeks going through exercises to get up to speed in R.\nStudents are encouraged to complete this self assessment prior to registering for the course to self-assess familiarity with these concepts."
-  },
-  {
-    "objectID": "project/1-proposal.html",
-    "href": "project/1-proposal.html",
-    "title": "Project Proposal",
-    "section": "",
-    "text": "Due: Sep 24 by 11:59pm\nWeight: This assignment is worth 5% of your final grade.\nAssessment: Your submission will be assessed using the rubric at the bottom of this page.\nAs a team, write a proposal defining the scope of your project plan. Your chosen project topic should follow the project selection guidelines.\nThe course instructor will review and grade your proposal and provide feedback in team meetings the week following the due date. If your proposal is approved, you are done and can move on towards the next project task. In some cases, the instructor may ask you to submit a revised proposal, most likely by focusing / adjusting the proposal scope. Follow the guidelines below to prepare your proposal."
-  },
-  {
-    "objectID": "project/1-proposal.html#get-organized",
-    "href": "project/1-proposal.html#get-organized",
-    "title": "Project Proposal",
-    "section": "1. Get Organized",
-    "text": "1. Get Organized\nDownload and unzip this template for your proposal. Open the proposal.Rproj file and write your proposal in the proposal.Rmd file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:\n\nWrite your project title in the title field (and provide a subtitle if you wish, or delete the subtitle field).\nIn the author field, list the names of all teammates, e.g. author: Luke Skywalker, Leia Organa, and Han Solo."
-  },
-  {
-    "objectID": "project/1-proposal.html#writing-quality",
-    "href": "project/1-proposal.html#writing-quality",
-    "title": "Project Proposal",
-    "section": "2. Writing Quality",
-    "text": "2. Writing Quality\nYour proposal should be written in a clear, concise, and logically-structured manner so that a reader can easily understand the ideas presented. The proposal should be proof-read before submission to correct any grammatical or spelling errors. Spell checking can be automated by installing the spelling package and running this in the R console:\nAll figures should be referenced in the text."
-  },
-  {
-    "objectID": "project/1-proposal.html#proposal-contents",
-    "href": "project/1-proposal.html#proposal-contents",
-    "title": "Project Proposal",
-    "section": "3. Proposal Contents",
-    "text": "3. Proposal Contents\nYour proposal should contain the following items listed as separate sections.\n\nNOTE: If your team is working on a policy project rather than a product, see the Policy Proposal Contents section below.\n\n\nAbstract\nA few sentences summarizing the overall proposal and convincing the reader why it is important. Specifically, tell the reader:\n\nWhat is the product you are studying?\nWhat key product attributes make it different than its competitors?\nWhat major design decision variables will you focus on for your analysis?\n\n\n\nIntroduction\nProvide a brief description and background of the product or technology. Include a picture or diagram of the product.\n\n\nMarket Opportunity\n\nIdentify Your Customer\nIf there are multiple potential markets, choose one to focus on for your analysis. Describe who you plan on taking your survey and how you intend to gain access to that population. You may survey customers of a “downstream” product, if appropriate (e.g. survey electric vehicle buyers to learn about preferences for electric vehicle battery attributes).\n\n\nIdentify Competitors\nWhich other products will compete with yours? Benchmark how competitors compare on your product’s attributes.\n\n\nIdentify Market Size\nEstimate the size of the annual market (expected sales in units per year) for this product and its competitors. Specify if your estimated annual market size is regional, national, or global, and provide references.\n\n\n\nProduct Attributes & Decision Variables\nA key component of your proposal is to identify the relationships between your product attributes and decision variables.\n\nProduct Attributes\nThese are the product features that consumers observe and care about. For example, price is almost always an important product attribute that influences consumer choices. You should list and describe the major product attributes you will include in your analysis. Where possible, label the product attributes on the diagram of your design. Where possible, quantify the metrics for each attribute (e.g. if one of your attributes is weight, the metric could be “kilograms”). Also list the set or range of possible levels you plan to explore for each attribute (e.g. for color you may choose the set {red, green, blue}, or for price you may choose the range $1 - $10).\n\n\nDecision Variables\nThese are key elements of the product / technology that the designers focused on in designing the product. For example, engineers might be trying to choose the best thickness for a solar cell, which affects multiple product attributes, including weight (thicker cells are heavier), price (thicker cells use more material), lifetime (cell thickness may affect how quickly a cell degrades), etc. You should discuss ~2-3 key decision variables that are related to your product’s design that you propose to consider. Discuss why you chose these variables, and label them on your diagram of the product design. For each variable, specify units and the range of potential values under consideration.\n\n\nModel Relationships Table\nInclude a clearly legible image of your model relationships table identifying relationships between your product attributes and decision variables. For now, these relationships can simply be directional (e.g. cell thickness is positively related to cell weight). Use this example as a template.\n\n\n\nQuestions\nList major outstanding questions (e.g. about the product / technology performance metrics, market opportunities, etc.) that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project."
-  },
-  {
-    "objectID": "project/1-proposal.html#knit-and-submit",
-    "href": "project/1-proposal.html#knit-and-submit",
-    "title": "Project Proposal",
-    "section": "4. Knit and submit",
-    "text": "4. Knit and submit\nClick the “knit” button to compile your proposal.Rmd file into a html web page, then create a zip file of everything in your R Project folder. Name your file proposal.zip, then go to your team Box folder and submit your zip file in the “submissions” folder. Only one person from your team should submit the report."
-  },
-  {
-    "objectID": "project/1-proposal.html#policy-proposal-contents",
-    "href": "project/1-proposal.html#policy-proposal-contents",
-    "title": "Project Proposal",
-    "section": "Policy Proposal Contents",
-    "text": "Policy Proposal Contents\nFor teams looking at a policy design rather than a product design, your proposal should contain the following sections.\n\nAbstract\nA few sentences summarizing the overall proposal and convincing the reader why it is important. Specifically, tell the reader:\n\nWhat is the problem you are trying to address?\nWhat policy options are you considering to address the problem?\nWhat is the target population of your policies? Who will be affected by them?\n\n\n\nIntroduction\nProvide a brief description and background of the problem you are trying to address and the goal of the policies you are considering.\n\n\nTarget Population\nDescribe the target population for your analysis. Who will be affected by the policies you are considering? Who are you targeting these policies towards? Who are you planning on getting to take your survey, and how you intend to gain access to that population? Include an estimate of the size of the total target population.\n\n\nPolicy Options\n\nIdentify Policy Options\nWhich policies are you considering, and what are some of the potential pros and cons of them? Are some easier / more feasible to implement or enforce than others? Are some more costly to implement than others? Include a summary table comparing some basic features of each policy, e.g.\n\n\n\nPolicy\nDescription\nPro\nCon\n\n\n\n\nPolicy 1\nBrief description\nEasily implemented\nExpensive\n\n\nPolicy 2\nBrief description\nHard to enforce\nCheap\n\n\n\n\n\nIdentify Policy Attributes\nFor each policy, identify the key attributes that your target population will observe. For example, if the policy involves a fee or tax, then the amount of that fee or tax would be a key attribute. For each attribute, specify the range of possible levels you plan to explore (e.g. for amount you may choose the range $1 - $10). You should choose levels that reflect the range of existing policies or potential policies. You may choose to include policies / attributes that have not yet been implemented as well.\n\n\n\nQuestions\nList major outstanding questions that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project."
-  },
-  {
-    "objectID": "project/3-pilot-survey.html",
-    "href": "project/3-pilot-survey.html",
-    "title": "Pilot Survey",
+    "objectID": "hw/9-wtp-simulation.html",
+    "href": "hw/9-wtp-simulation.html",
+    "title": "WTP & Simulations",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "project/5-final-survey.html",
-    "href": "project/5-final-survey.html",
-    "title": "Final Survey",
+    "objectID": "project/0-overview.html",
+    "href": "project/0-overview.html",
+    "title": "Project Overview",
+    "section": "",
+    "text": "Throughout the semester, you will work in teams of 3-4 students towards a final project. The project will have three phases:\n\nProject proposal\nPilot survey & analysis\nFinal survey & analysis\n\nTeams will apply topics covered in class to develop quantitative models of consumer choice to inform design decisions for a novel product, technology, or policy. Each team will have somewhat different tasks and areas of emphasis, depending on the product selected; however, all projects will be expected to demonstrate mastery of the topics covered in class and to address the criteria and guidelines required for project assignments.\nSummary of Deliverables: To make the overall project more manageable, it is broken down into separate “milestone” deliverables due throughout the semester, starting with a proposal.\n\n\n\n\nItem\nWeight towardsfinal grade\nDue Date(by 11:59pm)\n\n\n\n\nProject Proposal\n5 %\nSep. 24\n\n\nSurvey Plan\n5 %\nOct. 03\n\n\nPilot Survey\n5 %\nOct. 17\n\n\nPilot Analysis\n5 %\nNov. 05\n\n\nFinal Survey\n5 %\nNov. 19\n\n\nFinal Analysis Report\n15 %\nDec. 10\n\n\nFinal Presentation\n5 %\nDec. 12\n\n\n\n\n\nProject Selection\nI want this project to be as useful for you and your future career as possible - you’ll hopefully want to show off your final project in a portfolio or during job interviews. Accordingly, you get to choose the topic for your project, but it must meet certain guidelines.\nProjects must be selected during the first two weeks of class. Projects much be an emerging technology, product, or policy with a clearly identified market that has not yet been introduced into the mass market, such as a new invention from a research laboratory at GWU or a new product being explored by a firm. Students have the option to choose a sponsored project or propose their own project if it is approved by the instructor and meets the following criteria:\n\nInnovative / Emerging: The proposed project involves a new product or technology with attributes (e.g. price, efficiency, reliability, size, performance, color, etc.) that may be competitive in the marketplace but for which actual market adoption is still uncertain.\nWell-Defined: This course focuses on mathematical modeling to support design decision-making. There is not sufficient time in the course for conceptual design of a new product.\nIdentified Target Market: A target market has been identified for this new product or technology. Competing products in that market are known, and the attributes on which new market entrants compete can be identified. Representative potential customers can be identified for survey solicitation. If the new product or technology is a component of a larger product sold to a consumer market, students may assess the market implications for the final consumer product.\nPrior to Mass Commercialization: The new product or technology has only recently or has not yet been introduced to the mass market.\nModerate Scope and Complexity: The product or technology should involve moderate complexity. For example, a non-differentiated commodity, such as sugar, is too simple, and a complex product involving many components and manufacturing operations, such as a vehicle, is too complex.\nExpertise: If the product involves a new technology that requires specialized knowledge about its attributes, the team should have reliable access to experts who can supply the requisite knowledge.\nDecision Variables: The product should have several non-trivial design decisions. For example, choosing between two materials or topologies, setting dimensions of a component, or selecting among a set of alternative component configurations are suitable design decisions. The models developed in the project will be used to support decision-making along such dimensions.\n\n\n\nTeamwork\nThe experience of working in teams on this project will serve as preparation for teamwork throughout your careers. Some teams may experience an imbalance in team member contributions, effort, or reliability. The instructor is available to provide advice and interact in resolving team inequity and conflict; however, students should view this as a learning experience. Such situations regularly occur in any career, and learning how to handle them is a valuable skill. If you experience challenges within your team, it is a good opportunity to develop strategies and figure out how you will address such challenges in the future. One common job interview question is, “Describe a time when you experienced difficulties working in a team or experienced a team failure. What did you do about it?” This is a good chance to build a strong answer to this question."
+  },
+  {
+    "objectID": "project/2-survey-plan.html",
+    "href": "project/2-survey-plan.html",
+    "title": "Survey Plan",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "project/7-final-presentation.html",
-    "href": "project/7-final-presentation.html",
-    "title": "Final Presentation",
+    "objectID": "project/4-pilot-analysis.html",
+    "href": "project/4-pilot-analysis.html",
+    "title": "Pilot Analysis",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
+    "objectID": "project/6-final-analysis.html",
+    "href": "project/6-final-analysis.html",
+    "title": "Final Analysis",
     "section": "",
-    "text": "Grolemund, Garrett. “Hands-On Programming with R” [free online], [buy on amazon]\nPeng, Roger D. “R Programming for Data Science” [online - pay what you want]\n\n\n\n\n\nGrolemund, Garrett and Wickham, Hadley. “R for Data Science” [free online], [buy on amazon]\nPeng, Roger D. “Exploratory Data Analysis with R” [online - pay what you want]\n16 HOWTO’s, by Lingyun Zhang\n\n\n\n\n\nAll cheatsheets\nData wrangling with the dplyr library\nData visualization with the ggplot2 library\nRMarkdown"
+    "text": "Coming soon!"
   },
   {
-    "objectID": "references.html#general-programming-in-r",
-    "href": "references.html#general-programming-in-r",
-    "title": "References",
+    "objectID": "project/examples.html",
+    "href": "project/examples.html",
+    "title": "Example Analyses",
     "section": "",
-    "text": "Grolemund, Garrett. “Hands-On Programming with R” [free online], [buy on amazon]\nPeng, Roger D. “R Programming for Data Science” [online - pay what you want]"
+    "text": "As inspiration for your final projects, check out these prior exploratory data analyses.\n\nPrevious course showcases\n\n\n\n\n\nFall 2021 Showcase\nProjects from the fall 2021 semester of this class.\n\n\n\n\n\n\n\nFall 2022 Showcase\nProjects from the fall 2022 semester of this class."
   },
   {
-    "objectID": "references.html#data-analysis-in-r",
-    "href": "references.html#data-analysis-in-r",
-    "title": "References",
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
     "section": "",
-    "text": "Grolemund, Garrett and Wickham, Hadley. “R for Data Science” [free online], [buy on amazon]\nPeng, Roger D. “Exploratory Data Analysis with R” [online - pay what you want]\n16 HOWTO’s, by Lingyun Zhang"
-  },
-  {
-    "objectID": "references.html#rstudio-cheatsheets",
-    "href": "references.html#rstudio-cheatsheets",
-    "title": "References",
-    "section": "",
-    "text": "All cheatsheets\nData wrangling with the dplyr library\nData visualization with the ggplot2 library\nRMarkdown"
-  },
-  {
-    "objectID": "references.html#principles-of-data-visualization",
-    "href": "references.html#principles-of-data-visualization",
-    "title": "References",
-    "section": "Principles of data visualization",
-    "text": "Principles of data visualization\n\nHealy, Kieran. “Data Visualization: A practical introduction” [free online], [buy on amazon]\nWilke, Claus O. “Fundamentals of Data Visualization” [free online], [buy on amazon]\nVideo: How Humans See Data, by John Rauser. This is probably the best overviews I’ve seen on how to exploit the psychology of how our brains interpret images to make effective visualizations."
-  },
-  {
-    "objectID": "references.html#choosing-the-right-chart",
-    "href": "references.html#choosing-the-right-chart",
-    "title": "References",
-    "section": "Choosing the right chart",
-    "text": "Choosing the right chart\nYou will want to choose different chart types depending on the relationship or message you want to convey. Fortunately, we live in the future and awesome people have created wonderful tools to help you find the most appropriate graph for your data. Take a look through some of these resources - these will come in handy when you start working on your final project:\n\n Stephen Few’s Graph Selection Matrix\nThe Data Visualisation Catalogue\nData-to-Viz\nR Graph Gallery\nVisual Vocabulary\nThe Data Viz Project"
-  },
-  {
-    "objectID": "references.html#making-plots-with-ggplot2",
-    "href": "references.html#making-plots-with-ggplot2",
-    "title": "References",
-    "section": "Making plots with ggplot2",
-    "text": "Making plots with ggplot2\n\nThe R Graph Catalog: 124 examples (with code) for making common ggplots.\nThe ggplot2 Extensions gallery: 64 registered libraries that extend the functionality of ggplot2.\nTop 50 ggplot2 visualizations\nR Cookbook for ggplot2\nRStudio ggplot2 Cheatsheet\nTidyverse ggplot2 reference guide\nggThemeAssist: Package for customizing plot themes and layout\n16 HOWTO’s, by Lingyun Zhang - super useful for making specific types of charts"
-  },
-  {
-    "objectID": "references.html#polishing-ggplot2-plots",
-    "href": "references.html#polishing-ggplot2-plots",
-    "title": "References",
-    "section": "Polishing ggplot2 plots",
-    "text": "Polishing ggplot2 plots\n\nggplot2: Elegant Graphics for Data Analysis\nFollow good design rules"
-  },
-  {
-    "objectID": "references.html#choosing-colors",
-    "href": "references.html#choosing-colors",
-    "title": "References",
-    "section": "Choosing colors",
-    "text": "Choosing colors\n\nColor wheel tool\nggplot2 book chapter 12\nR graph gallery\nCoolors.co - super nice color palette generator"
-  },
-  {
-    "objectID": "references.html#animating-ggplot2-plots",
-    "href": "references.html#animating-ggplot2-plots",
-    "title": "References",
-    "section": "Animating ggplot2 plots",
-    "text": "Animating ggplot2 plots\n\nAnimate your ggplots with gganimate\nHow to make a bar chart race"
-  },
-  {
-    "objectID": "references.html#helpful-tutorials",
-    "href": "references.html#helpful-tutorials",
-    "title": "References",
-    "section": "Helpful Tutorials",
-    "text": "Helpful Tutorials\n\nRStudio Primers\nTidyverse in R\nTransitioning from Excel to R"
-  },
-  {
-    "objectID": "references.html#inspiration",
-    "href": "references.html#inspiration",
-    "title": "References",
-    "section": "Inspiration",
-    "text": "Inspiration\n\nAn Incomplete List of Females in Data Visualization, by Stephanie Evergreen\nThe Links Between Open Science and Star Wars"
-  },
-  {
-    "objectID": "references.html#when-all-else-fails",
-    "href": "references.html#when-all-else-fails",
-    "title": "References",
-    "section": "When all else fails…",
-    "text": "When all else fails…\nYou will inevitably run into problems; things won’t work the way you expect, and you’ll get lots of confusing error messages. When this happens, many turn to the following tried and true problem-solving approaches:"
+    "text": "All assignments are due by 11:59pm on the due date.\n\n\n\n\n\nWeek\nDate\nClass\nWeekly HW\nFinal Projects\n\n\n\n\n1\nAug 30\nGetting Started\nClass orientation, intro to R, workflow, packages\nHW 1\nDue: Sep 05\n\n\n\n2\nSep 06\nData Wrangling\nImporting, wrangling, and summarizing data in R\nHW 2\nDue: Sep 12\n\n\n\n3\nSep 13\nRMarkdown & Plotting\nIntro to \"literate programming\" with RMarkdown and plotting with {ggplot2}\nHW 3\nDue: Sep 19\nProposal\nDue: Sep 24\n\n\n4\nSep 20\nIntro to formr\nDesigning and implementing surveys in formr\n\n\n\n\n5\nSep 27\nNo Class - Team Meetings, Proposal Feedback\n\nHW 4\nDue: Oct 03\nSurvey Plan\nDue: Oct 03\n\n\n6\nOct 04\nConjoint Questions\nGenerating conjoint questions in R, implementing in formr\nHW 5\nDue: Oct 10\nPilot Survey\nDue: Oct 17\n\n\n7\nOct 11\nUtility Models\nIntro to utility models, discrete vs. continuous parameters, parameter coding\nHW 6\nDue: Oct 17\n\n\n\n8\nOct 18\nOptimization & MLE\nOptimization, maximum likelihood estimation\nHW 7\nDue: Oct 24\n\n\n\n9\nOct 25\nUncertainty\nComputing uncertainty in coefficient estimates\nHW 8\nDue: Oct 31\nPilot Analysis\nDue: Nov 05\n\n\n10\nNov 01\nDOE & Power Analysis\nDesigning your survey to reduce error\nHW 9\nDue: Nov 07\n\n\n\n11\nNov 08\nWTP & Simulation\nComputing WTP, WTP space models, market simulations\nHW 10\nDue: Nov 14\nFinal Survey\nDue: Nov 19\n\n\n12\nNov 15\nHeterogeneity\nModeling differences in preferences across sample population\n\n\n\n\n13\nNov 22\nThanksgiving - no class\n\n\n\n\n\n14\nNov 29\nClass Review\nOverview of course concepts\nHW 11\nDue: Dec 03\nFinal Analysis\nDue: Dec 10\n\n\n15\nDec 06\nCommunicating Results\nGo over exam solutions and also discuss tips for giving a good presentation\n\n\n\n\n16\nDec 13\nFinal Presentations\nIn-class presentation showcase w/Q&A\n\nFinal Presentation\nDue: Dec 12"
   },
   {
     "objectID": "software.html",
