@@ -1,0 +1,9 @@
+---
+title: "Self Assessment"
+---
+
+## This assignment is optional
+
+This optional assignment allows you to self-assess whether you have the prerequisite knowledge required for this course. Take this [three-question self-assessment quiz](./content/self-assessment.pdf). It shouldn't take more than 10-20 minutes to complete, and answers can be compared with the [solutions](./content/self-assessment-solutions.pdf).
+
+If you have trouble answering these questions, you may find this course challenging and may want to take other courses or review refresher materials on these topics prior to taking this course.
