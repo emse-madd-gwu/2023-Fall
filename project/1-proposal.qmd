@@ -8,7 +8,7 @@ execute:
   message: false
 params:
   number: 1
-  weight: '7%'
+  weight: '5%'
 ---
 
 ```{r}
