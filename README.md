@@ -1,7 +1,4 @@
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-## EMSE 6035: Marketing Analytics for Design Decisions - Fall 2022 <a href='https://github.com/emse-madd-gwu/2021-Fall'><img src='images/logo.png' align="right" height="139"/></a>
+## EMSE 6035: Marketing Analytics for Design Decisions - Fall 2023 <a href='https://madd.seas.gwu.edu/2023-Fall/'><img src='images/logo.png' align="right" height="139"/></a>
 
 <!-- badges: start -->
 [![License: CC-BY-SA
@@ -28,11 +25,11 @@ reviewing recorded lecture materials and answering related practice
 questions.
 
 For more details, please see the [course
-website](https://madd.seas.gwu.edu/2022-Fall/).
+website](https://madd.seas.gwu.edu/2023-Fall/).
 
 ### Acknowledgments
 
 This course was inspired by many other courses / resources that cover
 similar material - see the course [about
-page](https://madd.seas.gwu.edu/2022-Fall/about.html) for more details.
+page](https://madd.seas.gwu.edu/2023-Fall/about.html) for more details.
 
