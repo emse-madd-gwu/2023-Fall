@@ -287,10 +287,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#market-opportunity" id="toc-market-opportunity" class="nav-link" data-scroll-target="#market-opportunity">Market Opportunity</a></li>
-  <li><a href="#product-attributes-decision-variables" id="toc-product-attributes-decision-variables" class="nav-link" data-scroll-target="#product-attributes-decision-variables">Product Attributes &amp; Decision Variables</a></li>
+  <li><a href="#product-attributes-research-questions" id="toc-product-attributes-research-questions" class="nav-link" data-scroll-target="#product-attributes-research-questions">Product Attributes &amp; Research Questions</a></li>
   <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
   </ul></li>
-  <li><a href="#knit-and-submit" id="toc-knit-and-submit" class="nav-link" data-scroll-target="#knit-and-submit">4. Knit and submit</a></li>
+  <li><a href="#render-and-submit" id="toc-render-and-submit" class="nav-link" data-scroll-target="#render-and-submit">4. Render and submit</a></li>
   <li><a href="#policy-proposal-contents" id="toc-policy-proposal-contents" class="nav-link" data-scroll-target="#policy-proposal-contents">Policy Proposal Contents</a>
   <ul class="collapse">
   <li><a href="#abstract-1" id="toc-abstract-1" class="nav-link" data-scroll-target="#abstract-1">Abstract</a></li>
@@ -332,7 +332,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The course instructor will review and grade your proposal and provide feedback in team meetings the week following the due date. If your proposal is approved, you are done and can move on towards the next project task. In some cases, the instructor may ask you to submit a revised proposal, most likely by focusing / adjusting the proposal scope. Follow the guidelines below to prepare your proposal.</p>
 <section id="get-organized" class="level2">
 <h2 class="anchored" data-anchor-id="get-organized">1. Get Organized</h2>
-<p>Download and unzip <a href="../templates/proposal.zip">this template</a> for your proposal. Open the <code>proposal.Rproj</code> file and write your proposal in the <code>proposal.Rmd</code> file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:</p>
+<p>Download and unzip <a href="../templates/proposal.zip">this template</a> for your proposal. Open the <code>proposal.Rproj</code> file and write your proposal in the <code>proposal.qmd</code> file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the header:</p>
 <ul>
 <li>Write your project title in the <code>title</code> field (and provide a subtitle if you wish, or delete the <code>subtitle</code> field).</li>
 <li>In the <code>author</code> field, list the names of all teammates, e.g.&nbsp;<code>author: Luke Skywalker, Leia Organa, and Han Solo</code>.</li>
@@ -374,23 +374,23 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="identify-market-size" class="level4">
 <h4 class="anchored" data-anchor-id="identify-market-size">Identify Market Size</h4>
-<p>Estimate the size of the annual market (expected sales in units per year) for this product and its competitors. Specify if your estimated annual market size is regional, national, or global, and provide references.</p>
+<p>Estimate the size of the annual market (expected sales in units per year) for this product and its competitors. Specify if your estimated annual market size is regional, national, or global, and provide references. Also address how the market size is expected to <em>grow</em> in the future.</p>
 </section>
 </section>
-<section id="product-attributes-decision-variables" class="level3">
-<h3 class="anchored" data-anchor-id="product-attributes-decision-variables">Product Attributes &amp; Decision Variables</h3>
-<p>A key component of your proposal is to identify the relationships between your <em>product attributes</em> and <em>decision variables</em>.</p>
+<section id="product-attributes-research-questions" class="level3">
+<h3 class="anchored" data-anchor-id="product-attributes-research-questions">Product Attributes &amp; Research Questions</h3>
+<p>A key component of your proposal is to identify the relationships between your <em>product attributes</em> and <em>research questions</em>.</p>
 <section id="product-attributes" class="level4">
 <h4 class="anchored" data-anchor-id="product-attributes">Product Attributes</h4>
 <p>These are the product features that consumers observe and care about. For example, <em>price</em> is almost always an important product attribute that influences consumer choices. You should list and describe the major product attributes you will include in your analysis. Where possible, label the product attributes on the diagram of your design. Where possible, quantify the metrics for each attribute (e.g.&nbsp;if one of your attributes is <em>weight</em>, the metric could be “kilograms”). Also list the set or range of possible levels you plan to explore for each attribute (e.g.&nbsp;for <em>color</em> you may choose the set {red, green, blue}, or for <em>price</em> you may choose the range $1 - $10).</p>
 </section>
-<section id="decision-variables" class="level4">
-<h4 class="anchored" data-anchor-id="decision-variables">Decision Variables</h4>
-<p>These are key elements of the product / technology that the designers focused on in designing the product. For example, engineers might be trying to choose the best <em>thickness</em> for a solar cell, which affects multiple product attributes, including <em>weight</em> (thicker cells are heavier), <em>price</em> (thicker cells use more material), <em>lifetime</em> (cell thickness may affect how quickly a cell degrades), etc. You should discuss ~2-3 key decision variables that are related to your product’s design that you propose to consider. Discuss why you chose these variables, and label them on your diagram of the product design. For each variable, specify units and the range of potential values under consideration.</p>
+<section id="product-attributes-table" class="level4">
+<h4 class="anchored" data-anchor-id="product-attributes-table">Product Attributes Table</h4>
+<p>Include a clearly legible image of your model relationships table identifying the basic features of your <em>product attributes</em> as well as the features of current competitors. Use <a href="https://docs.google.com/spreadsheets/d/1iwMI9cbJjB6J8wghZY6Y_fCOSt7MDsUTnSuuC58_xjU/edit?usp=sharing">this example</a> as a template.</p>
 </section>
-<section id="model-relationships-table" class="level4">
-<h4 class="anchored" data-anchor-id="model-relationships-table">Model Relationships Table</h4>
-<p>Include a clearly legible image of your model relationships table identifying relationships between your <em>product attributes</em> and <em>decision variables</em>. For now, these relationships can simply be directional (e.g.&nbsp;<em>cell thickness</em> is positively related to <em>cell weight</em>). Use <a href="https://docs.google.com/spreadsheets/d/1iwMI9cbJjB6J8wghZY6Y_fCOSt7MDsUTnSuuC58_xjU/edit?usp=sharing">this example</a> as a template.</p>
+<section id="research-questions" class="level4">
+<h4 class="anchored" data-anchor-id="research-questions">Research Questions</h4>
+<p>Your research questions are the central decisions that you are trying to inform with your project, and they often are directly related to the product attributes! For example, a research question on a project about solar panels might be “how thick should the cells be?”. This question affects multiple product attributes, such as the <em>weight</em> (thicker cells are heavier), <em>price</em> (thicker cells use more material), <em>lifetime</em> (cell thickness may affect how quickly a cell degrades), etc. You should discuss ~2-3 key research questions that are related to your product’s design. Discuss why you chose these questions, and note any relationship between the questions you are asking and the attributes of your product.</p>
 </section>
 </section>
 <section id="questions" class="level3">
@@ -398,9 +398,9 @@ ul.task-list li input[type="checkbox"] {
 <p>List major outstanding questions (e.g.&nbsp;about the product / technology performance metrics, market opportunities, etc.) that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project.</p>
 </section>
 </section>
-<section id="knit-and-submit" class="level2">
-<h2 class="anchored" data-anchor-id="knit-and-submit">4. Knit and submit</h2>
-<p>Click the “knit” button to compile your <code>proposal.Rmd</code> file into a html web page, then create a zip file of everything in your R Project folder. Name your file <code>proposal.zip</code>, then go to your team Box folder and submit your zip file in the “submissions” folder. Only one person from your team should submit the report.</p>
+<section id="render-and-submit" class="level2">
+<h2 class="anchored" data-anchor-id="render-and-submit">4. Render and submit</h2>
+<p>Click the “Render” button to compile your <code>proposal.qmd</code> file into a html web page, then create a zip file of everything in your R Project folder. Submit your zip file on Blackboard - only one person from your team should submit the report.</p>
 <hr>
 </section>
 <section id="policy-proposal-contents" class="level2">
