@@ -87,9 +87,7 @@ A key component of your proposal is to identify the relationships between your _
 
 These are the product features that consumers observe and care about. For example, _price_ is almost always an important product attribute that influences consumer choices. You should list and describe the major product attributes you will include in your analysis. Where possible, label the product attributes on the diagram of your design. Where possible, quantify the metrics for each attribute (e.g. if one of your attributes is _weight_, the metric could be "kilograms"). Also list the set or range of possible levels you plan to explore for each attribute (e.g. for _color_ you may choose the set {red, green, blue}, or for _price_ you may choose the range $1 - $10).
 
-#### Product Attributes Table
-
-Include a clearly legible image of your model relationships table identifying the basic features of your _product attributes_ as well as the features of current competitors. Use [this example](https://docs.google.com/spreadsheets/d/1iwMI9cbJjB6J8wghZY6Y_fCOSt7MDsUTnSuuC58_xjU/edit?usp=sharing) as a template.
+Summarize your product attributes in a table, identifying the basic features of your attributes as well as the features of current competitors. Use [this example](https://docs.google.com/spreadsheets/d/1iwMI9cbJjB6J8wghZY6Y_fCOSt7MDsUTnSuuC58_xjU/edit?usp=sharing) as a template.
 
 #### Research Questions
 
@@ -99,9 +97,9 @@ Your research questions are the central decisions that you are trying to inform 
 
 List major outstanding questions (e.g. about the product / technology performance metrics, market opportunities, etc.) that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project.
 
-## 4. Render and submit
+## 4. Submit
 
-Click the "Render" button to compile your `proposal.qmd` file into a html web page, then create a zip file of everything in your R Project folder. Submit your zip file on Blackboard - only one person from your team should submit the report.
+Instructions for how to submit your assignment are at the [top of this page](). 
 
 ---
 
