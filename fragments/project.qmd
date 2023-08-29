@@ -1,11 +1,9 @@
 ```{r}
 #| include: false
 
-source(here::here("_common.R"))
-
 due <- get_schedule() %>%
-  filter(n_final == params$number) %>%
-  pull(due_final) %>%
+  filter(n_project == params$number) %>%
+  pull(due_project) %>%
   paste0(" by 11:59pm")
 ```
 
