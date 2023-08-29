@@ -11,4 +11,5 @@ params:
   formr4conjoint: FALSE
 ---
 
-Coming soon!
+```{r child = here::here("fragments", "class.qmd")}
+```
