@@ -131,8 +131,8 @@ library(ggrepel)
 
 df <- data.frame(
     category = c(
-      'Reflections', 'Quizzes', 'Project', 'Exam'),
-    percent = c(36, 8, 46, 10)) %>%
+      'Participation', 'Reflections', 'Quizzes', 'Project', 'Exam'),
+    percent = c(5, 30, 10, 45, 10)) %>%
     arrange(desc(percent)) %>%
     mutate(
       cumpercent = cumsum(percent),

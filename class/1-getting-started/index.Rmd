@@ -1,0 +1,795 @@
+---
+title: "Getting Started"
+subtitle: "EMSE 6035: Marketing Analytics for Design Decisions"
+date: August 30, 2023
+week: 1
+author: "John Paul Helveston"
+institute: "The George Washington University | Dept. of Engineering Management and Systems Engineering"
+output:
+  xaringan::moon_reader:
+    css:
+      - default
+      - css/lexis.css
+      - css/lexis-fonts.css
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+```{r setup, child="../setup.Rmd"}
+```
+
+---
+
+```{r child="topics/0.Rmd"}
+```
+
+---
+
+```{r child="topics/1.Rmd"}
+```
+
+---
+
+# Meet your instructor!
+
+.leftcol30[.circle[
+
+<img src="https://www.jhelvy.com/images/lab/john_helveston_square.png" width="300">
+
+]]
+
+.rightcol70[
+
+### John Helveston, Ph.D.
+
+.font80[
+
+- 2018 - Present Assistant Professor, Engineering Management & Systems Engineering
+- 2016-2018 Postdoc at [Institute for Sustainable Energy](https://www.bu.edu/ise/), Boston University
+- 2016 PhD in Engineering & Public Policy at Carnegie Mellon University
+- 2015 MS in Engineering & Public Policy at Carnegie Mellon University
+- 2010 BS in Engineering Science & Mechanics at Virginia Tech
+- Website: [www.jhelvy.com](http://www.jhelvy.com/)
+
+]]
+
+---
+
+# `r fa('screwdriver-wrench')` Tools
+
+<br>
+
+--
+
+## `r fa('globe')` Course website: https://madd.seas.gwu.edu/2023-Fall/
+
+--
+
+## `r fa('slack')` Course slack: https://emse-madd-f23.slack.com
+
+--
+
+## `r fa('r-project')` & RStudio: [Course Software Page](https://madd.seas.gwu.edu/2023-Fall/software.html)
+
+---
+
+class: center
+
+# Why `r fa('r-project')`?
+
+<center>
+<img src="images/why-R.png" width=600>
+</center>
+
+---
+
+# Learning Objectives
+
+### After this class, you will know how to... 
+
+- ### ...work with data in `r fa('r-project')`
+- ### ...design effective surveys to get rich data
+- ### ...analyze consumer choice data to model consumer preferences
+- ### ...design effective charts to communicate insights
+
+---
+
+# Course prerequisites 
+
+.leftcol60[
+
+### This course requires prior exposure to:
+
+- ### Probability theory
+- ### Multivariable calculus
+- ### Linear algebra
+- ### Regression
+]
+
+--
+
+.rightcol40[
+
+### **Not sure?** 
+
+### Take [this self assessment](https://madd.seas.gwu.edu/2023-Fall/self-assessment.html)
+
+]
+
+---
+
+# Reflections (30% of grade)
+
+### Do some readings, recorded lectures, practice problems
+
+### Write a short reflection
+
+--
+
+## `r fa('calendar')` ~Every week (10 total)
+
+--
+
+## `r fa('clock')` Due 11:59pm Tues. before class
+
+--
+
+## `r fa('check')` Graded for completion (looking for engagement)
+
+---
+
+# **Quizzes** (10% of grade)
+
+--
+
+## `r fa('calendar')` At the start of class every other week-is. Make ups only for excused absences (i.e. don't be late).
+
+--
+
+## `r fa('calendar')` 5 total, lowest dropped
+
+--
+
+## `r fa('clock')` ~5 - 10 minutes
+
+--
+
+> **Why quiz at all?** The "retrieval effect" - basically, you have to _practice_ remembering things, otherwise your brain won't remember them (see the book ["Make It Stick: The Science of Successful Learning"](https://www.hup.harvard.edu/catalog.php?isbn=9780674729018))
+
+---
+
+# Exam (10% of grade)
+
+### Take home exam, 2nd to last week of class
+
+### We'll go over exam solutions on last day of class
+
+---
+
+# [Semester Project](https://madd.seas.gwu.edu/2023-Fall/project/0-overview.html) (45% of grade)
+
+.leftcol[
+
+### Teams of 3-4 students 
+
+### Goals: 
+
+- Assess market viability of a new technology or design
+- Recommend best design choices for target market or application
+
+]
+
+.rightcol[
+
+### Key deliverables:
+
+
+Item            | Weight | Due
+----------------|----------------------------|--------------------
+Project Proposal      | 5 %    | Sep. 24
+Survey Plan           | 5 %    | Oct. 03
+Pilot Survey          | 5 %    | Oct. 17
+Pilot Analysis        | 5 %    | Nov. 05
+Final Survey          | 5 %    | Nov. 19
+Final Analysis Report | 15 %   | Dec. 10
+Final Presentation    | 5 %    | Dec. 12
+
+]
+
+---
+
+background-color: #FFF
+
+# .center[Grades]
+
+<center>
+<img src="https://madd.seas.gwu.edu/2023-Fall/figs/grade-breakdown-1.png" width=90%>
+</center>
+
+---
+
+# .center[Grades]
+
+Item                  | Weight | Notes
+----------------------|--------|-------------------------------------
+Participation / Attendance | 5%     | (Yes, I take attendance)
+Reflections           | 30 %   | Weekly assignment (10 x 3%, lowest dropped)
+Quizzes               | 10 %    | 5 quizzes, lowest dropped
+Final Exam            | 10 %   | Take home exam
+Project Proposal      | 5 %    | Teams of 3-4 students
+Survey Plan           | 5 %    |
+Pilot Survey          | 5 %    |
+Pilot Analysis        | 5 %    |
+Final Survey          | 5 %    |
+Final Analysis Report | 15 %   |
+Final Presentation    | 5 %    |
+
+---
+
+# Course policies
+
+--
+
+.leftcol35[
+
+- ## BE NICE
+- ## BE HONEST
+- ## DON'T CHEAT
+
+]
+
+--
+
+.rightcol65[
+
+## .center[Copying is good, stealing is bad]
+
+> "Plagiarism is trying to pass someone else's work off as your own. Copying is about reverse-engineering."
+>
+> .right[-- Austin Kleon, from [Steal Like An Artist](https://austinkleon.com/steal/)&ensp;]
+
+]
+
+---
+
+## Use of chatGPT and other AI tools
+
+- Large language models (LLMs) are pretty good...but sometimes suck.
+
+--
+ 
+- Use of AI tools is generally permitted, but **be transparent**.
+
+- All assignments must include a **Use of AI on this assignment** section where you:
+
+    - Describe any AI tool and how it was used along with prompt(s) used.
+    - Include a link to the chat transcript.
+
+## **Use AI as an assistant, not a solutions manual**
+
+> Curious how LLMs actually work? Check out [this article](https://www.understandingai.org/p/large-language-models-explained-with), which provides a simplified description of how they work (which itself is still quite complicated).
+
+---
+
+# Late submissions
+
+## - **5** late days - use them anytime, no questions asked
+## - No more than **2** late days on any one assignment
+## - Contact me for special cases
+
+---
+
+# How to succeed in this class
+
+--
+
+## `r fa("users")` Participate during class!
+
+--
+
+## `r fa("pen-ruler")` Start assignments early and **read carefully**!
+
+--
+
+## `r fa("bed")` Get sleep and take breaks often!
+
+--
+
+## `r fa("people-carry-box")` Ask for help!
+
+---
+
+# Getting Help
+
+--
+
+## `r fa('slack')` Use [Slack](https://emse-madd-f23.slack.com/) to ask questions.
+
+--
+
+## `r fa('user-clock')` [Schedule a meeting](https://jhelvy.appointlet.com/b/professor-helveston) w/Prof. Helveston:
+
+- Mondays from 8:00-4:30pm
+- Tuesdays from 8:00-4:30pm
+- Fridays from 8:00-4:00pm
+
+--
+
+## `r fa('code')` [GW Coders](http://gwcoders.github.io/)
+
+---
+
+```{r child="topics/2.Rmd"}
+```
+
+---
+
+.leftcol[
+
+<center>
+<img src="images/cat-box.jpg" width=100%>
+</center>
+
+]
+
+.rightcol[
+
+# Engineers often design things nobody wants!
+
+]
+
+---
+
+## We want to answers to questions like...
+
+<br>
+
+--
+
+### - Higher prices decrease demand, but by how much?
+
+--
+
+### - How much more is a consumer willing to pay for increased performance in X?
+
+--
+
+### - How will my product compete against competitors in the market?
+
+--
+
+## **Answers depend on knowing what people want**
+
+---
+
+class: center 
+
+## Directly asking people what they want isn't always helpful
+
+--
+
+### (People want everything)
+
+<center>
+<img src="images/the_homer.png" width=700>
+</center>
+
+---
+
+class: center, middle 
+
+## Which feature do you care more about?
+
+<center>
+<img src="images/phone.png" width=200>
+</center>
+
+.cols3[
+
+## .center[Battery Life?]
+
+<center>
+<img src="images/phone_battery.png" width=100%>
+</center>
+
+]
+
+.cols3[
+
+## .center[Brand?]
+
+<center>
+<img src="images/phone_brand.png" width=100%>
+</center>
+
+]
+
+.cols3[
+
+## .center[Signal quality?]
+
+<center>
+<img src="images/phone_signal.png" width=100%>
+</center>
+
+]
+
+---
+
+class: center
+
+## **Conjoint approach**:<br>Use consumer choice data to model preferences
+
+<center>
+<img src="images/conjoint_table.png" width=800>
+</center>
+
+---
+
+### .center[Use random utility framework to predict probability of choosing phone _j_]
+
+<br>
+
+--
+
+### 1. $u_j = \beta_1\mathrm{price}_j + \beta_2\mathrm{brand}_j + \beta_3\mathrm{battery}_j + \beta_4\mathrm{signal}_j + \varepsilon_j$
+
+--
+
+### 2. Assume $\varepsilon_j \sim$ iid extreme value 
+
+--
+
+### 3. Probability of choosing phone _j_: $P_j = \frac{e^{\beta'x_j}}{\sum_k^J e^{\beta'x_k}}$
+
+--
+
+### 4. Estimate $\beta_1$, $\beta_2$, $\beta_3$, $\beta_4$ by minimizing $-L = - \sum_n^N \sum_j^J y_{nj} \ln P_{nj}$ 
+
+---
+
+class: center 
+
+.leftcol[.center[
+
+## **Willingness to Pay**
+
+<br>
+
+## $u_j = \beta'x_j + \alpha p_j + \varepsilon_j$ 
+
+## $\omega = \frac{\beta}{-\alpha}$
+
+.font120["Respondents on average are willing to pay $XX to improve battery life by XX%"]
+
+]]
+
+--
+
+.rightcol[
+
+## **Make predictions**
+
+### $P_j = \frac{e^{\hat{\beta}'x_j}}{\sum_k^J e^{\hat{\beta}'x_k}}$
+
+<center>
+<img src="images/phone_price_sens.png" width=500>
+</center>
+
+]
+
+---
+
+class: center, inverse, middle
+
+# Example: _Pocket Charge_
+
+## A Flexible, Portable Solar Charger
+
+---
+
+background-image: url(images/solar1.png)
+background-size: contain
+
+---
+
+class: center, middle
+background-color: #fff
+
+### Example survey choice question
+
+<center>
+<img src="images/solar2.png" width=850>
+</center>
+
+---
+
+background-image: url(images/solar3.png)
+background-size: contain
+
+---
+
+class: center, inverse, middle
+
+# Your project starts now!
+
+# [View project Ideas](https://docs.google.com/presentation/d/1Q9f68tm4JWdi2MdSozqXgYtxrGr6VKqO/edit?usp=sharing)
+
+---
+
+```{r child="topics/3.Rmd"}
+```
+
+---
+
+# Introduce yourself 
+
+## - Preferred name
+## - Degree program
+## - Prior experience
+## - What do you hope to gain from this class?
+## - Project interests?
+
+---
+
+class: inverse
+
+<br>
+
+# .center[.fancy[Break]]
+
+1. If you haven't already, install everything on the [software page](https://madd.seas.gwu.edu/2023-Fall/software.html)
+
+2. Stand up, meet each other, (maybe form teams?...use [this sheet](https://docs.google.com/spreadsheets/d/1Y-ApfpujwbywjL05KCmUo-AzZqRheqq7_M_vLuEnjt0/edit?usp=sharing)) 
+
+```{r, echo=FALSE}
+countdown(
+    minutes = 5,
+    warn_when = 30,
+    update_every = 1,
+    left = 0, right = 0, top = 1, bottom = 0,
+    margin = "5%",
+    font_size = "8em"
+)
+```
+
+---
+
+```{r child="topics/4.Rmd"}
+```
+
+---
+
+# RStudio Orientation
+
+.leftcol70[
+
+<center>
+<img src="images/rstudio-panes.png" width=650>
+</center>
+
+]
+
+.rightcol30[
+
+- Know the boxes
+- Customize the layout
+- Customize the look
+- [Extra themes](https://github.com/gadenbuie/rsthemes)
+
+]
+
+---
+
+class: center, middle, inverse
+
+# Open `intro-to-R.R` file and follow along
+
+---
+
+# View prior code in history pane
+
+<img src="images/rstudio-panes.png" width=500>
+
+--
+
+# Use "up" arrow see previous code
+
+---
+
+# Staying organized
+
+--
+
+## 1) Save your code in .R files
+
+> ### &zwj;File > New File > R Script
+
+--
+
+## 2) Keep work in R Project files
+
+> ### File > New Project...
+
+---
+
+class: inverse
+
+```{r, echo=FALSE}
+countdown(
+  minutes      = 10,
+  warn_when    = 30,
+  update_every = 15,
+  bottom       = 0,
+  left         = 0,
+  font_size    = '2em'
+)
+```
+
+.leftcol[.font80[
+
+## Your turn
+
+### A. Practice getting organized
+
+1. Open RStudio and create a new R project called `week1`.
+2. Create a new R script and save it as `practice.R`.
+3. Open the `practice.R` file and write your answers to these questions in it.
+
+]]
+
+.rightcol[.font80[
+
+### B. Creating & working with objects
+
+1). Create objects to store the values in this table:
+
+| City              | Area (sq. mi.) | Population (thousands) |
+|-------------------|----------------|------------------------|
+| San Francisco, CA | 47             | 884                    |
+| Chicago, IL       | 228            | 2,716                  |
+| Washington, DC    | 61             | 694                    |
+
+2) Using the objects you created, answer the following questions:
+
+  - Which city has the highest density?
+  - How many _more_ people would need to live in DC for it to have the same population density as San Francisco?
+
+]]
+
+---
+
+class: center, middle
+background-color: #fff 
+
+# >15,000 [packages](https://cran.r-project.org/web/packages/available_packages_by_name.html) on the [CRAN](https://cran.r-project.org/)
+
+<center>
+<img src="images/cran.png" width=600>
+</center>
+
+---
+
+# Installing packages
+
+--
+
+### `install.packages("packagename")`
+### (The package name **must** be in quotes)
+
+```{r eval=FALSE}
+install.packages("packagename") # This works
+install.packages(packagename)   # This doesn't work
+```
+
+--
+
+### **You only need to install a package once!**
+
+---
+
+# Loading packages
+
+--
+
+### `library(packagename)`: Loads all the functions in a package
+### (The package name _doesn't_ need to be in quotes)
+
+```{r eval=FALSE}
+library("packagename") # This works
+library(packagename)   # This also works
+```
+
+--
+
+### **You need to _load_ the package every time you use it!**
+
+---
+
+background-color: #fff
+class: center
+
+# Installing vs. Loading
+
+<center>
+<img src="images/package_lightbulb.png" width=1000>
+</center>
+
+---
+
+## Example: **wikifacts**
+
+Install the [Wikifacts](https://github.com/keithmcnulty/wikifacts) package, by Keith McNulty:
+
+```{r eval=FALSE}
+install.packages("wikifacts")
+```
+
+--
+
+Load the package:
+
+```{r eval=FALSE}
+library(wikifacts) # Load the library
+```
+
+--
+
+Use one of the package functions
+
+```{r eval=FALSE}
+wiki_randomfact()
+```
+
+```{r echo=FALSE}
+wikifacts::wiki_randomfact()
+```
+
+---
+
+## Example: **wikifacts**
+
+Now, restart your RStudio session:
+> Session -> Restart R
+
+--
+
+Try using the package function again:
+
+```{r, error=TRUE}
+wiki_randomfact()
+```
+
+---
+
+# Using only _some_ package functions
+
+### You don't always have to load the whole library.
+
+--
+
+### Functions can be accessed with this pattern:
+`packagename::functionname()`
+
+--
+
+```{r}
+wikifacts::wiki_randomfact()
+```
+
+---
+
+class: inverse, center, middle
+
+## If you haven't yet, install [these packages](https://raw.githubusercontent.com/emse-madd-gwu/2023-Fall/main/content/packages.R)
+
+---
+
+class: center, middle, inverse
+
+# Back `intro-to-R.R` for the rest of class!
