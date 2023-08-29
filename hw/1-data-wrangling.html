@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -295,9 +329,98 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Coming soon!</p>
+<blockquote class="blockquote">
+<p><strong>Due</strong>: 2023-09-05 by 11:59pm</p>
+<p><strong>Submission Instructions</strong>: Create a zip file of all the files in your R project folder for this assignment, then submit your zip file on the corresponding assignment submission on Blackboard.</p>
+<p><strong>Weight</strong>: This assignment is worth 1.33% of your final grade.</p>
+<p><strong>Purpose</strong>: The purpose of this assignment is to get more familiar with R and RStudio and to develop some basic strategies for working with data in R.</p>
+<p><strong>Assessment</strong>: This assignment is graded using a check system:</p>
+<ul>
+<li>✔+ (110%): Responses shows phenomenal thought and engagement with the course content. I will not assign these often.</li>
+<li>✔ (100%): Responses are thoughtful, well-written, and show engagement with the course content. This is the expected level of performance.</li>
+<li>✔− (50%): Responses are hastily composed, too short, and/or only cursorily engages with the course content. This grade signals that you need to improve next time. I will <em>hopefully</em> not assign these often.</li>
+</ul>
+<p>Notice that this is essentially a pass/fail system. I’m not grading your writing ability and I’m not counting the number of words you write - I’m looking for thoughtful engagement. One or two sentences is <strong>not enough</strong>. Write at least a paragraph and show me that you did the readings assigned.</p>
+</blockquote>
+<section id="software" class="level1">
+<h1>1. Software</h1>
+<p>If you haven’t yet, go to the <a href="../software.html">Software</a> page and install all the software we’ll need for this course. You’ll need these tools for this assignment.</p>
+</section>
+<section id="getting-organized" class="level1">
+<h1>2. Getting Organized</h1>
+<p>Download and edit <a href="https://madd.seas.gwu.edu/2023-Fall/templates/hw1.zip">this template</a> when working through this assignment. This is for now mostly a blank file that you can use to jot down examples and play with code.</p>
+</section>
+<section id="readings" class="level1">
+<h1>3. Readings</h1>
+<p>Open up a notebook (physical, digital…whatever you take notes in best), and <strong>take notes</strong> while you go through these readinygs:</p>
+<ol type="1">
+<li><strong>Getting Familiar with the Course</strong>: Follow <a href="https://www.youtube.com/watch?v=Tnlaokj1opA">Snoop’s advice</a> and read the entire <a href="../syllabus.html">Course Syllabus</a> (actually read the whole thing). Then review the <a href="../schedule.html">schedule</a> and make sure to note important upcoming deadlines.</li>
+<li><strong><svg aria-hidden="true" role="img" viewbox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"></path></svg> Basics</strong> [Optional] Read through Lessons <a href="https://jhelvy.github.io/r4aPrimer/L1-getting-started.html">1 “Getting Started”</a> and <a href="https://jhelvy.github.io/r4aPrimer/L2-data-types-vectors.html">2 “Data Types &amp; Vectors”</a> in the <a href="https://jhelvy.github.io/r4aPrimer/index.html">R4A Primer</a> to get more familiar with <svg aria-hidden="true" role="img" viewbox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"></path></svg> basics.</li>
+<li><strong>Data Frames &amp; Data Wrangling</strong> Reading through Lessons <a href="https://jhelvy.github.io/r4aPrimer/L3-data-frames.html">3 “Data Frames”</a> and <a href="https://jhelvy.github.io/r4aPrimer/L4-data-wrangling.html">4 “Data Wrangling”</a> in the <a href="https://jhelvy.github.io/r4aPrimer/index.html">R4A Primer</a> to get more familiar with working with data sets in <svg aria-hidden="true" role="img" viewbox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"></path></svg>.</li>
+</ol>
+</section>
+<section id="exercises" class="level1">
+<h1>4. Exercises</h1>
+<p>RStudio offers many excellent <a href="https://rstudio.cloud/learn/primers/">primers</a> to get up and running quickly in <svg aria-hidden="true" role="img" viewbox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"></path></svg>. Running through these exercises will help prepare you for class next week:</p>
+<ol type="1">
+<li><a href="https://rstudio.cloud/learn/primers/1.2">Programming Basics</a> [Optional]</li>
+<li><a href="https://rstudio.cloud/learn/primers/2.1">Working with Data</a></li>
+<li><a href="https://rstudio.cloud/learn/primers/2.2">Isolating Data with dplyr</a></li>
+<li><a href="https://rstudio.cloud/learn/primers/2.3">Derive Information with dplyr</a></li>
+</ol>
+</section>
+<section id="reflect" class="level1">
+<h1>5. Reflect</h1>
+<p>Reflect on what you’ve learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your <code>hw1.R</code> file.</p>
+<p>Try filling out this template:</p>
+<blockquote class="blockquote">
+<p>“I used to think ______, now I think ______ 🤔”</p>
+</blockquote>
+</section>
+<section id="submit" class="level1">
+<h1>6. Submit</h1>
+<p>Instructions for how to submit your assignment are at the <a href="">top of this page</a>.</p>
+<hr>
+</section>
+<section id="extra-practice" class="level1">
+<h1>Extra Practice</h1>
+<p>Not required, but probably helpful, especially if you’re new to <svg aria-hidden="true" role="img" viewbox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"></path></svg>.</p>
+<section id="inspect-data-from-other-packages" class="level2">
+<h2 class="anchored" data-anchor-id="inspect-data-from-other-packages">Inspect data from other packages</h2>
+<p>Write R code to install the <strong>dslabs</strong> package from CRAN, then write code to load the library. Write some code to preview and inspect the <code>movielens</code> data frame that gets loaded when you load the library using some of the techniques we saw in class. For each of the following questions, write code to find your answer and leave a detailed response in a comment:</p>
+<ul>
+<li>What is this dataset about?</li>
+<li>How many observations are in the data frame?</li>
+<li>What is the original source of the data?</li>
+<li>What type of data is each variable?</li>
+<li>What are the years of the earliest and most recent observations in the data set?</li>
+</ul>
+</section>
+<section id="answer-questions-about-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="answer-questions-about-the-data">Answer questions about the data</h2>
+<p>For each of the following questions, write code to find your answer and leave a detailed response in a comment:</p>
+<ul>
+<li>What is the min, mean, and max rating in the data set?</li>
+<li>How many observations received the maximum rating?</li>
+<li>What percentage of total observations received the maximum rating?</li>
+<li>What is the title of the observation with the longest <code>title</code> (in terms of numbers of letters in the title)?</li>
+</ul>
+</section>
+<section id="installing-packages-from-github-the-brrr-library" class="level2">
+<h2 class="anchored" data-anchor-id="installing-packages-from-github-the-brrr-library">Installing packages from Github: the <strong>BRRR</strong> library</h2>
+<p>The vast majority of the time, you will install external packages using the <code>install.packages()</code> function. This installs packages from the <a href="https://cran.r-project.org/">Comprehensive R Archive Network</a> (CRAN), where most packages are published. But you can also install packages that are under development or haven’t been published to CRAN yet. Most of the time, these packages are hosted on GitHub - an online platform for sharing code (it’s also where all of the files that make up this website are <a href="https://github.com/emse-madd-gwu/2022-Fall">stored</a>).</p>
+<p>To install a package from GitHub, you first need to install the <strong>remotes</strong> library. Then you can use the <code>remotes</code>::install_github()` function to install packages directly from GitHub. To try this out, install the <strong>remotes</strong> library, then trying installing the <strong>BRRR</strong> package:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"brooke-watson/BRRR"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<blockquote class="blockquote">
+<p>Note: Packges on GitHub are <em>in development</em> and often require other packges to work. So if you get an installation error about some other package dependency, try restarting your R session and try again.</p>
+</blockquote>
+<p>Not sure what this package does? Well, one of the other nice things about packages listed on GitHub is the authors tend to write detailed descriptions - check out the <a href="https://github.com/brooke-watson/BRRR">GitHub page for the BRRR package</a>. Then try using the <code>BRRR::skrrrahh()</code> function with different number arguments (turn your volume up). In the <code>#welcome</code> channel on slack, post your favorite argument to <code>skrrrahh()</code> (mine is 24).</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

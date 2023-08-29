@@ -529,7 +529,28 @@
     "href": "hw/1-data-wrangling.html",
     "title": "Data Wrangling",
     "section": "",
-    "text": "Coming soon!"
+    "text": "Due: 2023-09-05 by 11:59pm\nSubmission Instructions: Create a zip file of all the files in your R project folder for this assignment, then submit your zip file on the corresponding assignment submission on Blackboard.\nWeight: This assignment is worth 1.33% of your final grade.\nPurpose: The purpose of this assignment is to get more familiar with R and RStudio and to develop some basic strategies for working with data in R.\nAssessment: This assignment is graded using a check system:\n\n✔+ (110%): Responses shows phenomenal thought and engagement with the course content. I will not assign these often.\n✔ (100%): Responses are thoughtful, well-written, and show engagement with the course content. This is the expected level of performance.\n✔− (50%): Responses are hastily composed, too short, and/or only cursorily engages with the course content. This grade signals that you need to improve next time. I will hopefully not assign these often.\n\nNotice that this is essentially a pass/fail system. I’m not grading your writing ability and I’m not counting the number of words you write - I’m looking for thoughtful engagement. One or two sentences is not enough. Write at least a paragraph and show me that you did the readings assigned."
+  },
+  {
+    "objectID": "hw/1-data-wrangling.html#inspect-data-from-other-packages",
+    "href": "hw/1-data-wrangling.html#inspect-data-from-other-packages",
+    "title": "Data Wrangling",
+    "section": "Inspect data from other packages",
+    "text": "Inspect data from other packages\nWrite R code to install the dslabs package from CRAN, then write code to load the library. Write some code to preview and inspect the movielens data frame that gets loaded when you load the library using some of the techniques we saw in class. For each of the following questions, write code to find your answer and leave a detailed response in a comment:\n\nWhat is this dataset about?\nHow many observations are in the data frame?\nWhat is the original source of the data?\nWhat type of data is each variable?\nWhat are the years of the earliest and most recent observations in the data set?"
+  },
+  {
+    "objectID": "hw/1-data-wrangling.html#answer-questions-about-the-data",
+    "href": "hw/1-data-wrangling.html#answer-questions-about-the-data",
+    "title": "Data Wrangling",
+    "section": "Answer questions about the data",
+    "text": "Answer questions about the data\nFor each of the following questions, write code to find your answer and leave a detailed response in a comment:\n\nWhat is the min, mean, and max rating in the data set?\nHow many observations received the maximum rating?\nWhat percentage of total observations received the maximum rating?\nWhat is the title of the observation with the longest title (in terms of numbers of letters in the title)?"
+  },
+  {
+    "objectID": "hw/1-data-wrangling.html#installing-packages-from-github-the-brrr-library",
+    "href": "hw/1-data-wrangling.html#installing-packages-from-github-the-brrr-library",
+    "title": "Data Wrangling",
+    "section": "Installing packages from Github: the BRRR library",
+    "text": "Installing packages from Github: the BRRR library\nThe vast majority of the time, you will install external packages using the install.packages() function. This installs packages from the Comprehensive R Archive Network (CRAN), where most packages are published. But you can also install packages that are under development or haven’t been published to CRAN yet. Most of the time, these packages are hosted on GitHub - an online platform for sharing code (it’s also where all of the files that make up this website are stored).\nTo install a package from GitHub, you first need to install the remotes library. Then you can use the remotes::install_github()` function to install packages directly from GitHub. To try this out, install the remotes library, then trying installing the BRRR package:\n\nremotes::install_github(\"brooke-watson/BRRR\")\n\n\nNote: Packges on GitHub are in development and often require other packges to work. So if you get an installation error about some other package dependency, try restarting your R session and try again.\n\nNot sure what this package does? Well, one of the other nice things about packages listed on GitHub is the authors tend to write detailed descriptions - check out the GitHub page for the BRRR package. Then try using the BRRR::skrrrahh() function with different number arguments (turn your volume up). In the #welcome channel on slack, post your favorite argument to skrrrahh() (mine is 24)."
   },
   {
     "objectID": "hw/11-exam.html",
