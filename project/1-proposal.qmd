@@ -32,7 +32,7 @@ The course instructor will review and grade your proposal and provide feedback i
 
 ## 1. Get Organized
 
-Download and unzip [this template](../templates/proposal.zip) for your proposal. Open the `proposal.Rproj` file and write your proposal in the `proposal.Rmd` file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:
+Download and unzip [this template](../templates/proposal.zip) for your proposal. Open the `proposal.Rproj` file and write your proposal in the `proposal.qmd` file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the header:
 
 - Write your project title in the `title` field (and provide a subtitle if you wish, or delete the `subtitle` field).
  - In the `author` field, list the names of all teammates, e.g. `author: Luke Skywalker, Leia Organa, and Han Solo`.
@@ -42,7 +42,7 @@ Download and unzip [this template](../templates/proposal.zip) for your proposal.
 Your proposal should be written in a clear, concise, and logically-structured manner so that a reader can easily understand the ideas presented. The proposal should be proof-read before submission to correct any grammatical or spelling errors. Spell checking can be automated by installing the `spelling` package and running this in the R console:
 
 ```{r, eval=FALSE}
-spelling::spell_check_files("proposal.Rmd")
+spelling::spell_check_files("proposal.qmd")
 ```
 
 All figures should be referenced in the text.
@@ -77,31 +77,31 @@ Which other products will compete with yours? Benchmark how competitors compare 
 
 #### Identify Market Size
 
-Estimate the size of the annual market (expected sales in units per year) for this product and its competitors. Specify if your estimated annual market size is regional, national, or global, and provide references.
+Estimate the size of the annual market (expected sales in units per year) for this product and its competitors. Specify if your estimated annual market size is regional, national, or global, and provide references. Also address how the market size is expected to _grow_ in the future.
 
-### Product Attributes & Decision Variables
+### Product Attributes & Research Questions
 
-A key component of your proposal is to identify the relationships between your _product attributes_ and _decision variables_.
+A key component of your proposal is to identify the relationships between your _product attributes_ and _research questions_.
 
 #### Product Attributes 
 
 These are the product features that consumers observe and care about. For example, _price_ is almost always an important product attribute that influences consumer choices. You should list and describe the major product attributes you will include in your analysis. Where possible, label the product attributes on the diagram of your design. Where possible, quantify the metrics for each attribute (e.g. if one of your attributes is _weight_, the metric could be "kilograms"). Also list the set or range of possible levels you plan to explore for each attribute (e.g. for _color_ you may choose the set {red, green, blue}, or for _price_ you may choose the range $1 - $10).
 
-#### Decision Variables 
+#### Product Attributes Table
 
-These are key elements of the product / technology that the designers focused on in designing the product. For example, engineers might be trying to choose the best _thickness_ for a solar cell, which affects multiple product attributes, including _weight_ (thicker cells are heavier), _price_ (thicker cells use more material), _lifetime_ (cell thickness may affect how quickly a cell degrades), etc. You should discuss ~2-3 key decision variables that are related to your product's design that you propose to consider. Discuss why you chose these variables, and label them on your diagram of the product design. For each variable, specify units and the range of potential values under consideration. 
+Include a clearly legible image of your model relationships table identifying the basic features of your _product attributes_ as well as the features of current competitors. Use [this example](https://docs.google.com/spreadsheets/d/1iwMI9cbJjB6J8wghZY6Y_fCOSt7MDsUTnSuuC58_xjU/edit?usp=sharing) as a template.
 
-#### Model Relationships Table
+#### Research Questions
 
-Include a clearly legible image of your model relationships table identifying relationships between your _product attributes_ and _decision variables_. For now, these relationships can simply be directional (e.g. _cell thickness_ is positively related to _cell weight_). Use [this example](https://docs.google.com/spreadsheets/d/1iwMI9cbJjB6J8wghZY6Y_fCOSt7MDsUTnSuuC58_xjU/edit?usp=sharing) as a template.
+Your research questions are the central decisions that you are trying to inform with your project, and they often are directly related to the product attributes! For example, a research question on a project about solar panels might be "how thick should the cells be?". This question affects multiple product attributes, such as the _weight_ (thicker cells are heavier), _price_ (thicker cells use more material), _lifetime_ (cell thickness may affect how quickly a cell degrades), etc. You should discuss ~2-3 key research questions that are related to your product's design. Discuss why you chose these questions, and note any relationship between the questions you are asking and the attributes of your product. 
 
 ### Questions
 
 List major outstanding questions (e.g. about the product / technology performance metrics, market opportunities, etc.) that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project.
 
-## 4. Knit and submit
+## 4. Render and submit
 
-Click the "knit" button to compile your `proposal.Rmd` file into a html web page, then create a zip file of everything in your R Project folder. Name your file `proposal.zip`, then go to your team Box folder and submit your zip file in the "submissions" folder. Only one person from your team should submit the report.
+Click the "Render" button to compile your `proposal.qmd` file into a html web page, then create a zip file of everything in your R Project folder. Submit your zip file on Blackboard - only one person from your team should submit the report.
 
 ---
 
