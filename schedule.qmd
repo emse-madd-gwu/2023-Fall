@@ -21,7 +21,7 @@ names(schedule) <- str_to_title(names(schedule))
 done <- schedule %>%
   rename(
       `Final Projects` = Project,
-      `Weekly HW` = Assignments
+      `Weekly HW` = Assign
   ) %>%
   select(
       Week, Date = Date_md, Class, `Weekly HW`, `Final Projects`
