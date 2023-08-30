@@ -518,7 +518,7 @@ class: center, inverse, middle
 
 # Your project starts now!
 
-# [View project Ideas](https://docs.google.com/presentation/d/1Q9f68tm4JWdi2MdSozqXgYtxrGr6VKqO/edit?usp=sharing)
+# [View project Ideas](https://docs.google.com/presentation/d/1bNnsKWkU8FwGHIL_jK72ilXsvhZhr98Q/edit?usp=sharing)
 
 ---
 
