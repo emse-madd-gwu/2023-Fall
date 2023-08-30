@@ -14,6 +14,7 @@ install.packages(c(
     "knitr",
     "logitr",
     "MASS",
+    "quarto",
     "remotes",
     "rmarkdown",
     "tidyverse",
