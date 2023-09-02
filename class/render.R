@@ -12,6 +12,7 @@ tools::compactPDF(paste0(lesson, ".pdf"), gs_quality = 'ebook')
 zip::zip(
     zipfile = paste0(lesson, ".zip"),
     files = c(
-        'intro-to-R.R',
+        'practice.R',
+        'practice-solutions.R',
         paste0(lesson, ".Rproj"))
 )
