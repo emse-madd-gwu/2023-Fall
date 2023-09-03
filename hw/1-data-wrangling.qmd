@@ -43,7 +43,7 @@ If you're unsure where to start with a reflection, try filling out this template
 
 # 6. Submit
 
-Instructions for how to submit your assignment are at the [top of this page]().
+Create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard. (Ignore the instructions at the [top of this page]() - that will be the instructions for all future assignments).
 
 ----
 
