@@ -1,0 +1,47 @@
+---
+title: "Quarto & Plotting"
+params:
+  number: 2
+  purpose: 'The purpose of this assignment is to get familiar with creating plots using the ggplot2 library and to introduce you to the "Quarto" file format.'
+---
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+### 1. Getting Organized
+
+Download and edit [this template](`r url_template`) when working through this assignment. This is for now mostly a blank file that you can use to jot down examples and play with code.
+
+Notice that this week's template is a `.qmd` file, which is called a "Quarto Markdown" file (or just "Quarto" file). You'll learn about what these files are and how they are different from .R files in the readings for this week. From now on, we'll mostly be using Quarto files for our assignments (including your project deliverables).
+
+### 2. Readings
+
+Open up a notebook (physical, digital...whatever you take notes in best), and **take notes** while you go through these readings:
+
+1. Lesson [5 "Data Visualization"](https://jhelvy.github.io/r4aPrimer/L5-data-visualization.html)
+2. Lesson [6 "Reproducible Reporting"](https://jhelvy.github.io/r4aPrimer/L6-reproducible-reporting.html)
+
+### 3. Exercises
+
+Running through these RStudio Primer exercises to practice making charts with ggplot - we'll do more of this in class next week:
+
+1. [Histograms](https://rstudio.cloud/learn/primers/3.3)
+2. [Bar Charts](https://rstudio.cloud/learn/primers/3.2)
+3. [Scatterplots](https://rstudio.cloud/learn/primers/3.5)
+4. [Line Charts](https://rstudio.cloud/learn/primers/3.6)
+
+### 4. Reflect
+
+Reflect on what you've learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your ``r hw_file`` file, and include at least one question. The teaching team will review the questions we get and will try to answer them either in Slack or in class.
+
+If you're unsure where to start with a reflection, try filling out this template:
+
+> "I used to think ______, now I think ______ 🤔"
+
+### 5. Submit
+
+To submit your assignment, follow these instructions:
+
+1. Render your .qmd file by either clicking the "Render" button in RStudio or running the command ``r paste0('quarto::quarto_render("', hw_file, '")')`` command.
+2. Open the rendered html file and make sure it looks good! Is all the formatting as you expected?
+3. Create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard.
