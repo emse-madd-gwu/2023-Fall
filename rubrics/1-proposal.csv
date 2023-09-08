@@ -11,9 +11,9 @@ order,category,label,rating,maxPoints,points,description
 4,marketOpportunity,Market Opportunity,Excellent,10,10 / 9,"Clearly identifies customer, competitors, and estimated market size."
 4,marketOpportunity,Market Opportunity,Good,10,8 / 7 / 6,"Identifies customer, competitors, and estimated market size, but parts are unclear."
 4,marketOpportunity,Market Opportunity,Needs work,10,5 / 4 / 3,"Section is missing a key component: customer, competitors, or estimated market size."
-5,attributesVariables,Product Attributes & Decision Variables,Excellent,10,10 / 9,All product attributes and decision variables are listed; metrics and level ranges are specified; diagram is appropriately labeled; model relationships table is well-defined.
-5,attributesVariables,Product Attributes & Decision Variables,Good,10,8 / 7 / 6,All product attributes and decision variables are listed; metrics and level ranges are not all specified; diagram is poorly labeled; model relationships table not well-defined.
-5,attributesVariables,Product Attributes & Decision Variables,Needs work,10,5 / 4 / 3,"Product attributes and decision variables are listed, but some key ones are missing; metrics and level ranges are not specified; diagram is not labeled; model relationships table is poorly-defined or missing."
+5,attributesQuestions,Product Attributes & Research Questions,Excellent,10,10 / 9,All product attributes and decision variables are listed; metrics and level ranges are specified; diagram is appropriately labeled; product attribute table is well-defined; research questions are clear and well thought out.
+5,attributesQuestions,Product Attributes & Research Questions,Good,10,8 / 7 / 6,All product attributes and decision variables are listed; metrics and level ranges are not all specified; diagram is poorly labeled; product attribute table is not well-defined; research questions are okay but perhaps unclear.
+5,attributesQuestions,Product Attributes & Research Questions,Needs work,10,5 / 4 / 3,"Product attributes and decision variables are listed, but some key ones are missing; metrics and level ranges are not specified; diagram is not labeled; product attribute table is poorly-defined or missing; research questions are poorly formed or missing."
 6,questions,Questions,Excellent,5,5,Includes at leaset three thoughtful questions.
 6,questions,Questions,Good,5,4,Includes one or two thoughtful questions.
 6,questions,Questions,Needs work,5,3,Includes few or no questions.
