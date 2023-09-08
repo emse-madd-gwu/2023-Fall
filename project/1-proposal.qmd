@@ -93,9 +93,21 @@ Summarize your product attributes in a table, identifying the basic features of 
 
 Your research questions are the central decisions that you are trying to inform with your project, and they often are directly related to the product attributes! For example, a research question on a project about solar panels might be "how thick should the cells be?". This question affects multiple product attributes, such as the _weight_ (thicker cells are heavier), _price_ (thicker cells use more material), _lifetime_ (cell thickness may affect how quickly a cell degrades), etc. You should discuss ~2-3 key research questions that are related to your product's design. Discuss why you chose these questions, and note any relationship between the questions you are asking and the attributes of your product. 
 
-### Questions
+### Other Questions
 
 List major outstanding questions (e.g. about the product / technology performance metrics, market opportunities, etc.) that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project.
+
+### Attribution
+
+Include a short description of the specific contributions of each team member in your team. Here is an example:
+
+> - Student A wrote the initial proposal draft.
+> - Student B identified the market opportunity and created the product attribute table. 
+> - Student C helped organize project files and edited the final draft of the proposal. 
+
+If all members contributed equally, you can just put the single sentence "All members contributed equally".
+
+Team members who do not make meaningful contributions to their projects will not receive the same grade as that of their team mates. If you are having any issues or disputes among team members, please contact Professor Helveston ASAP so we can find a resolution.
 
 ## 4. Submit
 
