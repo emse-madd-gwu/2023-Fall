@@ -1,0 +1,27 @@
+---
+title: "Bears Analysis"
+format: 
+  html:
+    toc: true
+    theme: flatly
+    self-contained: true
+---
+
+
+### Which months have the highest frequency of bear killings?
+
+```{r}
+# Write code here
+```
+
+### Who has been killed more often by bears: hunters or hikers?
+
+```{r}
+# Write code here
+```
+
+### How do the the number of bear attacks on men vs women compare?
+
+```{r}
+# Write code here
+```

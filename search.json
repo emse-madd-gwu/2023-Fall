@@ -434,16 +434,114 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/3-rmarkdown-plotting.html",
-    "href": "class/3-rmarkdown-plotting.html",
-    "title": "RMarkdown & Plotting",
+    "objectID": "class/3-quarto-plotting/quarto_demo.html",
+    "href": "class/3-quarto-plotting/quarto_demo.html",
+    "title": "A Quick Quarto Demo",
+    "section": "",
+    "text": "This is a Quarto markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using Quarto see the Quarto website.\nWhen you click the Render button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.\n\n\n\nQuick markdown reference guide: https://commonmark.org/help/\nQuick demo guide: https://markdown-it.github.io/.\nOnline table converter: http://www.tablesgenerator.com"
+  },
+  {
+    "objectID": "class/3-quarto-plotting/quarto_demo.html#useful-tools",
+    "href": "class/3-quarto-plotting/quarto_demo.html#useful-tools",
+    "title": "A Quick Quarto Demo",
+    "section": "",
+    "text": "Quick markdown reference guide: https://commonmark.org/help/\nQuick demo guide: https://markdown-it.github.io/.\nOnline table converter: http://www.tablesgenerator.com"
+  },
+  {
+    "objectID": "class/3-quarto-plotting/quarto_demo.html#using-ggplot",
+    "href": "class/3-quarto-plotting/quarto_demo.html#using-ggplot",
+    "title": "A Quick Quarto Demo",
+    "section": "Using ggplot",
+    "text": "Using ggplot\nHere is an example of how to make a plot with ggplot2:\n\nbears %&gt;%\n  count(month) %&gt;%\n  ggplot() +\n  geom_col(aes(x = as.factor(month), y = n)) +\n  theme_minimal(base_size = 22) + \n  labs(x = \"Month\", y = \"Count\")"
+  },
+  {
+    "objectID": "class/3-quarto-plotting/quarto_demo.html#inserting-an-image-file",
+    "href": "class/3-quarto-plotting/quarto_demo.html#inserting-an-image-file",
+    "title": "A Quick Quarto Demo",
+    "section": "Inserting an image file",
+    "text": "Inserting an image file\nYou can define the side using out.width, like this:"
+  },
+  {
+    "objectID": "class/3-quarto-plotting/ggplot2.html",
+    "href": "class/3-quarto-plotting/ggplot2.html",
+    "title": "Practice with ggplot2",
+    "section": "",
+    "text": "If you put it at the “top level” inside ggplot(aes(...)), the mapping will apply to all levels. For example:\n\nbears %&gt;% \n  count(month) %&gt;%\n  ggplot(aes(x = month, y = n)) +\n  geom_point() + \n  geom_line()\n\n\n\n\nIn contrast, if you put the aes() mapping inside a single geometry layer, it will only apply to that layer. For example, this will cause an error since the geom_line() part doesn’t have an aesthetic mapping:\n\nbears %&gt;% \n  count(month) %&gt;% \n  ggplot() +\n  geom_point(aes(x = month, y = n)) + \n  geom_line()\n\n#&gt; Error in `geom_line()`:\n#&gt; ! Problem while setting up geom.\n#&gt; ℹ Error occurred in the 2nd layer.\n#&gt; Caused by error in `compute_geom_1()`:\n#&gt; ! `geom_line()` requires the following missing aesthetics: x and y"
+  },
+  {
+    "objectID": "class/3-quarto-plotting/ggplot2.html#geom_point",
+    "href": "class/3-quarto-plotting/ggplot2.html#geom_point",
+    "title": "Practice with ggplot2",
+    "section": "geom_point()",
+    "text": "geom_point()\nBasic scatterplot:\n\nmpg %&gt;% \n  ggplot() +\n  geom_point(aes(x = displ, y = hwy))\n\n\n\n\nChange color for all points:\n\nmpg %&gt;% \n  ggplot() +\n  geom_point(aes(x = displ, y = hwy), color = 'blue')\n\n\n\n\nTo change color based on a variable, map the variable to color in aes():\n\nmpg %&gt;% \n  ggplot() +\n  geom_point(aes(x = displ, y = hwy, color = class)) \n\n\n\n\nMap the shape instead of color (usually not a great idea):\n\nmpg %&gt;% \n  ggplot() +\n  geom_point(aes(x = displ, y = hwy, shape = class)) \n\n\n\n\nWhat happened to SUV?"
+  },
+  {
+    "objectID": "class/3-quarto-plotting/ggplot2.html#geom_line-vs.-geom_smooth",
+    "href": "class/3-quarto-plotting/ggplot2.html#geom_line-vs.-geom_smooth",
+    "title": "Practice with ggplot2",
+    "section": "geom_line() vs. geom_smooth()",
+    "text": "geom_line() vs. geom_smooth()\ngeom_line() connects all the dots:\n\nmpg %&gt;% \n  ggplot() +\n  geom_line(aes(x = displ, y = hwy))\n\n\n\n\nThe reason this looks messy is because geom_line() is trying to literally connect every dot from left to right.\nIf you wanted a single “best-fit” trend line, use geom_smooth():\n\nmpg %&gt;% \n  ggplot() +\n  geom_smooth(aes(x = displ, y = hwy))\n\n\n\n\nSet se = FALSE to drop the error bounds:\n\nmpg %&gt;% \n  ggplot() +\n  geom_smooth(aes(x = displ, y = hwy), se = FALSE)"
+  },
+  {
+    "objectID": "class/3-quarto-plotting/ggplot2.html#geom_col",
+    "href": "class/3-quarto-plotting/ggplot2.html#geom_col",
+    "title": "Practice with ggplot2",
+    "section": "geom_col()",
+    "text": "geom_col()\nFor these examples, I’m creating a smaller summary data frame first that just counts how many rows there are for each class:\n\nmpg %&gt;% \n  count(class)\n\n#&gt; # A tibble: 7 × 2\n#&gt;   class          n\n#&gt;   &lt;chr&gt;      &lt;int&gt;\n#&gt; 1 2seater        5\n#&gt; 2 compact       47\n#&gt; 3 midsize       41\n#&gt; 4 minivan       11\n#&gt; 5 pickup        33\n#&gt; 6 subcompact    35\n#&gt; 7 suv           62\n\n\nBasic bar plot of the counts:\n\nmpg %&gt;% \n  count(class) %&gt;% \n  ggplot() +\n  geom_col(aes(x = class, y = n), width = 0.7) # width is width of bars\n\n\n\n\nRe-order bars based on count using reorder():\n\nmpg %&gt;% \n  count(class) %&gt;% \n  ggplot() +\n  geom_col(aes(x = reorder(class, n), y = n), width = 0.7)\n\n\n\n\nTo change the color for all bars, use fill (not color):\n\nmpg %&gt;% \n  count(class) %&gt;% \n  ggplot() +\n  geom_col(aes(x = reorder(class, n), y = n), fill = 'blue', width = 0.7)\n\n\n\n\nTo change color based on a variable, map the variable to fill in aes():\n\nmpg %&gt;% \n  count(class, drv) %&gt;% # Note I had to include drv in the count too \n  ggplot() +\n  geom_col(aes(x = reorder(class, n), y = n, fill = drv), width = 0.7) \n\n\n\n\nUse position = 'dodge' to change from stacked to side-by-side:\n\nmpg %&gt;% \n  count(class, drv) %&gt;% # Note I had to include drv in the count too \n  ggplot() +\n  geom_col(\n    aes(x = reorder(class, n), y = n, fill = drv), \n    position = \"dodge\", width = 0.7)"
+  },
+  {
+    "objectID": "class/3-quarto-plotting/bears.html",
+    "href": "class/3-quarto-plotting/bears.html",
+    "title": "Bears Analysis",
+    "section": "",
+    "text": "Which months have the highest frequency of bear killings?\n\n# Write code here\n\n\n\nWho has been killed more often by bears: hunters or hikers?\n\n# Write code here\n\n\n\nHow do the the number of bear attacks on men vs women compare?\n\n# Write code here"
+  },
+  {
+    "objectID": "class/2-data-wrangling.html",
+    "href": "class/2-data-wrangling.html",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "KEYBOARD SHORTCUTS FOR SLIDES:\n\nUse ← and → to navigate through the slides.\nUse f to toggle full screen.\nUse o to view an overview of all slides.\nUse h to see a list of other shortcuts.\n\n\n\n\nSLIDES\n View slides\n Download PDF\n\n\n\n\nCLASS PRACTICE\n Notes zip file"
+  },
+  {
+    "objectID": "class/13-communicating-results.html",
+    "href": "class/13-communicating-results.html",
+    "title": "Communicating Results",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/14-final-presentations.html",
-    "href": "class/14-final-presentations.html",
-    "title": "Final Presentations",
+    "objectID": "class/11-heterogeneity.html",
+    "href": "class/11-heterogeneity.html",
+    "title": "Heterogeneity",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/1-getting-started.html",
+    "href": "class/1-getting-started.html",
+    "title": "Getting Started",
+    "section": "",
+    "text": "KEYBOARD SHORTCUTS FOR SLIDES:\n\nUse ← and → to navigate through the slides.\nUse f to toggle full screen.\nUse o to view an overview of all slides.\nUse h to see a list of other shortcuts.\n\n\n\n\nSLIDES\n View slides\n Download PDF\n\n\n\n\nCLASS PRACTICE\n Notes zip file"
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "Licensing and copyright information",
+    "section": "",
+    "text": "The course material is licensed under the Creative Commons Attribution 4.0 International License and the course code is licensed under a MIT License by John Helveston."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions.\nThis course was first created by Dr. John Paul Helveston at the George Washington University for the Spring 2019 semester of EMSE 6035, which was previously called Marketing of Technology. See the LICENSE page for information about reusing and sharing content."
+  },
+  {
+    "objectID": "class/10-wtp-simulation.html",
+    "href": "class/10-wtp-simulation.html",
+    "title": "WTP & Simulations",
     "section": "",
     "text": "Coming soon!"
   },
@@ -455,53 +553,53 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/10-wtp-simulation.html",
-    "href": "class/10-wtp-simulation.html",
-    "title": "WTP & Simulations",
+    "objectID": "class/14-final-presentations.html",
+    "href": "class/14-final-presentations.html",
+    "title": "Final Presentations",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions.\nThis course was first created by Dr. John Paul Helveston at the George Washington University for the Spring 2019 semester of EMSE 6035, which was previously called Marketing of Technology. See the LICENSE page for information about reusing and sharing content."
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "Licensing and copyright information",
-    "section": "",
-    "text": "The course material is licensed under the Creative Commons Attribution 4.0 International License and the course code is licensed under a MIT License by John Helveston."
-  },
-  {
-    "objectID": "class/1-getting-started.html",
-    "href": "class/1-getting-started.html",
-    "title": "Getting Started",
-    "section": "",
-    "text": "KEYBOARD SHORTCUTS FOR SLIDES:\n\nUse ← and → to navigate through the slides.\nUse f to toggle full screen.\nUse o to view an overview of all slides.\nUse h to see a list of other shortcuts.\n\n\n\n\nSLIDES\n View slides\n Download PDF\n\n\n\n\nCLASS PRACTICE\n Notes zip file"
-  },
-  {
-    "objectID": "class/11-heterogeneity.html",
-    "href": "class/11-heterogeneity.html",
-    "title": "Heterogeneity",
+    "objectID": "class/3-quarto-plotting.html",
+    "href": "class/3-quarto-plotting.html",
+    "title": "Quarto & Plotting",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/13-communicating-results.html",
-    "href": "class/13-communicating-results.html",
-    "title": "Communicating Results",
+    "objectID": "class/3-quarto-plotting/bears_solutions.html",
+    "href": "class/3-quarto-plotting/bears_solutions.html",
+    "title": "Bears Analysis",
     "section": "",
-    "text": "Coming soon!"
+    "text": "Which months have the highest frequency of bear killings?\n\nbears %&gt;% \n  count(month) %&gt;% \n  arrange(desc(n))\n\n#&gt; # A tibble: 12 × 2\n#&gt;    month     n\n#&gt;    &lt;dbl&gt; &lt;int&gt;\n#&gt;  1     8    28\n#&gt;  2     7    27\n#&gt;  3     9    25\n#&gt;  4    10    25\n#&gt;  5     6    20\n#&gt;  6     5    18\n#&gt;  7    11    12\n#&gt;  8     4     4\n#&gt;  9     1     3\n#&gt; 10    12     2\n#&gt; 11     2     1\n#&gt; 12     3     1\n\n\nMost attacks occur during the summer, with August having the highest number of attacks.\n\n\nWho has been killed more often by bears: hunters or hikers?\n\nbears %&gt;% \n  count(hunter, hiker)\n\n#&gt; # A tibble: 3 × 3\n#&gt;   hunter hiker     n\n#&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt;\n#&gt; 1      0     0   144\n#&gt; 2      0     1     6\n#&gt; 3      1     0    16\n\n\nAlthough hunters are killed more often than hikers, the vast majority of the data set does not record the hunter / hiker status of the victims.\n\n\nHow do the the number of bear attacks on men vs women compare?\n\nbears %&gt;% \n  count(gender)\n\n#&gt; # A tibble: 3 × 2\n#&gt;   gender     n\n#&gt;   &lt;chr&gt;  &lt;int&gt;\n#&gt; 1 female    43\n#&gt; 2 male     122\n#&gt; 3 &lt;NA&gt;       1\n\n\nFar more attacks have involved men than women."
   },
   {
-    "objectID": "class/2-data-wrangling.html",
-    "href": "class/2-data-wrangling.html",
-    "title": "Data Wrangling",
+    "objectID": "class/3-quarto-plotting/ggplot2_solutions.html",
+    "href": "class/3-quarto-plotting/ggplot2_solutions.html",
+    "title": "Practice with ggplot2",
     "section": "",
-    "text": "KEYBOARD SHORTCUTS FOR SLIDES:\n\nUse ← and → to navigate through the slides.\nUse f to toggle full screen.\nUse o to view an overview of all slides.\nUse h to see a list of other shortcuts.\n\n\n\n\nSLIDES\n View slides\n Download PDF\n\n\n\n\nCLASS PRACTICE\n Notes zip file"
+    "text": "If you put it at the “top level” inside ggplot(aes(...)), the mapping will apply to all levels. For example:\n\nbears %&gt;% \n  count(month) %&gt;%\n  ggplot(aes(x = month, y = n)) +\n  geom_point() + \n  geom_line()\n\n\n\n\nIn contrast, if you put the aes() mapping inside a single geometry layer, it will only apply to that layer. For example, this will cause an error since the geom_line() part doesn’t have an aesthetic mapping:\n\nbears %&gt;% \n  count(month) %&gt;% \n  ggplot() +\n  geom_point(aes(x = month, y = n)) + \n  geom_line()\n\n#&gt; Error in `geom_line()`:\n#&gt; ! Problem while setting up geom.\n#&gt; ℹ Error occurred in the 2nd layer.\n#&gt; Caused by error in `compute_geom_1()`:\n#&gt; ! `geom_line()` requires the following missing aesthetics: x and y"
+  },
+  {
+    "objectID": "class/3-quarto-plotting/ggplot2_solutions.html#geom_point",
+    "href": "class/3-quarto-plotting/ggplot2_solutions.html#geom_point",
+    "title": "Practice with ggplot2",
+    "section": "geom_point()",
+    "text": "geom_point()\nBasic scatterplot:\n\nmpg %&gt;% \n  ggplot() +\n  geom_point(aes(x = displ, y = hwy))\n\n\n\n\nChange color for all points:\n\nmpg %&gt;% \n  ggplot() +\n  geom_point(aes(x = displ, y = hwy), color = 'blue')\n\n\n\n\nTo change color based on a variable, map the variable to color in aes():\n\nmpg %&gt;% \n  ggplot() +\n  geom_point(aes(x = displ, y = hwy, color = class)) \n\n\n\n\nMap the shape instead of color (usually not a great idea):\n\nmpg %&gt;% \n  ggplot() +\n  geom_point(aes(x = displ, y = hwy, shape = class)) \n\n\n\n\nWhat happened to SUV?"
+  },
+  {
+    "objectID": "class/3-quarto-plotting/ggplot2_solutions.html#geom_line-vs.-geom_smooth",
+    "href": "class/3-quarto-plotting/ggplot2_solutions.html#geom_line-vs.-geom_smooth",
+    "title": "Practice with ggplot2",
+    "section": "geom_line() vs. geom_smooth()",
+    "text": "geom_line() vs. geom_smooth()\ngeom_line() connects all the dots:\n\nmpg %&gt;% \n  ggplot() +\n  geom_line(aes(x = displ, y = hwy))\n\n\n\n\nThe reason this looks messy is because geom_line() is trying to literally connect every dot from left to right.\nIf you wanted a single “best-fit” trend line, use geom_smooth():\n\nmpg %&gt;% \n  ggplot() +\n  geom_smooth(aes(x = displ, y = hwy))\n\n\n\n\nSet se = FALSE to drop the error bounds:\n\nmpg %&gt;% \n  ggplot() +\n  geom_smooth(aes(x = displ, y = hwy), se = FALSE)"
+  },
+  {
+    "objectID": "class/3-quarto-plotting/ggplot2_solutions.html#geom_col",
+    "href": "class/3-quarto-plotting/ggplot2_solutions.html#geom_col",
+    "title": "Practice with ggplot2",
+    "section": "geom_col()",
+    "text": "geom_col()\nFor these examples, I’m creating a smaller summary data frame first that just counts how many rows there are for each class:\n\nmpg %&gt;% \n  count(class)\n\n#&gt; # A tibble: 7 × 2\n#&gt;   class          n\n#&gt;   &lt;chr&gt;      &lt;int&gt;\n#&gt; 1 2seater        5\n#&gt; 2 compact       47\n#&gt; 3 midsize       41\n#&gt; 4 minivan       11\n#&gt; 5 pickup        33\n#&gt; 6 subcompact    35\n#&gt; 7 suv           62\n\n\nBasic bar plot of the counts:\n\nmpg %&gt;% \n  count(class) %&gt;% \n  ggplot() +\n  geom_col(aes(x = class, y = n), width = 0.7) # width is width of bars\n\n\n\n\nRe-order bars based on count using reorder():\n\nmpg %&gt;% \n  count(class) %&gt;% \n  ggplot() +\n  geom_col(aes(x = reorder(class, n), y = n), width = 0.7)\n\n\n\n\nTo change the color for all bars, use fill (not color):\n\nmpg %&gt;% \n  count(class) %&gt;% \n  ggplot() +\n  geom_col(aes(x = reorder(class, n), y = n), fill = 'blue', width = 0.7)\n\n\n\n\nTo change color based on a variable, map the variable to fill in aes():\n\nmpg %&gt;% \n  count(class, drv) %&gt;% # Note I had to include drv in the count too \n  ggplot() +\n  geom_col(aes(x = reorder(class, n), y = n, fill = drv), width = 0.7)\n\n\n\n\nUse position = 'dodge' to change from stacked to side-by-side:\n\nmpg %&gt;% \n  count(class, drv) %&gt;% # Note I had to include drv in the count too \n  ggplot() +\n  geom_col(\n    aes(x = reorder(class, n), y = n, fill = drv),\n    position = \"dodge\", width = 0.7)"
   },
   {
     "objectID": "class/4-intro-to-formr.html",

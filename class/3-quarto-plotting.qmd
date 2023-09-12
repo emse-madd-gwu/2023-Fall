@@ -1,0 +1,14 @@
+---
+title: "Quarto & Plotting"
+toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
+params:
+  class: "3-quarto-plotting"
+  logitrcars: FALSE
+  formr4conjoint: FALSE
+---
+
+Coming soon!
