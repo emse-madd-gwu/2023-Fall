@@ -20,19 +20,11 @@ output:
       ratio: "16:9"
 ---
 
-```{r}
-#| label: setup
-#| include: false
+```{r setup, child="../setup.Rmd"}
+```
 
-knitr::opts_chunk$set(
-    warning = FALSE,
-    message = FALSE,
-    fig.path = "figs/",
-    fig.width = 7.252,
-    fig.height = 4,
-    comment = "#>",
-    fig.retina = 3
-)
+```{r}
+#| include: false
 
 # For this class
 data <- mtcars
