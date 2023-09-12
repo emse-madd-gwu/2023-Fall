@@ -107,5 +107,5 @@ You can define the side using `out.width`, like this:
 #| out.width: 20%
 #| fig.align: center
 
-knitr::include_graphics("images/logo.png")
+knitr::include_graphics("logo.png")
 ```
