@@ -1,0 +1,58 @@
+---
+title: "Bears Analysis"
+format: 
+  html:
+    toc: true
+    theme: flatly
+    self-contained: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+knitr::opts_chunk$set(
+    warning = FALSE,
+    message = FALSE,
+    fig.path = "figs/",
+    fig.width = 7.252,
+    fig.height = 4,
+    comment = "#>",
+    fig.retina = 3
+)
+
+# Load libraries
+library(tidyverse)
+library(here)
+
+# Read in data 
+bears <- read_csv(here::here('data', 'bear_killings.csv'))
+```
+
+### Which months have the highest frequency of bear killings?
+
+```{r}
+bears %>% 
+  count(month) %>% 
+  arrange(desc(n))
+```
+
+Most attacks occur during the **summer**, with August having the highest number of attacks.
+
+### Who has been killed more often by bears: hunters or hikers?
+
+```{r}
+bears %>% 
+  count(hunter, hiker)
+```
+
+Although *hunters* are killed more often than *hikers*, the vast majority of the data set does not record the hunter / hiker status of the victims. 
+
+### How do the the number of bear attacks on men vs women compare?
+
+```{r}
+bears %>% 
+  count(gender)
+```
+
+Far more attacks have involved men than women. 
