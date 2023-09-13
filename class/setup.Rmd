@@ -41,10 +41,10 @@ meta() %>%
     description = rmarkdown::metadata$subtitle,
     generator = "xaringan and remark.js"
   ) %>%
-  meta_name("github-repo" = "emse-eda-gwu/2023-Fall") %>%
+  meta_name("github-repo" = "emse-madd-gwu/2023-Fall") %>%
   meta_social(
     title = rmarkdown::metadata$title,
-    url = "https://eda.seas.gwu.edu/2023-Fall/",
+    url = "https://madd.seas.gwu.edu/2023-Fall/",
     og_type = "website",
     og_author = "John Paul Helveston",
     twitter_card_type = "summary_large_image",
@@ -53,7 +53,7 @@ meta() %>%
 
 # Setup class-specific paths
 class <- rmarkdown::metadata$class
-root <- paste0("https://eda.seas.gwu.edu/2023-Fall/class/", class, "/")
+root <- paste0("https://madd.seas.gwu.edu/2023-Fall/class/", class, "/")
 path_slides <- file.path("class", class, "index.html")
 path_pdf <- paste0(root, class, ".pdf")
 path_notes <- paste0(root, class, ".zip")
@@ -64,7 +64,7 @@ class: middle, inverse
 .leftcol30[
 
 <center>
-<img src="https://eda.seas.gwu.edu/images/logo.png" width=250>
+<img src="https://madd.seas.gwu.edu/images/logo.png" width=250>
 </center>
 
 ]
