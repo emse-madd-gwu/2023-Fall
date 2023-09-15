@@ -150,6 +150,10 @@ Policy 2 | Brief description | Hard to enforce | Cheap
 
 For each policy, identify the key attributes that your target population will observe. For example, if the policy involves a fee or tax, then the _amount_ of that fee or tax would be a key attribute. For each attribute, specify the range of possible levels you plan to explore (e.g. for _amount_ you may choose the range $1 - $10). You should choose levels that reflect the range of existing policies or potential policies. You may choose to include policies / attributes that have not yet been implemented as well.
 
+### Research Questions
+
+Your research questions are the central decisions that you are trying to inform with your project, and they often are directly related to the policy options and attributes. 
+
 ### Questions
 
 List major outstanding questions that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project.
