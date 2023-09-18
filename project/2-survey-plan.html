@@ -62,6 +62,9 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="EMSE 6035 - Survey Plan">
@@ -273,7 +276,19 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#get-organized" id="toc-get-organized" class="nav-link active" data-scroll-target="#get-organized">1. Get Organized</a></li>
+  <li><a href="#specify-the-target-population" id="toc-specify-the-target-population" class="nav-link" data-scroll-target="#specify-the-target-population">2. Specify the Target Population</a></li>
+  <li><a href="#specify-the-conjoint-question" id="toc-specify-the-conjoint-question" class="nav-link" data-scroll-target="#specify-the-conjoint-question">3. Specify the Conjoint Question</a></li>
+  <li><a href="#specify-other-survey-content" id="toc-specify-other-survey-content" class="nav-link" data-scroll-target="#specify-other-survey-content">4. Specify Other Survey Content</a></li>
+  <li><a href="#attribution" id="toc-attribution" class="nav-link" data-scroll-target="#attribution">4. Attribution</a></li>
+  <li><a href="#submit" id="toc-submit" class="nav-link" data-scroll-target="#submit">5. Submit</a></li>
+  <li><a href="#grading-rubric" id="toc-grading-rubric" class="nav-link" data-scroll-target="#grading-rubric">Grading Rubric</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/emse-madd-gwu/2023-Fall/edit/main/project/2-survey-plan.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/emse-madd-gwu/2023-Fall/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -295,9 +310,147 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Coming soon!</p>
+<blockquote class="blockquote">
+<p><strong>Due</strong>: Oct 03 by 11:59pm</p>
+<p><strong>Submission Instructions</strong>: Render your .qmd file, then create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard. <strong>Only one person from your team should submit the report</strong>.</p>
+<p><strong>Weight</strong>: This assignment is worth 5% of your final grade.</p>
+<p><strong>Assessment</strong>: Your submission will be assessed using the <a href="#grading-rubric">rubric</a> at the bottom of this page.</p>
+</blockquote>
+<p>As a team, write a <strong>survey plan</strong> to guide your survey design in formr. This plan does not have to be “set in stone” but rather a first attempt at defining the scope and general content of your survey. The course instructor will review and grade your plan and provide written feedback to guide the development of your pilot survey. Follow the instructions below to prepare your survey plan.</p>
+<section id="get-organized" class="level1">
+<h1>1. Get Organized</h1>
+<p>Download and unzip <a href="../templates/survey-plan.zip">this template</a> for your survey plan. Open the <code>survey_plan.Rproj</code> file and write your plan in the <code>survey_plan.qmd</code> file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:</p>
+<ul>
+<li>Write your project title in the <code>title</code> field (and provide a subtitle if you wish, or delete the <code>subtitle</code> field).</li>
+<li>In the <code>author</code> field, list the names of all teammates, e.g.&nbsp;<code>author: Luke Skywalker, Leia Organa, and Han Solo</code>.</li>
+</ul>
+</section>
+<section id="specify-the-target-population" class="level1">
+<h1>2. Specify the Target Population</h1>
+<p>What is the ideal population you would like to take your survey? If you cannot access this population, is there a different or similar population that you are planning to target?</p>
+<p>Write out your eligibility requirements for people to be considered part of your target population. Be specific. Write the exact question language you plan to use in your survey (e.g.&nbsp;“Are you a car owner?”) to identify the target sample. You may need to ask more than one question.</p>
+<p>By default, we will pay users on <a href="https://www.prolific.co/">prolific.co</a> (i.e.&nbsp;people from the general U.S. population) to take your survey, but if a specific subpopulation is required (e.g.&nbsp;people currently shopping for a car), list that here and perhaps one or two strategies for reaching that population. If you have any other opportunities to distribute your survey to the target population (e.g.&nbsp;an external collaborator, personal networks, etc.), list those here.</p>
+</section>
+<section id="specify-the-conjoint-question" class="level1">
+<h1>3. Specify the Conjoint Question</h1>
+<p>Write the text of a conjoint choice question you plan on asking your respondents. This needs to be a specific choice question. Below your question, list in a table the attributes and levels you will include in your conjoint questions (these may change between now and the actual final survey).</p>
+<p>For example, for a survey on car preferences, you might use this as a question:</p>
+<blockquote class="blockquote">
+<p>“If these were your only options, which vehicle would you choose?”</p>
+</blockquote>
+<p>And you might use these as some possible attributes and levels:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Levels</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Price</td>
+<td>15, 20, 25</td>
+<td>$1000</td>
+</tr>
+<tr class="even">
+<td>Fuel economy</td>
+<td>20, 25, 30</td>
+<td>Miles per gallon</td>
+</tr>
+<tr class="odd">
+<td>Acceleration time</td>
+<td>6, 7, 8</td>
+<td>Seconds (from 0-60 mph)</td>
+</tr>
+<tr class="even">
+<td>Powertrain</td>
+<td>Gasoline, Electric</td>
+<td>Type</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="specify-other-survey-content" class="level1">
+<h1>4. Specify Other Survey Content</h1>
+<p>Your survey plan should include the following additional content (much of this will go directly into your pilot survey):</p>
+<ul>
+<li><strong>Welcome page text</strong>: Welcome your survey respondents and inform them in just a few sentences who you are and what the survey is about.</li>
+<li><strong>Consent page text</strong>: Write out the text of a consent form and include restrictions at least for 18 years of age and the statement “I have read and understand the above information” (in your survey, this can go on the welcome page).</li>
+<li><strong>Education information</strong>: Write out descriptions of the attributes you will include in your conjoint questions so that you can explain them to your survey respondents. Use common, simple language and as few words as possible. Include illustrative images if possible.</li>
+<li><strong>Critical respondent information</strong>: What pieces of information about your respondent are absolutely necessary for your analysis (e.g.&nbsp;demographic factors like income, age, etc., or other information specific to the market for your product). Again, write the specific questions you plan on asking.</li>
+<li><strong>Other questions</strong>: What other information about your respondents would be helpful in your analysis? Are you planning on asking any behavioral or demographic questions? Include the specific question text you plan to include.</li>
+</ul>
+</section>
+<section id="attribution" class="level1">
+<h1>4. Attribution</h1>
+<p>Include a short description of the specific contributions of each team member for this report. If all members contributed equally, you can just put the single sentence “All members contributed equally”.</p>
+<p>Team members who do not make meaningful contributions to their projects will not receive the same grade as that of their team mates. If you are having any issues or disputes among team members, please contact Professor Helveston ASAP so we can find a resolution.</p>
+</section>
+<section id="submit" class="level1">
+<h1>5. Submit</h1>
+<p>Instructions for how to submit your assignment are at the <a href="">top of this page</a>.</p>
+</section>
+<section id="grading-rubric" class="level1">
+<h1>Grading Rubric</h1>
+<p><strong>35 Total Points</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<table class="table table-striped table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Category</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Excellent</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Good</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Needs work</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Organization &amp; Formatting</td>
+<td style="text-align: left;"><strong>5</strong><br>
+All formatting guidelines are followed; YAML is correct with all team members listed; Rmd compiles to html.</td>
+<td style="text-align: left;"><strong>4</strong><br>
+Most formatting guidelines are followed; YAML is correct with all team members listed; Rmd might require one fix to compile to html.</td>
+<td style="text-align: left;"><strong>3</strong><br>
+Several or all formatting guidelines not followed; YAML contains elements that aren't updated from the template; Rmd requires mutliple fixes to compile to html.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Target Population</td>
+<td style="text-align: left;"><strong>10 / 9</strong><br>
+Target population clearly identified; fielding strategy is discussed; eligibility requirement question text is specified.</td>
+<td style="text-align: left;"><strong>8 / 7 / 6</strong><br>
+Target population identified, though may need to be refined; fielding strategy is discussed; eligibility requirement question text needs to be refined.</td>
+<td style="text-align: left;"><strong>5 / 4 / 3</strong><br>
+Target population unclear; fielding strategy missing; eligibility requirement question text needs to be refined or is missing.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Conjoint Questions</td>
+<td style="text-align: left;"><strong>10 / 9</strong><br>
+Exact conjoint question text is clear and specific; table of all attributes are included.</td>
+<td style="text-align: left;"><strong>8 / 7 / 6</strong><br>
+Conjoint question text could be improved; table of all attributes are included with some attributes missing.</td>
+<td style="text-align: left;"><strong>5 / 4 / 3</strong><br>
+Conjoint question text is missing or poorly written / unclear; table of all attributes is missing or unclear.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Other Content</td>
+<td style="text-align: left;"><strong>10 / 9</strong><br>
+All required survey components are specified with clear, precise question text included.</td>
+<td style="text-align: left;"><strong>8 / 7 / 6</strong><br>
+Some but not all required survey components are specified.</td>
+<td style="text-align: left;"><strong>5 / 4 / 3</strong><br>
+Missing multiple of the required survey components, question text is unclear.</td>
+</tr>
+</tbody>
+</table>
 
 
+</div>
+</div>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -559,7 +712,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
  © 2023 John Paul Helveston <a href="LICENSE.html"><i class="fab fa-creative-commons"></i><i class="fab fa-creative-commons-by"></i><i class="fab fa-creative-commons-sa"></i></a><br><i class="far fa-calendar-alt"></i> Wednesdays | <i class="far fa-clock"></i> 6:10PM - 8:40PM EST | <a href="https://acadtech.gwu.edu/main-classroom-search/bell-hall-109"><i class="fa fa-map-marker-alt"></i> Bell Hall 109</a><br><a href="https://www.jhelvy.com"><i class="fas fa-user"></i> Dr. John Paul Helveston</a> | <a href="mailto:jph@gwu.edu"><i class="fas fa-envelope"></i> jph@gwu.edu</a> | <a href="https://github.com/emse-madd-gwu/2023-Fall"><i class="fab fa-github"></i></a>
   </li>  
 </ul>
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/emse-madd-gwu/2023-Fall/edit/main/project/2-survey-plan.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/emse-madd-gwu/2023-Fall/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

@@ -8,7 +8,92 @@ execute:
   message: false
 params:
   number: 2
-  weight: '4%'
+  weight: '5%'
 ---
 
-Coming soon!
+```{r}
+#| label: setup
+
+source(here::here("_common.R"))
+
+rubric <- read_csv(here::here('rubrics', '2-survey-plan.csv'))
+maxPoints <- rubric %>%
+    filter(rating == "Excellent") %>%
+    summarise(max = sum(maxPoints)) %>%
+    pull(max)
+```
+
+```{r child = here::here("fragments", "project.qmd")}
+```
+
+As a team, write a **survey plan** to guide your survey design in formr. This plan does not have to be "set in stone" but rather a first attempt at defining the scope and general content of your survey. The course instructor will review and grade your plan and provide written feedback to guide the development of your pilot survey. Follow the instructions below to prepare your survey plan.
+
+# 1. Get Organized
+
+Download and unzip [this template](../templates/survey-plan.zip) for your survey plan. Open the `survey_plan.Rproj` file and write your plan in the `survey_plan.qmd` file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:
+
+- Write your project title in the `title` field (and provide a subtitle if you wish, or delete the `subtitle` field).
+ - In the `author` field, list the names of all teammates, e.g. `author: Luke Skywalker, Leia Organa, and Han Solo`.
+
+# 2. Specify the Target Population
+
+What is the ideal population you would like to take your survey? If you cannot access this population, is there a different or similar population that you are planning to target?
+
+Write out your eligibility requirements for people to be considered part of your target population. Be specific. Write the exact question language you plan to use in your survey (e.g. "Are you a car owner?") to identify the target sample. You may need to ask more than one question.
+
+By default, we will pay users on [prolific.co](https://www.prolific.co/) (i.e. people from the general U.S. population) to take your survey, but if a specific subpopulation is required (e.g. people currently shopping for a car), list that here and perhaps one or two strategies for reaching that population. If you have any other opportunities to distribute your survey to the target population (e.g. an external collaborator, personal networks, etc.), list those here.
+
+# 3. Specify the Conjoint Question 
+
+Write the text of a conjoint choice question you plan on asking your respondents. This needs to be a specific choice question. Below your question, list in a table the attributes and levels you will include in your conjoint questions (these may change between now and the actual final survey). 
+
+For example, for a survey on car preferences, you might use this as a question:
+
+> "If these were your only options, which vehicle would you choose?"
+
+And you might use these as some possible attributes and levels:
+
+Attribute | Levels | Unit
+----------|--------|--------
+Price | 15, 20, 25 | $1000
+Fuel economy | 20, 25, 30 | Miles per gallon
+Acceleration time | 6, 7, 8 | Seconds (from 0-60 mph)
+Powertrain | Gasoline, Electric | Type
+
+# 4. Specify Other Survey Content
+
+Your survey plan should include the following additional content (much of this will go directly into your pilot survey):
+
+- **Welcome page text**: Welcome your survey respondents and inform them in just a few sentences who you are and what the survey is about.
+- **Consent page text**: Write out the text of a consent form and include restrictions at least for 18 years of age and the statement "I have read and understand the above information" (in your survey, this can go on the welcome page).
+- **Education information**: Write out descriptions of the attributes you will include in your conjoint questions so that you can explain them to your survey respondents. Use common, simple language and as few words as possible. Include illustrative images if possible.
+- **Critical respondent information**: What pieces of information about your respondent are absolutely necessary for your analysis (e.g. demographic factors like income, age, etc., or other information specific to the market for your product). Again, write the specific questions you plan on asking.
+- **Other questions**: What other information about your respondents would be helpful in your analysis? Are you planning on asking any behavioral or demographic questions? Include the specific question text you plan to include.
+
+# 4. Attribution
+
+Include a short description of the specific contributions of each team member for this report. If all members contributed equally, you can just put the single sentence "All members contributed equally".
+
+Team members who do not make meaningful contributions to their projects will not receive the same grade as that of their team mates. If you are having any issues or disputes among team members, please contact Professor Helveston ASAP so we can find a resolution.
+
+# 5. Submit
+
+Instructions for how to submit your assignment are at the [top of this page](). 
+
+# Grading Rubric
+
+**`r maxPoints` Total Points**
+
+```{r, echo=FALSE}
+rubric %>%
+  mutate(description = paste0("<b>", points, '</b><br>', description)) %>%
+  select(-points) %>%
+  spread(key = rating, value = description) %>%
+  select(-category) %>%
+  rename(Category = label) %>%
+  arrange(order) %>%
+  select(-order) %>%
+  select(-maxPoints) %>%
+  kable(format = 'html', escape = FALSE) %>%
+  kable_styling(bootstrap_options = "striped")
+```
