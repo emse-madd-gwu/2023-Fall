@@ -11,12 +11,15 @@ order,category,label,rating,maxPoints,points,description
 4,marketOpportunity,Market Opportunity,Excellent,10,10 / 9,"Clearly identifies customer, competitors, and estimated market size."
 4,marketOpportunity,Market Opportunity,Good,10,8 / 7 / 6,"Identifies customer, competitors, and estimated market size, but parts are unclear."
 4,marketOpportunity,Market Opportunity,Needs work,10,5 / 4 / 3,"Section is missing a key component: customer, competitors, or estimated market size."
-5,attributesQuestions,Product Attributes & Research Questions,Excellent,10,10 / 9,All product attributes and decision variables are listed; metrics and level ranges are specified; diagram is appropriately labeled; product attribute table is well-defined; research questions are clear and well thought out.
-5,attributesQuestions,Product Attributes & Research Questions,Good,10,8 / 7 / 6,All product attributes and decision variables are listed; metrics and level ranges are not all specified; diagram is poorly labeled; product attribute table is not well-defined; research questions are okay but perhaps unclear.
-5,attributesQuestions,Product Attributes & Research Questions,Needs work,10,5 / 4 / 3,"Product attributes and decision variables are listed, but some key ones are missing; metrics and level ranges are not specified; diagram is not labeled; product attribute table is poorly-defined or missing; research questions are poorly formed or missing."
-6,questions,Questions,Excellent,5,5,Includes at leaset three thoughtful questions.
-6,questions,Questions,Good,5,4,Includes one or two thoughtful questions.
-6,questions,Questions,Needs work,5,3,Includes few or no questions.
-7,writing,Writing Quality,Excellent,5,5,"Writing is clear, concise, and logically-structured; ideas are easily understood."
-7,writing,Writing Quality,Good,5,4,Writing is clear but verbose and the structure could be improved; ideas are mostly easily understood.
-7,writing,Writing Quality,Needs work,5,3,"Writing is not clear, verbose, and poorly-structured; ideas are not easily understood."
+5,productAttributes,Product Attributes,Excellent,10,10 / 9,All product attributes being considered are listed and well-described; metrics and level ranges are specified; diagram is appropriately labeled; product attribute table is well-defined.
+5,productAttributes,Product Attributes,Good,10,8 / 7 / 6,All product attributes being considered are listed; metrics and level ranges are not all specified; diagram is poorly labeled; product attribute table is not well-defined.
+5,productAttributes,Product Attributes,Needs work,10,5 / 4 / 3,"Product attributes are listed, but some key ones are missing; metrics and level ranges are not specified; diagram is not labeled; product attribute table is poorly-defined or missing."
+6,researchQuestions,Research Questions,Excellent,10,10 / 9,Research questions are clear and well thought out; questions directly relate to product attributes / policies being considered.
+6,researchQuestions,Research Questions,Good,10,8 / 7 / 6,"Research questions are acceptable, but could be improved; questions relate to product attributes / policies being considered, but some connections aren’t clear."
+6,researchQuestions,Research Questions,Needs work,10,5 / 4 / 3,Research questions are poorly thought out and / or unrelated to the product attributes / policies being considered.
+7,questions,Questions,Excellent,5,5,Includes at leaset three thoughtful questions.
+7,questions,Questions,Good,5,4,Includes one or two thoughtful questions.
+7,questions,Questions,Needs work,5,3,Includes few or no questions.
+8,writing,Writing Quality,Excellent,5,5,"Writing is clear, concise, and logically-structured; ideas are easily understood."
+8,writing,Writing Quality,Good,5,4,Writing is clear but verbose and the structure could be improved; ideas are mostly easily understood.
+8,writing,Writing Quality,Needs work,5,3,"Writing is not clear, verbose, and poorly-structured; ideas are not easily understood."
