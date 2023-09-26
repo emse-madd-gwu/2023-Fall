@@ -43,15 +43,15 @@ Write out your eligibility requirements for people to be considered part of your
 
 By default, we will pay users on [prolific.co](https://www.prolific.co/) (i.e. people from the general U.S. population) to take your survey, but if a specific subpopulation is required (e.g. people currently shopping for a car), list that here and perhaps one or two strategies for reaching that population. If you have any other opportunities to distribute your survey to the target population (e.g. an external collaborator, personal networks, etc.), list those here.
 
-# 3. Specify the Conjoint Question 
+# 3. Attributes and Levels for Choice Questions
 
-Write the text of a conjoint choice question you plan on asking your respondents. This needs to be a specific choice question. Below your question, list in a table the attributes and levels you will include in your conjoint questions (these may change between now and the actual final survey). 
+Write the text of the choice question you plan on asking your respondents. Below your question, list in a table the attributes and levels you will include in your choice questions (these may change between now and the actual final survey).
 
-For example, for a survey on car preferences, you might use this as a question:
+For example, for a survey on car preferences, you might use this as a choice question:
 
 > "If these were your only options, which vehicle would you choose?"
 
-And you might use these as some possible attributes and levels:
+And you might use these as your attributes and levels:
 
 Attribute | Levels | Unit
 ----------|--------|--------
@@ -60,13 +60,13 @@ Fuel economy | 20, 25, 30 | Miles per gallon
 Acceleration time | 6, 7, 8 | Seconds (from 0-60 mph)
 Powertrain | Gasoline, Electric | Type
 
-# 4. Specify Other Survey Content
+# 4. Survey Content
 
 Your survey plan should include the following additional content (much of this will go directly into your pilot survey):
 
 - **Welcome page text**: Welcome your survey respondents and inform them in just a few sentences who you are and what the survey is about.
 - **Consent page text**: Write out the text of a consent form and include restrictions at least for 18 years of age and the statement "I have read and understand the above information" (in your survey, this can go on the welcome page).
-- **Education information**: Write out descriptions of the attributes you will include in your conjoint questions so that you can explain them to your survey respondents. Use common, simple language and as few words as possible. Include illustrative images if possible.
+- **Education information**: Write out descriptions of the attributes you will include in your conjoint choice questions so that you can explain them to your survey respondents. Use common, simple language and as few words as possible. Include illustrative images if possible.
 - **Critical respondent information**: What pieces of information about your respondent are absolutely necessary for your analysis (e.g. demographic factors like income, age, etc., or other information specific to the market for your product). Again, write the specific questions you plan on asking.
 - **Other questions**: What other information about your respondents would be helpful in your analysis? Are you planning on asking any behavioral or demographic questions? Include the specific question text you plan to include.
 
