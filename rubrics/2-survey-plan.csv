@@ -5,9 +5,9 @@ order,category,label,rating,maxPoints,points,description
 2,targetPopulation,Target Population,Excellent,10,10 / 9,Target population clearly identified; fielding strategy is discussed; eligibility requirement question text is specified.
 2,targetPopulation,Target Population,Good,10,8 / 7 / 6,"Target population identified, though may need to be refined; fielding strategy is discussed; eligibility requirement question text needs to be refined."
 2,targetPopulation,Target Population,Needs work,10,5 / 4 / 3,Target population unclear; fielding strategy missing; eligibility requirement question text needs to be refined or is missing.
-3,conjointQuestions,Conjoint Questions,Excellent,10,10 / 9,Exact conjoint question text is clear and specific; table of all attributes are included.
-3,conjointQuestions,Conjoint Questions,Good,10,8 / 7 / 6,Conjoint question text could be improved; table of all attributes are included with some attributes missing.
-3,conjointQuestions,Conjoint Questions,Needs work,10,5 / 4 / 3,Conjoint question text is missing or poorly written / unclear; table of all attributes is missing or unclear.
-4,other,Other Content,Excellent,10,10 / 9,"All required survey components are specified with clear, precise question text included."
-4,other,Other Content,Good,10,8 / 7 / 6,Some but not all required survey components are specified.
-4,other,Other Content,Needs work,10,5 / 4 / 3,"Missing multiple of the required survey components, question text is unclear."
+3,attributesLevels,Attributes & Levels,Excellent,10,10 / 9,Choice question text is clear and specific; table of all attributes are included.
+3,attributesLevels,Attributes & Levels,Good,10,8 / 7 / 6,Choice question text could be improved; table of all attributes are included with some attributes missing.
+3,attributesLevels,Attributes & Levels,Needs work,10,5 / 4 / 3,Choice question text is missing or poorly written / unclear; table of all attributes is missing or unclear.
+4,surveyContent,Survey Content,Excellent,10,10 / 9,"All required survey components are specified with clear, precise question text included."
+4,surveyContent,Survey Content,Good,10,8 / 7 / 6,Some but not all required survey components are specified.
+4,surveyContent,Survey Content,Needs work,10,5 / 4 / 3,"Missing multiple of the required survey components, question text is unclear."
