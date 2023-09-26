@@ -59,7 +59,7 @@ A few sentences summarizing the overall proposal and convincing the reader why i
 
 1. What is the product you are studying?
 2. What key product attributes make it different than its competitors?
-3. What major design decision variables will you focus on for your analysis?
+3. What major research questions will you focus on for your analysis?
 
 ### Introduction
 
