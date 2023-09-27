@@ -2,7 +2,36 @@
 title: "Conjoint Surveys in formr"
 params:
   number: 4
-  purpose: "The purpose of this assignment is to get familiar with how to implement a conjoint survey in formr."
+  purpose: "The purpose of this assignment is to get familiar with how to implement a full conjoint survey in formr."
 ---
 
-Coming soon!
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+### 1. Getting Organized
+
+Download and edit [this template](`r url_template`) when working through this assignment. This is for now mostly a blank file that you can use to jot down examples and play with code.
+
+Notice that this week's template is a `.qmd` file, which is called a "Quarto Markdown" file (or just "Quarto" file). You'll learn about what these files are and how they are different from .R files in the readings for this week. From now on, we'll mostly be using Quarto files for our assignments (including your project deliverables).
+
+### 2. Readings
+
+Your next major team assignment is your survey plan. The central questions of your eventual survey will be your conjoint questions, which are the sets of randomized choice questions where respondents will be asked to make choices from different sets of alternatives. We have not yet gotten into all the details of how to set up those randomized questions (that will come soon!). But it is helpful at this stage to see an overview of the overall survey structure and how a conjoint survey can be built in formr.
+
+With that in mind, read through [this blog post](https://www.jhelvy.com/posts/2021-09-18-choice-based-conjoint-surveys-in-r-with-formr/) I wrote on how to implement a choice-based conjoint survey in formr. It may not yet be immediately clear what every single piece of code is doing, but reading it at least once will help as we go forward with the class. You will probably want to use this blog post as a guide to implement your own conjoint surveys later in the class.
+
+### 3. Reflect
+
+Reflect on what you've learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your ``r hw_file`` file, and include at least one question. The teaching team will review the questions we get and will try to answer them either in Slack or in class.
+
+If you're unsure where to start with a reflection, try filling out this template:
+
+> "I used to think ______, now I think ______ 🤔"
+
+### 4. Submit
+
+To submit your assignment, follow these instructions:
+
+1. Render your .qmd file by either clicking the "Render" button in RStudio or running the command ``r paste0('quarto::quarto_render("', hw_file, '")')`` command.
+2. Open the rendered html file and make sure it looks good! Is all the formatting as you expected?
+3. Create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard.
