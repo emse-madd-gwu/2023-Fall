@@ -1,0 +1,14 @@
+---
+title: "Heterogeneity"
+toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
+params:
+  class: "12-heterogeneity"
+  logitrcars: TRUE
+  formr4conjoint: FALSE
+---
+
+Coming soon!

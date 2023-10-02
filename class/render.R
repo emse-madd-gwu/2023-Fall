@@ -12,8 +12,8 @@ tools::compactPDF(paste0(lesson, ".pdf"), gs_quality = 'ebook')
 zip::zip(
     zipfile = paste0(lesson, ".zip"),
     files = c(
-        "practiceSurvey.qmd",
-        "practiceSurvey_solutions.qmd",
-        "demoSurvey.qmd",
+        "p2-choice-questions-table.qmd",
+        "p2-choice-questions.qmd",
         paste0(lesson, ".Rproj"))
 )
+
