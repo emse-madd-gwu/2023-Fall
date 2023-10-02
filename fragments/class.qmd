@@ -57,5 +57,3 @@ knitr::asis_output('<a href="https://github.com/jhelvy/formr4conjoint/archive/re
 ```{r lexi-demo, echo=FALSE}
 xaringanExtra::embed_xaringan(url = path_slides, ratio = "16:9")
 ```
-
-

@@ -1,14 +1,14 @@
 ---
-title: "Optimization & MLE"
+title: "Exam Review & Final Analysis Overview"
 toc: false
 execute:
   echo: false
   warning: false
   message: false
 params:
-  class: "7-optimization-mle"
+  class: "14-class-review"
   logitrcars: TRUE
-  formr4conjoint: TRUE
+  formr4conjoint: FALSE
 ---
 
 Coming soon!

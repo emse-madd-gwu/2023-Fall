@@ -1,14 +1,14 @@
 ---
-title: "Heterogeneity"
+title: "Uncertainty"
 toc: false
 execute:
   echo: false
   warning: false
   message: false
 params:
-  class: "11-heterogeneity"
+  class: "9-uncertainty"
   logitrcars: TRUE
-  formr4conjoint: FALSE
+  formr4conjoint: TRUE
 ---
 
 Coming soon!

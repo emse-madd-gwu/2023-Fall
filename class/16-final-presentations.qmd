@@ -1,12 +1,12 @@
 ---
-title: "DOE & Power Analysis"
+title: "Final Presentations"
 toc: false
 execute:
   echo: false
   warning: false
   message: false
 params:
-  class: "9-doe-power-analysis"
+  class: "16-final-presentations"
   logitrcars: FALSE
   formr4conjoint: FALSE
 ---

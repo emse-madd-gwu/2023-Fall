@@ -1,12 +1,12 @@
 ---
-title: "Uncertainty"
+title: "Optimization & MLE"
 toc: false
 execute:
   echo: false
   warning: false
   message: false
 params:
-  class: "8-uncertainty"
+  class: "8-optimization-mle"
   logitrcars: TRUE
   formr4conjoint: TRUE
 ---
