@@ -5,4 +5,43 @@ params:
   purpose: "The purpose of this assignment is to get familiar with utility models, which will be the underyling modeling framework we will use for constructing choice models."
 ---
 
-Coming soon!
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+### 1. Getting Organized
+
+Download and edit [this template](`r url_template`) when working through this assignment. This is for now mostly a blank file that you can use to jot down examples and play with code.
+
+Notice that this week's template is a `.qmd` file, which is called a "Quarto Markdown" file (or just "Quarto" file). You'll learn about what these files are and how they are different from .R files in the readings for this week. From now on, we'll mostly be using Quarto files for our assignments (including your project deliverables).
+
+### 2. Readings
+
+Next week we will start getting into choice modeling. I have pre-recorded videos covering most of the technical concepts we will use for estimating choice models in [this Youtube playlist](https://www.youtube.com/playlist?list=PLzFdSE-D7jUQnbczxdjohRqlBBrrsaFFg). Feel free to look ahead at concepts we'll be covering over the next few weeks.
+
+> For this coming week, you should watch the first video:<br>_Introduction to Choice Modeling_
+
+**Take notes** as you watch the video. Throughout the video, I ask practice questions at several places - you should answer to those questions as part of your reflection. You may submit your answers however you wish, e.g. hand-write them on paper and take a picture and / or type answers in your reflection .Rmd file.
+
+Click [here](../content/slides_choice_modeling.pdf) to download the slides in the video as a PDF.
+
+<center>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/CjFLZf-hHwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+If you are interested in more details about the logit model, see [Chapter 3 (free pdf)](https://eml.berkeley.edu/books/choice2nd/Ch03_p34-75.pdf) of Kenneth Train's book, ["Discrete Choice Methods with Simulation"](https://eml.berkeley.edu/books/choice2.html)
+
+### 3. Reflect
+
+Reflect on what you've learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your ``r hw_file`` file, and include at least one question. The teaching team will review the questions we get and will try to answer them either in Slack or in class.
+
+If you're unsure where to start with a reflection, try filling out this template:
+
+> "I used to think ______, now I think ______ 🤔"
+
+### 4. Submit
+
+To submit your assignment, follow these instructions:
+
+1. Render your .qmd file by either clicking the "Render" button in RStudio or running the command ``r paste0('quarto::quarto_render("', hw_file, '")')`` command.
+2. Open the rendered html file and make sure it looks good! Is all the formatting as you expected?
+3. Create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard.
