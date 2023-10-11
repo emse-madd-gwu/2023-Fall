@@ -19,6 +19,7 @@ Imports:
     gsheet,
     kableExtra,
     knitr,
+    patchwork,
     quarto,
     rmarkdown,
     rvest,
