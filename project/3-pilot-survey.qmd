@@ -62,7 +62,7 @@ Using the class formr account:
 
 # 4. Submit
 
-Instructions for how to submit your assignment are at the [top of this page]().
+Render your `.qmd` files for each part of your survey, then create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard. **Only one person from your team should submit the report.**
 
 # Grading Rubric
 

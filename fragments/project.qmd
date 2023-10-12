@@ -9,8 +9,6 @@ due <- get_schedule() %>%
 
 > **Due**: `r due`
 >
-> **Submission Instructions**: Render your .qmd file, then create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard. **Only one person from your team should submit the report**.
->
 > **Weight**: This assignment is worth `r params$weight` of your final grade.
 >
 > **Assessment**: Your submission will be assessed using the [rubric](#grading-rubric) at the bottom of this page.
