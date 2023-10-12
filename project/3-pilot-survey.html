@@ -64,6 +64,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- fontawesome kit -->
 <script src="https://kit.fontawesome.com/1392a7030f.js" crossorigin="anonymous"></script>
 
+<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="EMSE 6035 - Pilot Survey">
@@ -275,7 +278,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#get-organized" id="toc-get-organized" class="nav-link active" data-scroll-target="#get-organized">1. Get Organized</a></li>
+  <li><a href="#write-your-survey-content" id="toc-write-your-survey-content" class="nav-link" data-scroll-target="#write-your-survey-content">2. Write your survey content</a></li>
+  <li><a href="#upload-your-content-to-formr.org" id="toc-upload-your-content-to-formr.org" class="nav-link" data-scroll-target="#upload-your-content-to-formr.org">3. Upload your content to formr.org</a></li>
+  <li><a href="#submit" id="toc-submit" class="nav-link" data-scroll-target="#submit">4. Submit</a></li>
+  <li><a href="#grading-rubric" id="toc-grading-rubric" class="nav-link" data-scroll-target="#grading-rubric">Grading Rubric</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/emse-madd-gwu/2023-Fall/edit/main/project/3-pilot-survey.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/emse-madd-gwu/2023-Fall/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -297,9 +310,112 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Coming soon!</p>
+<blockquote class="blockquote">
+<p><strong>Due</strong>: Oct 17 by 11:59pm</p>
+<p><strong>Submission Instructions</strong>: Render your .qmd file, then create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard. <strong>Only one person from your team should submit the report</strong>.</p>
+<p><strong>Weight</strong>: This assignment is worth 5% of your final grade.</p>
+<p><strong>Assessment</strong>: Your submission will be assessed using the <a href="#grading-rubric">rubric</a> at the bottom of this page.</p>
+</blockquote>
+<p>As a team, create a <strong>pilot survey</strong> - an initial draft of your final survey for preliminary testing. Your fellow classmates will all take your survey and provide feedback. The course instructor will also review and grade your survey and will provide written feedback. Follow the instructions below to prepare your pilot survey.</p>
+<section id="get-organized" class="level2">
+<h2 class="anchored" data-anchor-id="get-organized">1. Get Organized</h2>
+<p>Download and unzip <a href="../templates/pilot-survey.zip">this template</a> for your pilot survey. The folder contains the following files:</p>
+<ul>
+<li><code>pilot_survey.Rproj</code>: An R Project file for staying organized.</li>
+<li><code>make-choice-questions.R</code>: The code to generate the <code>choice_questions.csv</code> file (your survey design file…use the code you wrote in class for this).</li>
+<li><code>choice_questions.csv</code>: The survey choice question design file.</li>
+<li><code>p1-intro.qmd</code>: The code for creating part 1 of your survey, which should include a welcome page, content form, and eligibility questions for screening our ineligible respondents.</li>
+<li><code>p2-choice-questions.qmd</code>: The code for creating part 2 of your survey, which should include your education content and randomized conjoint choice questions.</li>
+<li><code>p3-other.qmd</code>: The code for creating part 3 of your survey, which should include any other questions (e.g.&nbsp;demographics) you wish to ask your survey respondents.</li>
+<li><code>images</code>: A folder of images (if you’re using any in your survey). This is just to make sure we have a copy. In general though your images should all be accessible from the internet (e.g.&nbsp;github.com, uploaded to a formr run, etc.).</li>
+</ul>
+</section>
+<section id="write-your-survey-content" class="level2">
+<h2 class="anchored" data-anchor-id="write-your-survey-content">2. Write your survey content</h2>
+<p>The files included in the zip file are just example content based on the <a href="https://www.jhelvy.com/posts/2021-09-18-choice-based-conjoint-surveys-in-r-with-formr/">blog post</a> on building conjoint surveys in R. <strong>This is just placeholder content - you need to replace it with your survey content</strong>.</p>
+<p>Follow these guidelines in inserting your content:</p>
+<ul>
+<li>You may directly copy and paste any content you wish from your <a href="https://madd.seas.gwu.edu/2023-Fall/project/2-survey-plan.html">Survey Plan</a> assignment.</li>
+<li>In your <code>p2-choice-questions.qmd</code> file, you should include at least one example choice question (e.g.&nbsp;the first choice question for the first respondent) using your choice question design file (the <code>choice_questions.csv</code> file).</li>
+<li>Your code should <strong>not</strong> reference any local files - all files should be hosted online somewhere (e.g.&nbsp;github.com, uploaded to a formr run, etc.), and your code should use the urls to those locations. This includes your <code>choice_questions.csv</code> file as well as any images used in your survey.</li>
+</ul>
+<blockquote class="blockquote">
+<p>Be sure to render each file often - you should render each part to html files so you can preview that everything is displaying as expected.</p>
+</blockquote>
+</section>
+<section id="upload-your-content-to-formr.org" class="level2">
+<h2 class="anchored" data-anchor-id="upload-your-content-to-formr.org">3. Upload your content to formr.org</h2>
+<p>Using the class formr account:</p>
+<ol type="1">
+<li>Create a Google Sheet for each of your survey .qmd files. You may directly copy and edit from the example survey parts.</li>
+<li>Upload each sheet as a separate Survey in formr, then create a Run linking the surveys together. Be sure to carefully edit the Run settings such that respondents are appropriately screened out as desired.</li>
+<li>When you are confident that the Run is ready, turn the “volume” settings to the third setting (“People who have the link can access”).</li>
+</ol>
+</section>
+<section id="submit" class="level1">
+<h1>4. Submit</h1>
+<p>Instructions for how to submit your assignment are at the <a href="">top of this page</a>.</p>
+</section>
+<section id="grading-rubric" class="level1">
+<h1>Grading Rubric</h1>
+<p><strong>35 Total Points</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<table class="table table-striped table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Category</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Excellent</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Good</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Needs work</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Organization &amp; Formatting</td>
+<td style="text-align: left;"><strong>5</strong><br>
+All formatting guidelines are followed.</td>
+<td style="text-align: left;"><strong>4</strong><br>
+Most formatting guidelines are followed; only one or two components from the template are missing.</td>
+<td style="text-align: left;"><strong>3</strong><br>
+Most formatting guidelines are followed; several components from the template are missing or incomplete.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Survey Content</td>
+<td style="text-align: left;"><strong>10 / 9</strong><br>
+Quarto files are complete and compile without error to html pages. All referenced files are on the web (not local).</td>
+<td style="text-align: left;"><strong>8 / 7 / 6</strong><br>
+Quarto files are complete and compile to html pages mostly without error (may need one or two small fixeds). All referenced files are on the web (not local).</td>
+<td style="text-align: left;"><strong>5 / 4 / 3</strong><br>
+Quarto files are incomplete and / or missing, and they require multiple fixes to compile into html files. References local files that are not yet on the web.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Conjoint Questions</td>
+<td style="text-align: left;"><strong>10 / 9</strong><br>
+Randomized conjoint questions render on live formr survey without error.</td>
+<td style="text-align: left;"><strong>8 / 7 / 6</strong><br>
+Randomized conjoint questions render on live formr survey with only one or two errors (e.g. image load fail).</td>
+<td style="text-align: left;"><strong>5 / 4 / 3</strong><br>
+Randomized conjoint questions have major issues rendering on the live formr survey. Page load fails or content is displayed in an unintelligle manner.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">formr</td>
+<td style="text-align: left;"><strong>10 / 9</strong><br>
+Entire survey renders on live survey without errors, user can get to end and questions are clear and understandable.</td>
+<td style="text-align: left;"><strong>8 / 7 / 6</strong><br>
+The survey contains one or two errors when rendering in formr, but the user can still get to the end of the survey.</td>
+<td style="text-align: left;"><strong>5 / 4 / 3</strong><br>
+An error page displays preventing continuation in the survey, or multiple major errors exist in the survey making it difficult to understand the questions.</td>
+</tr>
+</tbody>
+</table>
 
 
+</div>
+</div>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -561,7 +677,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
  © 2023 John Paul Helveston <a href="LICENSE.html"><i class="fab fa-creative-commons"></i><i class="fab fa-creative-commons-by"></i><i class="fab fa-creative-commons-sa"></i></a><br><i class="far fa-calendar-alt"></i> Wednesdays | <i class="far fa-clock"></i> 6:10PM - 8:40PM EST | <a href="https://acadtech.gwu.edu/main-classroom-search/bell-hall-109"><i class="fa fa-map-marker-alt"></i> Bell Hall 109</a><br><a href="https://www.jhelvy.com"><i class="fas fa-user"></i> Dr. John Paul Helveston</a> | <a href="mailto:jph@gwu.edu"><i class="fas fa-envelope"></i> jph@gwu.edu</a> | <a href="https://github.com/emse-madd-gwu/2023-Fall"><i class="fab fa-github"></i></a>
   </li>  
 </ul>
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/emse-madd-gwu/2023-Fall/edit/main/project/3-pilot-survey.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/emse-madd-gwu/2023-Fall/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

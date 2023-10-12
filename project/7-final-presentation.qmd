@@ -8,7 +8,7 @@ execute:
   message: false
 params:
   number: 7
-  weight: '8%'
+  weight: '5%'
 ---
 
 Coming soon!

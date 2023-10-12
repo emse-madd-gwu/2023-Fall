@@ -13,9 +13,9 @@ zip::zip(
     zipfile = paste0(lesson, ".zip"),
     files = c(
         "data",
-        "simulate-choices.R",
-        "practice-solutions.qmd",
-        "practice.qmd",
+        'make-choice-questions.R',
+        'p2-choice-questions-table.qmd',
+        'p2-choice-questions.qmd',
         paste0(lesson, ".Rproj"))
 )
 
