@@ -401,7 +401,7 @@ countdown(
 - Include a "none" option (outside good) or not?
 - Include restrictions?
 
-2. Edit the `make_choice_questions.R` file to design your choice questions.
+2. Edit the `make-choice-questions.R` file to design your choice questions.
 
 ---
 
