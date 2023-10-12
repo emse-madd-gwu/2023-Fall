@@ -78,7 +78,7 @@ Team members who do not make meaningful contributions to their projects will not
 
 # 5. Submit
 
-Instructions for how to submit your assignment are at the [top of this page](). 
+Render your `survey_plan.qmd` file, then create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard. **Only one person from your team should submit the report.**
 
 # Grading Rubric
 
