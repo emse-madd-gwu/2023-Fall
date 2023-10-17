@@ -68,6 +68,35 @@ class: middle, inverse
 
 ---
 
+class: inverse
+
+# Quiz 3
+
+<div class="countdown" id="timer_93a21180" data-warn-when="30" data-update-every="1" tabindex="0" style="bottom:0;left:0;font-size:4em;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+.leftcol[
+
+### Download the template from the #class channel
+
+### Make sure you unzip it!
+
+### When done, submit your `quiz3.qmd` on Blackboard
+
+]
+
+.rightcol[
+
+&lt;center&gt;
+&lt;img src="https://github.com/emse-p4a-gwu/2022-Spring/raw/main/images/quiz_doge.png" width="400"&gt;
+&lt;/center&gt;
+
+]
+
+---
+
 
 
 class: inverse, middle
@@ -381,7 +410,7 @@ class: inverse, center
 
 # .fancy[Break]
 
-<div class="countdown" id="timer_fbc52030" data-warn-when="30" data-update-every="1" tabindex="0" style="top:1;right:0;bottom:0;left:0;margin:5%;font-size:8em;">
+<div class="countdown" id="timer_e4c07fc5" data-warn-when="30" data-update-every="1" tabindex="0" style="top:1;right:0;bottom:0;left:0;margin:5%;font-size:8em;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -820,44 +849,83 @@ band_members %&gt;%
 
 class: inverse
 
-<div class="countdown" id="timer_81993d0b" data-warn-when="30" data-update-every="1" tabindex="0" style="top:0;right:0;font-size:2em;">
+<div class="countdown" id="timer_2c3e6fdf" data-warn-when="15" data-update-every="1" tabindex="0" style="top:0;right:0;font-size:2em;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
 ## Your turn
 
-.leftcol[
+.leftcol[.font80[
 
-1. Write code to read in the `state_abbs.csv` and `state_regions.csv` data files in the "data" folder.
-2. Create a new data frame called `states` by joining the two data frames `states_abbs` and `state_regions` together. The result should be a data frame with variables `region`, `name`, `abb`.
+1) Create a new data frame called `state_data` by joining the `state_abbs` and `state_regions` data frames. The result should be a data frame with variables `state_name`, `state_abb`, and `state_region`. It should look like this:
 
-]
-
-.rightcol[
-
-Your result should look like this:
+.code70[
 
 
 
 
 ```r
-head(states)
+head(state_data)
 ```
 
 ```
 #&gt; # A tibble: 6 × 3
-#&gt;   region    name          abb  
-#&gt;   &lt;chr&gt;     &lt;chr&gt;         &lt;chr&gt;
-#&gt; 1 Northeast Maine         ME   
-#&gt; 2 Northeast New Hampshire NH   
-#&gt; 3 Northeast Vermont       VT   
-#&gt; 4 Northeast Massachusetts MA   
-#&gt; 5 Northeast Rhode Island  RI   
-#&gt; 6 Northeast Connecticut   CT
+#&gt;   state_name state_abb state_region
+#&gt;   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;       
+#&gt; 1 Alabama    AL        Southeast   
+#&gt; 2 Alaska     AK        Pacific     
+#&gt; 3 Arizona    AZ        Mountain    
+#&gt; 4 Arkansas   AR        Delta States
+#&gt; 5 California CA        Pacific     
+#&gt; 6 Colorado   CO        Mountain
 ```
 
-]
+]]]
+
+.rightcol[.font80[
+
+2) Join the `state_data` data frame to the `wildlife_impacts` data frame, adding the variables `state_region` and `state_name`.
+
+
+
+.code50[
+
+
+```r
+glimpse(wildlife_impacts)
+```
+
+
+```
+#&gt; Rows: 56,978
+#&gt; Columns: 23
+#&gt; $ state_abb             &lt;chr&gt; "FL", "IN", NA, NA, NA, "FL", "FL", NA, NA, "FL", NA, "TX", NA, NA, "NY", NA, NA, "MD", "CA", "AZ", "NC", "TX", NA, NA, "CA", NA, NA, "NM", NA, NA, NA, NA, "CA", "NC", "FL", "FL", "CA", NA, "TX", "CA", "PA", NA, "TX", …
+#&gt; $ state_name            &lt;chr&gt; "Florida", "Indiana", NA, NA, NA, "Florida", "Florida", NA, NA, "Florida", NA, "Texas", NA, NA, "New York", NA, NA, "Maryland", "California", "Arizona", "North Carolina", "Texas", NA, NA, "California", NA, NA, "New Mex…
+#&gt; $ state_region          &lt;chr&gt; "Southeast", "Corn Belt", NA, NA, NA, "Southeast", "Southeast", NA, NA, "Southeast", NA, "Southern Plains", NA, NA, "Northeast", NA, NA, "Northeast", "Pacific", "Mountain", "Appalachian", "Southern Plains", NA, NA, "Pa…
+#&gt; $ incident_date         &lt;dttm&gt; 2018-12-31, 2018-12-29, 2018-12-29, 2018-12-27, 2018-12-27, 2018-12-27, 2018-12-27, 2018-12-26, 2018-12-23, 2018-12-23, 2018-12-23, 2018-12-22, 2018-12-22, 2018-12-22, 2018-12-22, 2018-12-22, 2018-12-21, 2018-12-21, 2…
+#&gt; $ airport_id            &lt;chr&gt; "KMIA", "KIND", "ZZZZ", "ZZZZ", "ZZZZ", "KMIA", "KMCO", "ZZZZ", "ZZZZ", "KFLL", "ZZZZ", "KGRK", "ZZZZ", "ZZZZ", "KJFK", "MDPP", "MNMG", "KBWI", "KSMF", "KPHX", "KCLT", "KDFW", "ZZZZ", "ZZZZ", "KSNA", "ZZZZ", "ZZZZ", "K…
+#&gt; $ airport               &lt;chr&gt; "MIAMI INTL", "INDIANAPOLIS INTL ARPT", "UNKNOWN", "UNKNOWN", "UNKNOWN", "MIAMI INTL", "ORLANDO INTL", "UNKNOWN", "UNKNOWN", "FORT LAUDERDALE/HOLLYWOOD INTL", "UNKNOWN", "KILLEEN/FT HOOD REGIONAL", "UNKNOWN", "UNKNOWN"…
+#&gt; $ operator              &lt;chr&gt; "AMERICAN AIRLINES", "AMERICAN AIRLINES", "AMERICAN AIRLINES", "AMERICAN AIRLINES", "AMERICAN AIRLINES", "AMERICAN AIRLINES", "AMERICAN AIRLINES", "AMERICAN AIRLINES", "AMERICAN AIRLINES", "AMERICAN AIRLINES", "AMERICA…
+#&gt; $ atype                 &lt;chr&gt; "B-737-800", "B-737-800", "UNKNOWN", "B-737-900", "B-737-800", "A-319", "A-321", "B-737-800", "A-321", "B-737-800", "B-737-800", "EMB-145", "A-319", "A-319", "B-737-800", "B-737-800", "B-737-800", "A-319", "A-319", "B-…
+#&gt; $ type_eng              &lt;chr&gt; "D", "D", NA, "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", NA, "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", …
+#&gt; $ species_id            &lt;chr&gt; "UNKBL", "R", "R2004", "N5205", "J2139", "UNKB", "UNKBS", "ZT001", "ZT101", "I1301", "UNKB", "O22", "ZX010", "ZX303", "K5114", "UNKBS", "UNKBS", "UNKB", "J2141", "UNKBS", "ZT101", "UNKB", "UNKB", "ZS009", "UNKB", "UNKB…
+#&gt; $ species               &lt;chr&gt; "Unknown bird - large", "Owls", "Short-eared owl", "Southern lapwing", "Lesser scaup", "Unknown bird", "Unknown bird - small", "Eastern meadowlark", "Red-winged blackbird", "Cattle egret", "Unknown bird", "Doves", "Pin…
+#&gt; $ damage                &lt;chr&gt; "M?", "N", NA, "M?", "M?", "N", "N", "N", "N", "N", "N", "N", "N", "N", NA, "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", NA, "N", NA, "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", NA, "N", "N", "N", NA, "…
+#&gt; $ num_engs              &lt;dbl&gt; 2, 2, NA, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, NA, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, NA, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,…
+#&gt; $ incident_month        &lt;dbl&gt; 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 11, 11, 11, 11, 11, 11, 11, 11…
+#&gt; $ incident_year         &lt;dbl&gt; 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 2018, 20…
+#&gt; $ time_of_day           &lt;chr&gt; "Day", "Night", NA, NA, NA, "Day", "Night", NA, NA, "Day", "Night", "Day", NA, NA, "Day", "Day", "Day", "Day", "Day", "Night", "Day", "Dawn", NA, NA, "Day", NA, NA, "Day", NA, NA, NA, NA, "Day", "Day", "Day", "Day", "D…
+#&gt; $ time                  &lt;dbl&gt; 1207, 2355, NA, NA, NA, 955, 948, NA, NA, 1321, 15, 1612, NA, NA, 905, 1457, 1418, 1628, 627, 2130, 719, 747, NA, NA, 1348, NA, NA, 1305, NA, NA, NA, NA, 1345, 944, 1400, 1415, 1150, 800, 1400, 1505, 1731, NA, NA, 1733…
+#&gt; $ height                &lt;dbl&gt; 700, 0, NA, NA, NA, NA, 600, NA, NA, 0, NA, 0, NA, NA, 0, 500, 100, 0, 1000, 4500, 300, NA, NA, NA, NA, NA, NA, 0, NA, NA, NA, NA, 0, NA, 0, 100, 0, 3027, 0, NA, 0, NA, 200, NA, 0, 300, 8, NA, 500, NA, NA, NA, NA, NA, …
+#&gt; $ speed                 &lt;dbl&gt; 200, NA, NA, NA, NA, NA, 145, NA, NA, 130, NA, NA, NA, NA, NA, 160, 150, NA, NA, 250, NA, NA, NA, NA, NA, NA, NA, 160, NA, NA, NA, NA, 100, NA, NA, 100, 150, 130, 130, NA, 150, NA, 150, NA, NA, 140, 144, NA, 145, NA, N…
+#&gt; $ phase_of_flt          &lt;chr&gt; "Climb", "Landing Roll", NA, NA, NA, "Approach", "Approach", NA, NA, "Take-off run", NA, "Landing Roll", NA, NA, "Landing Roll", "Approach", "Approach", "Take-off run", "Climb", "Climb", "Approach", "Approach", NA, NA,…
+#&gt; $ sky                   &lt;chr&gt; "Some Cloud", NA, NA, NA, NA, NA, "Some Cloud", NA, NA, "No Cloud", NA, "Some Cloud", NA, NA, "Some Cloud", "No Cloud", "No Cloud", NA, "No Cloud", "No Cloud", "No Cloud", "Some Cloud", NA, NA, NA, NA, NA, "Some Cloud"…
+#&gt; $ precip                &lt;chr&gt; "None", NA, NA, NA, NA, NA, "None", NA, NA, "None", NA, "None", NA, NA, "None", "None", "None", NA, "None", "None", "None", "None", NA, NA, NA, NA, NA, "None", NA, NA, NA, NA, "None", "None", NA, "None", "None", "None"…
+#&gt; $ cost_repairs_infl_adj &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+```
+
+]]]
 
 ---
 

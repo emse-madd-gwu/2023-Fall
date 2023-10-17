@@ -26,9 +26,43 @@ output:
 ```{r}
 #| include: false
 
-# For this class
-abbs <- read_csv(here::here('data', 'state_abbs.csv'))
+abbs <- read_csv(here::here('data', 'state_abbs.csv')) 
 ```
+
+---
+
+class: inverse
+
+# Quiz 3
+
+```{r, echo=FALSE}
+countdown(
+    minutes = 10,
+    warn_when = 30,
+    update_every = 1,
+    bottom = 0,
+    left = 0,
+    font_size = '4em'
+)
+```
+
+.leftcol[
+
+### Download the template from the #class channel
+
+### Make sure you unzip it!
+
+### When done, submit your `quiz3.qmd` on Blackboard
+
+]
+
+.rightcol[
+
+<center>
+<img src="https://github.com/emse-p4a-gwu/2022-Spring/raw/main/images/quiz_doge.png" width="400">
+</center>
+
+]
 
 ---
 
@@ -573,41 +607,61 @@ class: inverse
 
 ```{r, echo=FALSE}
 countdown(
-    minutes = 10,
-    warn_when = 30,
+    minutes      = 15,
+    warn_when    = 15,
     update_every = 1,
-    top = 0,
-    right = 0,
-    font_size = '2em'
+    top          = 0,
+    right        = 0,
+    font_size    = '2em'
 )
 ```
 
 ## Your turn
 
-.leftcol[
+.leftcol[.font80[
 
-1. Write code to read in the `state_abbs.csv` and `state_regions.csv` data files in the "data" folder.
-2. Create a new data frame called `states` by joining the two data frames `states_abbs` and `state_regions` together. The result should be a data frame with variables `region`, `name`, `abb`.
+1) Create a new data frame called `state_data` by joining the `state_abbs` and `state_regions` data frames. The result should be a data frame with variables `state_name`, `state_abb`, and `state_region`. It should look like this:
 
-]
-
-.rightcol[
-
-Your result should look like this:
+.code70[
 
 ```{r, include=FALSE}
-regions <- read_csv(here::here('data', 'state_regions.csv'))
-abbs <- read_csv(here::here('data', 'state_abbs.csv'))
-states <- regions %>%
-    left_join(abbs, by = c('state' = 'state_name')) %>%
-    select(region, name = state, abb = state_abb)
+state_abbs <- read_csv(here::here('data', 'state_abbs.csv')) 
+state_regions <- read_csv(here::here('data', 'state_regions.csv')) 
+wildlife_impacts <- read_csv(here::here('data', 'wildlife_impacts.csv'))
+
+state_data <- state_abbs %>%
+    left_join(state_regions, by = c('state_name' = 'state')) %>%
+    rename(state_region = region)
 ```
 
 ```{r}
-head(states)
+head(state_data)
 ```
 
-]
+]]]
+
+.rightcol[.font80[
+
+2) Join the `state_data` data frame to the `wildlife_impacts` data frame, adding the variables `state_region` and `state_name`.
+
+```{r, include=FALSE}
+wildlife_impacts2 <- wildlife_impacts %>%
+    mutate(state = ifelse(state == 'N/A', NA, state)) %>% 
+    left_join(state_data, by = c('state' = 'state_abb')) %>%
+    select(state_abb = state, state_name, state_region, everything())
+```
+
+.code50[
+
+```{r, eval=FALSE}
+glimpse(wildlife_impacts)
+```
+
+```{r, echo=FALSE}
+glimpse(wildlife_impacts2)
+```
+
+]]]
 
 ---
 

@@ -207,18 +207,31 @@ plot1 + plot2
 
 ## In Class Questions 1
 
-1. Write code to read in the `state_abbs.csv` and `state_regions.csv` data files in the "data" folder.
+Read in data:
 
 ```{r}
-regions <- read_csv(here::here('data', 'state_regions.csv'))
-abbs <- read_csv(here::here('data', 'state_abbs.csv'))
+state_abbs <- read_csv(here::here('data', 'state_abbs.csv')) 
+state_regions <- read_csv(here::here('data', 'state_regions.csv')) 
+wildlife_impacts <- read_csv(here::here('data', 'wildlife_impacts.csv'))
 ```
 
-2. Create a new data frame called `states` by joining the two data frames `states_abbs` and `state_regions` together. The result should be a data frame with variables `region`, `name`, `abb`.
+1. Create a new data frame called `state_data` by joining the `state_abbs` and `state_regions` data frames. The result should be a data frame with variables `state_name`, `state_abb`, and `state_region`.
 
 ```{r}
-states <- regions %>%
-    left_join(abbs, by = c('state' = 'state_name')) %>%
-    select(region, name = state, abb = state_abb)
-head(states)
+state_data <- state_abbs %>%
+    left_join(state_regions, by = c('state_name' = 'state')) %>%
+    rename(state_region = region)
+
+head(state_data)
+```
+
+2. Join the `state_data` data frame to the `wildlife_impacts` data frame, adding the variables `state_region` and `state_name`.
+
+```{r}
+wildlife_impacts <- wildlife_impacts %>%
+    mutate(state = ifelse(state == 'N/A', NA, state)) %>% 
+    left_join(state_data, by = c('state' = 'state_abb')) %>%
+    select(state_abb = state, state_name, state_region, everything())
+
+glimpse(wildlife_impacts)
 ```
