@@ -8,13 +8,16 @@ params:
 ```{r child = here::here("fragments", "hw.qmd")}
 ```
 
-### 1. Getting Organized
+# 1. Get Organized
 
-Download and edit [this template](`r url_template`) when working through this assignment. This is for now mostly a blank file that you can use to jot down examples and play with code.
+Follow these instructions:
 
-Notice that this week's template is a `.qmd` file, which is called a "Quarto Markdown" file (or just "Quarto" file). You'll learn about what these files are and how they are different from .R files in the readings for this week. From now on, we'll mostly be using Quarto files for our assignments (including your project deliverables).
+1. Download and edit [this template](`r url_template`).
+2. Unzip the template folder. **Make sure you actually unzip it**! (in Windows, right-click it and use "extract all")
+3. Open the .Rproj file to open RStudio.
+4. Inside RStudio, open the ``r hw_file`` file, take notes, and write some example code as you go through the readings / exercises below.
 
-### 2. Readings
+# 2. Readings
 
 Last week we introduced the concept of utility models, which is the primary theoretical framework we'll be using to construct our choice models.
 
@@ -28,7 +31,7 @@ Click [here](../content/slides_mle_optimization.pdf) to download the slides in t
 <iframe width="640" height="360" src="https://www.youtube.com/embed/myeAGFTKYkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
-### 3. Reflect
+# 3. Reflect
 
 Reflect on what you've learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your ``r hw_file`` file, and include at least one question. The teaching team will review the questions we get and will try to answer them either in Slack or in class.
 
@@ -36,7 +39,7 @@ If you're unsure where to start with a reflection, try filling out this template
 
 > "I used to think ______, now I think ______ 🤔"
 
-### 4. Submit
+# 4. Submit
 
 To submit your assignment, follow these instructions:
 

@@ -8,13 +8,16 @@ params:
 ```{r child = here::here("fragments", "hw.qmd")}
 ```
 
-### 1. Getting Organized
+# 1. Get Organized
 
-Download and edit [this template](`r url_template`) when working through this assignment. This is for now mostly a blank file that you can use to jot down examples and play with code.
+Follow these instructions:
 
-Notice that this week's template is a `.qmd` file, which is called a "Quarto Markdown" file (or just "Quarto" file). You'll learn about what these files are and how they are different from .R files in the readings for this week. From now on, we'll mostly be using Quarto files for our assignments (including your project deliverables).
+1. Download and edit [this template](`r url_template`).
+2. Unzip the template folder. **Make sure you actually unzip it**! (in Windows, right-click it and use "extract all")
+3. Open the .Rproj file to open RStudio.
+4. Inside RStudio, open the ``r hw_file`` file, take notes, and write some example code as you go through the readings / exercises below.
 
-### 2. Readings
+# 2. Readings
 
 Next week we will start getting into designing conjoint surveys for our projects. We will implement them using [formr.org](https://formr.org/), which is an R-based platform for designing surveys. The platform allows you to use R or markdown code (just like you would in a .Rmd file) to define everything you see in an online survey. All survey elements are defined using Google Sheets.
 
@@ -24,7 +27,7 @@ To get familiar with the platform, go to **[this post](https://www.jhelvy.com/ta
 
 At the bottom of the page in the section titled "Surveys with {formr}", you can see links to the actual surveys I used in the video.
 
-### 3. Make a practice survey
+# 3. Make a practice survey
 
 Normally I would have each team create their own account on formr.org, but at the moment the site is undergoing several upgrades and they have temporarily suspended new accounts. So, the work around for this semester will be for every team to use the same account. I will post the log in information on the class [Slack]({{< var slack >}}){target="_blank"} in the #projects channel.
 
@@ -36,7 +39,7 @@ For practice, try replicating the [random images](https://docs.google.com/spread
 4. The link to the survey will be `https://your_run_name.formr.org`. You can control whether your survey is "live" or not by modifying the "volume" icons. I recommend setting it to the `r fa("volume-low")` icon, which means people who have the link can access the survey.
 5. Try it out! See if the survey works as expected. You can also click through a few times and then see the response data by going to your survey (not the run) in the formr.org admin page.
 
-### 4. Reflect
+# 4. Reflect
 
 Reflect on what you've learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your ``r hw_file`` file, and include at least one question. The teaching team will review the questions we get and will try to answer them either in Slack or in class.
 
@@ -44,7 +47,7 @@ If you're unsure where to start with a reflection, try filling out this template
 
 > "I used to think ______, now I think ______ 🤔"
 
-### 5. Submit
+# 5. Submit
 
 To submit your assignment, follow these instructions:
 
