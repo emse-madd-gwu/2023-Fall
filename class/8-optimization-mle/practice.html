@@ -362,17 +362,23 @@ f(\underline{x}) = x_1^2 + 4x_2^2
 </section>
 <section id="in-class-questions-1" class="level2">
 <h2 class="anchored" data-anchor-id="in-class-questions-1">In Class Questions 1</h2>
-<ol type="1">
-<li>Write code to read in the <code>state_abbs.csv</code> and <code>state_regions.csv</code> data files in the “data” folder.</li>
-</ol>
+<p>Read in data:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Write code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>state_abbs <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">'data'</span>, <span class="st">'state_abbs.csv'</span>)) </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>state_regions <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">'data'</span>, <span class="st">'state_regions.csv'</span>)) </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>wildlife_impacts <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">'data'</span>, <span class="st">'wildlife_impacts.csv'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<ol start="2" type="1">
-<li>Create a new data frame called <code>states</code> by joining the two data frames <code>states_abbs</code> and <code>state_regions</code> together. The result should be a data frame with variables <code>region</code>, <code>name</code>, <code>abb</code>.</li>
+<ol type="1">
+<li>Create a new data frame called <code>state_data</code> by joining the <code>state_abbs</code> and <code>state_regions</code> data frames. The result should be a data frame with variables <code>state_name</code>, <code>state_abb</code>, and <code>state_region</code>.</li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Write code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="1">
+<li>Join the <code>state_data</code> data frame to the <code>wildlife_impacts</code> data frame, adding the variables <code>state_region</code> and <code>state_name</code>.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Write code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
