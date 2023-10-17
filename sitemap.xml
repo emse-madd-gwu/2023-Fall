@@ -2,218 +2,230 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/syllabus.html</loc>
-    <lastmod>2023-10-12T11:03:27.522Z</lastmod>
+    <lastmod>2023-10-17T11:11:38.203Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/self-assessment.html</loc>
-    <lastmod>2023-10-12T11:03:20.844Z</lastmod>
+    <lastmod>2023-10-17T11:11:32.985Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/references.html</loc>
-    <lastmod>2023-10-12T11:03:16.867Z</lastmod>
+    <lastmod>2023-10-17T11:11:27.812Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/project/7-final-presentation.html</loc>
-    <lastmod>2023-10-12T11:03:15.496Z</lastmod>
+    <lastmod>2023-10-17T11:11:26.084Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/project/5-final-survey.html</loc>
-    <lastmod>2023-10-12T11:03:14.423Z</lastmod>
+    <lastmod>2023-10-17T11:11:24.787Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/project/3-pilot-survey.html</loc>
-    <lastmod>2023-10-12T11:03:09.737Z</lastmod>
+    <lastmod>2023-10-17T11:11:19.649Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/project/1-proposal.html</loc>
-    <lastmod>2023-10-12T11:03:00.397Z</lastmod>
+    <lastmod>2023-10-17T11:11:11.776Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/index.html</loc>
-    <lastmod>2023-10-12T11:02:54.429Z</lastmod>
+    <lastmod>2023-10-17T11:11:04.974Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/hw/8-doe-power-analysis.html</loc>
-    <lastmod>2023-10-12T11:02:51.840Z</lastmod>
+    <lastmod>2023-10-17T11:11:02.976Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/hw/6-optimization-mle.html</loc>
-    <lastmod>2023-10-12T11:02:50.832Z</lastmod>
+    <lastmod>2023-10-17T11:11:01.957Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/hw/4-conjoint-questions.html</loc>
-    <lastmod>2023-10-12T11:02:43.338Z</lastmod>
+    <lastmod>2023-10-17T11:10:55.432Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/hw/2-quarto-plotting.html</loc>
-    <lastmod>2023-10-12T11:02:35.787Z</lastmod>
+    <lastmod>2023-10-17T11:10:47.627Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/hw/10-heterogeneity.html</loc>
-    <lastmod>2023-10-12T11:02:30.698Z</lastmod>
+    <lastmod>2023-10-17T11:10:43.494Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/class/9-uncertainty.html</loc>
-    <lastmod>2023-10-12T11:02:25.766Z</lastmod>
+    <lastmod>2023-10-17T11:10:38.352Z</lastmod>
   </url>
   <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/7-utility-models/practice.html</loc>
-    <lastmod>2023-10-12T11:02:24.746Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/7-utility-models.html</loc>
-    <lastmod>2023-10-12T11:02:11.357Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/6-conjoint-questions/p2-choice-questions-table.html</loc>
-    <lastmod>2023-10-12T11:02:04.843Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/4-intro-to-formr/practiceSurvey_solutions.html</loc>
-    <lastmod>2023-10-12T11:01:58.465Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/4-intro-to-formr/demoSurvey.html</loc>
-    <lastmod>2023-10-12T11:01:52.898Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/3-quarto-plotting/quarto_demo.html</loc>
-    <lastmod>2023-10-12T11:01:44.639Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/3-quarto-plotting/ggplot2.html</loc>
-    <lastmod>2023-10-12T11:01:22.003Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/3-quarto-plotting/bears.html</loc>
-    <lastmod>2023-10-12T11:00:59.524Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/2-data-wrangling.html</loc>
-    <lastmod>2023-10-12T11:00:53.550Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/15-communicating-results.html</loc>
-    <lastmod>2023-10-12T11:00:51.156Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/12-heterogeneity.html</loc>
-    <lastmod>2023-10-12T11:00:50.122Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/10-doe-power-analysis.html</loc>
-    <lastmod>2023-10-12T11:00:49.067Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/about.html</loc>
-    <lastmod>2023-10-12T11:00:46.846Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/LICENSE.html</loc>
-    <lastmod>2023-10-12T11:00:43.104Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/1-getting-started.html</loc>
-    <lastmod>2023-10-12T11:00:48.562Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/11-wtp-simulation.html</loc>
-    <lastmod>2023-10-12T11:00:49.561Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/14-class-review.html</loc>
-    <lastmod>2023-10-12T11:00:50.669Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/16-final-presentations.html</loc>
-    <lastmod>2023-10-12T11:00:51.654Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/3-quarto-plotting.html</loc>
-    <lastmod>2023-10-12T11:00:55.318Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/3-quarto-plotting/bears_solutions.html</loc>
-    <lastmod>2023-10-12T11:01:06.390Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/3-quarto-plotting/ggplot2_solutions.html</loc>
-    <lastmod>2023-10-12T11:01:38.066Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/4-intro-to-formr.html</loc>
-    <lastmod>2023-10-12T11:01:46.578Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/4-intro-to-formr/practiceSurvey.html</loc>
-    <lastmod>2023-10-12T11:01:54.428Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/6-conjoint-questions.html</loc>
-    <lastmod>2023-10-12T11:02:00.320Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/6-conjoint-questions/p2-choice-questions.html</loc>
-    <lastmod>2023-10-12T11:02:09.132Z</lastmod>
-  </url>
-  <url>
-    <loc>https://madd.seas.gwu.edu/2023-Fall/class/7-utility-models/practice-solutions.html</loc>
-    <lastmod>2023-10-12T11:02:19.914Z</lastmod>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/8-optimization-mle/practice-solutions.html</loc>
+    <lastmod>2023-10-17T11:10:33.397Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/class/8-optimization-mle.html</loc>
-    <lastmod>2023-10-12T11:02:25.234Z</lastmod>
+    <lastmod>2023-10-17T11:10:23.384Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/7-utility-models/practice-solutions.html</loc>
+    <lastmod>2023-10-17T11:10:17.243Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/6-conjoint-questions/p2-choice-questions.html</loc>
+    <lastmod>2023-10-17T11:10:08.392Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/6-conjoint-questions.html</loc>
+    <lastmod>2023-10-17T11:09:59.782Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/4-intro-to-formr/practiceSurvey.html</loc>
+    <lastmod>2023-10-17T11:09:50.418Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/4-intro-to-formr.html</loc>
+    <lastmod>2023-10-17T11:09:40.784Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/3-quarto-plotting/ggplot2_solutions.html</loc>
+    <lastmod>2023-10-17T11:09:30.876Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/3-quarto-plotting/bears_solutions.html</loc>
+    <lastmod>2023-10-17T11:08:54.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/3-quarto-plotting.html</loc>
+    <lastmod>2023-10-17T11:08:41.326Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/16-final-presentations.html</loc>
+    <lastmod>2023-10-17T11:08:36.522Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/14-class-review.html</loc>
+    <lastmod>2023-10-17T11:08:35.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/11-wtp-simulation.html</loc>
+    <lastmod>2023-10-17T11:08:34.293Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/1-getting-started.html</loc>
+    <lastmod>2023-10-17T11:08:33.082Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/LICENSE.html</loc>
+    <lastmod>2023-10-17T11:08:28.726Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/about.html</loc>
+    <lastmod>2023-10-17T11:08:31.144Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/10-doe-power-analysis.html</loc>
+    <lastmod>2023-10-17T11:08:33.693Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/12-heterogeneity.html</loc>
+    <lastmod>2023-10-17T11:08:34.887Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/15-communicating-results.html</loc>
+    <lastmod>2023-10-17T11:08:35.986Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/2-data-wrangling.html</loc>
+    <lastmod>2023-10-17T11:08:38.563Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/3-quarto-plotting/bears.html</loc>
+    <lastmod>2023-10-17T11:08:47.879Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/3-quarto-plotting/ggplot2.html</loc>
+    <lastmod>2023-10-17T11:09:11.703Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/3-quarto-plotting/quarto_demo.html</loc>
+    <lastmod>2023-10-17T11:09:37.758Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/4-intro-to-formr/demoSurvey.html</loc>
+    <lastmod>2023-10-17T11:09:48.061Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/4-intro-to-formr/practiceSurvey_solutions.html</loc>
+    <lastmod>2023-10-17T11:09:55.529Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/6-conjoint-questions/p2-choice-questions-table.html</loc>
+    <lastmod>2023-10-17T11:10:04.973Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/7-utility-models.html</loc>
+    <lastmod>2023-10-17T11:10:10.171Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/7-utility-models/practice.html</loc>
+    <lastmod>2023-10-17T11:10:21.480Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/8-optimization-mle/box_problem.html</loc>
+    <lastmod>2023-10-17T11:10:27.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://madd.seas.gwu.edu/2023-Fall/class/8-optimization-mle/practice.html</loc>
+    <lastmod>2023-10-17T11:10:37.828Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/hw/1-data-wrangling.html</loc>
-    <lastmod>2023-10-12T11:02:30.158Z</lastmod>
+    <lastmod>2023-10-17T11:10:42.965Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/hw/11-exam.html</loc>
-    <lastmod>2023-10-12T11:02:31.257Z</lastmod>
+    <lastmod>2023-10-17T11:10:44.026Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/hw/3-intro-to-formr.html</loc>
-    <lastmod>2023-10-12T11:02:39.288Z</lastmod>
+    <lastmod>2023-10-17T11:10:50.785Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/hw/5-utility-models.html</loc>
-    <lastmod>2023-10-12T11:02:47.216Z</lastmod>
+    <lastmod>2023-10-17T11:10:58.706Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/hw/7-uncertainty.html</loc>
-    <lastmod>2023-10-12T11:02:51.334Z</lastmod>
+    <lastmod>2023-10-17T11:11:02.470Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/hw/9-wtp-simulation.html</loc>
-    <lastmod>2023-10-12T11:02:52.429Z</lastmod>
+    <lastmod>2023-10-17T11:11:03.512Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/project/0-overview.html</loc>
-    <lastmod>2023-10-12T11:02:55.180Z</lastmod>
+    <lastmod>2023-10-17T11:11:05.903Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/project/2-survey-plan.html</loc>
-    <lastmod>2023-10-12T11:03:05.060Z</lastmod>
+    <lastmod>2023-10-17T11:11:15.831Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/project/4-pilot-analysis.html</loc>
-    <lastmod>2023-10-12T11:03:13.924Z</lastmod>
+    <lastmod>2023-10-17T11:11:24.244Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/project/6-final-analysis.html</loc>
-    <lastmod>2023-10-12T11:03:14.968Z</lastmod>
+    <lastmod>2023-10-17T11:11:25.364Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/project/examples.html</loc>
-    <lastmod>2023-10-12T11:03:16.105Z</lastmod>
+    <lastmod>2023-10-17T11:11:26.687Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/schedule.html</loc>
-    <lastmod>2023-10-12T11:03:20.357Z</lastmod>
+    <lastmod>2023-10-17T11:11:32.282Z</lastmod>
   </url>
   <url>
     <loc>https://madd.seas.gwu.edu/2023-Fall/software.html</loc>
-    <lastmod>2023-10-12T11:03:21.474Z</lastmod>
+    <lastmod>2023-10-17T11:11:33.556Z</lastmod>
   </url>
 </urlset>
