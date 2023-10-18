@@ -5,4 +5,50 @@ params:
   purpose: "The purpose of this assignment is to introduce how we quantify uncertainty around estimated parameters that result from maximizing the log-likelihood function."
 ---
 
-Coming soon!
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+# Pilot Surveys
+
+In addition to the assignment below, this week you should also help out your fellow classmates by providing feedback on their pilot surveys. For every team other than your own, answer their pilot survey and provide any feedback you have in a row in [this spreadsheet](https://docs.google.com/spreadsheets/d/1MlYov0zK8Kf3fD7sX-53CSOz0OZRFUqrVUPHEYolWG8/edit?usp=sharing). Feedback should be **anonymous, constructive, and objective**. Note things that didn't work and / or things that weren't clear or were confusing.
+
+If you got screened out early in the survey, go back and take it again and pick a response so that you won't get screened out. Do your best to actually answer the conjoint questions honestly (don't just click randomly).
+
+Completing all the surveys shouldn't take more than an hour. In addition to giving everyone very useful feedback, this exercise may also give you new ideas for improving your own survey.
+
+# 1. Get Organized
+
+Follow these instructions:
+
+1. Download and edit [this template](`r url_template`).
+2. Unzip the template folder. **Make sure you actually unzip it**! (in Windows, right-click it and use "extract all")
+3. Open the .Rproj file to open RStudio.
+4. Inside RStudio, open the ``r hw_file`` file, take notes, and write some example code as you go through the readings / exercises below.
+
+# 2. Readings
+
+Last week we introduced how we can use maximum likelihood estimation to estimate the unknown parameters of utility models. This week we'll learn about how to quantify the _uncertainty_ associated with those parameter estimates by watching the third video in [our Youtube playlist](https://www.youtube.com/playlist?list=PLzFdSE-D7jUQnbczxdjohRqlBBrrsaFFg) on choice modeling: _Uncertainty_
+
+**Take notes** as you watch the video. Throughout the video, I ask practice questions at several places - you should answer to those questions as part of your reflection. You may submit your answers however you wish, e.g. hand-write them on paper and take a picture and / or type answers in your reflection .Rmd file.
+
+Click [here](../content/slides_uncertainty.pdf) to download the slides in the video as a PDF.
+
+<center>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/PmDhvrgB47g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+# 3. Reflect
+
+Reflect on what you've learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your ``r hw_file`` file, and include at least one question. The teaching team will review the questions we get and will try to answer them either in Slack or in class.
+
+If you're unsure where to start with a reflection, try filling out this template:
+
+> "I used to think ______, now I think ______ 🤔"
+
+# 4. Submit
+
+To submit your assignment, follow these instructions:
+
+1. Render your .qmd file by either clicking the "Render" button in RStudio or running the command ``r paste0('quarto::quarto_render("', hw_file, '")')`` command.
+2. Open the rendered html file and make sure it looks good! Is all the formatting as you expected?
+3. Create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard.
