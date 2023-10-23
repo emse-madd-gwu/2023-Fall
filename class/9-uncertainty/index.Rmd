@@ -1,0 +1,698 @@
+---
+title: "Uncertainty"
+subtitle: "EMSE 6035: Marketing Analytics for Design Decisions"
+date: October 25, 2023
+week: 9
+author: "John Paul Helveston"
+institute: "The George Washington University | Dept. of Engineering Management and Systems Engineering"
+output:
+  xaringan::moon_reader:
+    css:
+      - default
+      - css/lexis.css
+      - css/lexis-fonts.css
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+```{r setup, child="../setup.Rmd"}
+```
+
+```{r}
+#| include: false
+
+# For this class
+milk_production  <- read_csv(here::here('data', 'milk_production.csv'))
+fed_spend_long <- read_csv(here('data', 'fed_spend_long.csv'))
+fed_spend_wide <- read_csv(here('data', 'fed_spend_wide.csv'))
+tb_cases <- read_csv(here('data', 'tb_cases.csv'))
+lotr_words <- read_csv(here('data', 'lotr_words.csv'))
+```
+
+---
+
+# Pilot Analysis Report 
+
+### Assignment is now [posted](https://madd.seas.gwu.edu/2022-Fall/project/4-pilot-analysis.html)
+
+### Due 11/06 (that's 10 days from now)
+
+---
+
+```{r child="topics/0.Rmd"}
+```
+
+---
+
+```{r child="topics/1.Rmd"}
+```
+
+---
+
+background-color: #EEEDEE
+class: center
+
+# Maximum likelihood estimation
+
+<center>
+<img src="images/mle1.png" width=100%>
+</center>
+
+---
+
+background-color: #EEEDEE
+
+<center>
+<img src="images/mle2.png" width=90%>
+</center>
+
+---
+
+background-color: #EEEDEE
+
+class: middle, center
+
+### The _curvature_ of the log-likelihood function is related to the hessian
+
+<center>
+<img src="images/covariance.png" width=500>
+</center>
+
+---
+
+background-color: #EEEDEE
+
+class: middle, center
+
+### The _curvature_ of the log-likelihood function is related to the hessian
+
+<center>
+<img src="images/covariance2.png" width=900>
+</center>
+
+---
+
+background-color: #EEEDEE
+
+class: middle, center
+
+### Usually report parameter uncertainty ("standard errors") with $\sigma$ values
+
+<center>
+<img src="images/uncertainty.png" width=1100>
+</center>
+
+---
+
+class: inverse
+
+# Practice Question 1
+
+Suppose we estimate a model and get the following results:
+
+$$
+\hat{\beta} =
+\begin{bmatrix}
+-0.4
+\\ 
+0.5
+\end{bmatrix}
+$$
+
+$$
+\nabla_{\beta}^2 \ln(\mathcal{L}) =
+\begin{bmatrix}
+-6000 & 60
+\\ 
+60 & -700
+\end{bmatrix}
+$$
+
+a) Use the hessian to compute the standard errors for $\hat{\beta}$
+
+b) Use the standard errors to compute a 95% confidence interval around $\hat{\beta}$
+
+---
+
+# .center[Simulating uncertainty]
+
+We can use the coefficients and hessian from a model to obtain draws that reflect parameter uncertainty
+
+.leftcol[
+
+```{r}
+beta <- c(-0.7, 0.1, -4.0)
+
+hessian <- matrix(c(
+    -6000,   50,   60,
+       50, -700,   50,
+       60,   50, -300),
+    ncol = 3, byrow = TRUE)
+```
+
+]
+
+.rightcol[
+
+```{r}
+covariance <- -1*solve(hessian)
+draws <- MASS::mvrnorm(10^5, beta, covariance)
+
+head(draws)
+```
+
+]
+
+---
+
+# .center[Simulating uncertainty]
+
+We can use the coefficients and hessian from a model to obtain draws that reflect parameter uncertainty
+
+.cols3[
+
+```{r}
+hist(draws[, 1])
+```
+
+]
+
+.cols3[
+
+```{r}
+hist(draws[, 2])
+```
+
+]
+
+.cols3[
+
+```{r}
+hist(draws[, 3])
+```
+
+]
+
+---
+
+class: inverse
+
+# Practice Question 2
+
+.leftcol[
+
+Suppose we estimate the following utility model describing preferences for cars:
+
+$$
+u_j = \alpha p_j + \beta_1 x_j^{mpg} + \beta_2 x_j^{elec} + \varepsilon_j
+$$
+
+a) Generate 10,000 draws of the model coefficients using the estimated coefficients and hessian. Use the `mvrnorm()` function from the `MASS` library.
+
+b) Use the draws to compute the mean and 95% confidence intervals of each parameter estimate.
+
+]
+
+.rightcol[
+
+The estimated model produces the following results:
+
+Parameter | Coefficient
+----------|------------
+$\alpha$ | -0.7
+$\beta_1$ | 0.1
+$\beta_2$ | -0.4
+
+Hessian:
+
+$$
+\begin{bmatrix}
+-6000 & 50 & 60
+\\ 
+50 & -700 & 50
+\\
+60 & 50 & -300
+\end{bmatrix}
+$$
+
+]
+
+---
+
+class: center
+
+## Download the [logitr-cars](https://github.com/emse-madd-gwu/logitr-cars) repo from GitHub
+
+<center>
+<img src="images/logitr-cars.png" width=900>
+</center>
+
+---
+
+# .center[Computing and visualizing uncertainty]
+
+<br>
+
+.rightcol80[
+
+## 1. Open `logitr-cars`
+
+## 2. Open `code/5.1-uncertainty.R`
+
+]
+
+---
+
+```{r child="topics/2.Rmd"}
+```
+
+---
+
+## .center[Federal R&D Spending by Department]
+
+```{r, echo=FALSE}
+head(fed_spend_wide)
+```
+
+---
+
+## .center[Federal R&D Spending by Department]
+
+.leftcol60[.code70[
+
+# "Wide" format
+
+```{r, echo=FALSE}
+head(fed_spend_wide)
+```
+
+]]
+
+--
+
+.rightcol40[.code70[
+
+# "Long" format
+
+```{r, echo=FALSE}
+head(fed_spend_long)
+```
+
+]]
+
+---
+
+## .center[Federal R&D Spending by Department]
+
+.leftcol60[.code70[
+
+# "Wide" format
+
+```{r, echo=FALSE}
+head(fed_spend_wide)
+dim(fed_spend_wide)
+```
+
+]]
+
+.rightcol40[.code70[
+
+# "Long" format
+
+```{r, echo=FALSE}
+head(fed_spend_long)
+dim(fed_spend_long)
+```
+
+]]
+
+---
+
+# .center[Tidy data = "Long" format]
+
+- Each **variable** has its own **column**
+- Each **observation** has its own **row**
+
+<center>
+<img src="images/tidy-data.png" width = "1000">
+</center>
+
+---
+
+.leftcol[
+
+# Tidy data 
+
+- Each **variable** has its own **column**
+- Each **observation** has its own **row**
+
+]
+
+.rightcol[
+
+```{r, echo=FALSE}
+head(fed_spend_long)
+```
+
+]
+
+<center>
+<img src="images/tidy-data.png" width = "1000">
+</center>
+
+---
+
+.leftcol40[.code70[
+
+# "Long" format
+
+```{r, echo=FALSE}
+head(fed_spend_long)
+```
+
+]]
+
+.rightcol60[.code70[
+
+# "Wide" format
+
+```{r, echo=FALSE}
+head(fed_spend_wide)
+```
+
+]]
+
+---
+
+# .center[**Do the names describe the values?**]
+
+.leftcol40[.code70[
+
+## **Yes**: "Long" format
+
+```{r, echo=FALSE}
+head(fed_spend_long)
+```
+
+]]
+
+.rightcol60[.code70[
+
+## **No**: "Wide" format
+
+```{r, echo=FALSE}
+head(select(fed_spend_wide, year:HHS))
+```
+
+]]
+
+---
+
+# **Quick practice 1**: "long" or "wide" format? 
+
+**Description**: Tuberculosis cases in various countries
+
+.code100[
+```{r, echo=FALSE}
+tb_cases
+```
+]
+
+---
+
+# **Quick practice 2**: "long" or "wide" format? 
+
+**Description**: Word counts in LOTR trilogy
+
+.code90[
+```{r, echo=FALSE}
+lotr_words
+```
+]
+
+---
+
+# **Quick practice 3**: "long" or "wide" format? 
+
+**Description**: Word counts in LOTR trilogy
+
+```{r, echo=FALSE}
+lotr_words %>% 
+    pivot_longer(
+        cols = Female:Male, 
+        names_to = "Gender", 
+        values_to = "Word_Count"
+    ) %>% 
+    head(15)
+```
+
+---
+
+class: inverse, center, middle
+
+# Reshaping data with
+
+## `pivot_longer()` and `pivot_wider()`
+
+---
+
+background-color: #fff
+
+.leftcol40[
+
+# Reshaping data 
+
+## `pivot_longer()`<br>`pivot_wider()`
+
+]
+
+.rightcol60[
+
+<center>
+<img src="images/tidyr-pivoting.gif" width=530>
+</center>
+
+]
+
+---
+
+## .center[From "long" to "wide" with `pivot_wider()`]
+
+<center>
+<img src="images/tidy-wider.png" width=600>
+</center>
+
+---
+
+## .center[From "long" to "wide" with `pivot_wider()`]
+
+.leftcol45[
+
+```{r}
+head(fed_spend_long)
+```
+
+]
+
+.rightcol55[
+
+```{r}
+fed_spend_wide <- fed_spend_long %>%
+    pivot_wider(
+        names_from = department,  #<<
+        values_from = rd_budget_mil) #<<
+
+head(fed_spend_wide)
+```
+
+]
+
+---
+
+## .center[From "wide" to "long" with `pivot_longer()`]
+
+<center>
+<img src="images/tidy-longer.png" width=600>
+</center>
+
+---
+
+## .center[From "wide" to "long" with `pivot_longer()`]
+
+.leftcol45[
+
+```{r}
+head(fed_spend_wide)
+```
+
+]
+
+.rightcol55[
+
+```{r}
+fed_spend_long <- fed_spend_wide %>%
+    pivot_longer( 
+        names_to = "department", #<<
+        values_to = "rd_budget_mil", #<< 
+        cols = DOD:Other) #<<
+
+head(fed_spend_long)
+```
+
+]
+
+---
+
+## Can also set `cols` by selecting which columns _not_ to use
+
+.leftcol45[
+
+```{r}
+names(fed_spend_wide)
+```
+
+]
+
+.rightcol55[
+
+```{r}
+fed_spend_long <- fed_spend_wide %>%
+    pivot_longer(
+        names_to = "department", 
+        values_to = "rd_budget_mil",
+        cols = -year) #<<
+
+head(fed_spend_long)
+```
+
+]
+
+---
+
+class: inverse
+
+```{r, echo=FALSE}
+countdown(
+    minutes      = 15,
+    warn_when    = 15,
+    update_every = 1,
+    top          = 0,
+    right        = 0,
+    font_size    = '2em'
+)
+```
+
+# Your turn: Reshaping Data
+
+Open the `practice.Rmd` file. 
+
+Run the code chunk to read in the following two data files:
+
+- `pv_cell_production.xlsx`: Data on solar photovoltaic cell production by country
+- `milk_production.csv`: Data on milk production by state
+
+Now modify the format of each:
+
+- If the data are in "wide" format, convert it to "long" with `pivot_longer()`
+- If the data are in "long" format, convert it to "wide" with `pivot_wider()`
+
+---
+
+class: inverse, center
+
+# .fancy[Break]
+
+```{r, echo=FALSE}
+
+countdown(
+    minutes      = 5,
+    warn_when    = 30,
+    update_every = 1,
+    left         = 0, right = 0, top = 1, bottom = 0,
+    margin       = "5%",
+    font_size    = "8em"
+)
+```
+
+---
+
+```{r child="topics/3.Rmd"}
+```
+
+---
+
+class: center
+
+## Download the [formr4conjoint](https://github.com/jhelvy/formr4conjoint) repo from GitHub
+
+<center>
+<img src="images/formr4conjoint.png" width=900>
+</center>
+
+---
+
+# .center[Cleaning formr survey data]
+
+<br>
+
+.rightcol80[
+
+## 1. Open `formr4conjoint.Rproj`
+
+## 2. Open `code/data_cleaning.R`
+
+]
+
+---
+
+class: inverse
+
+```{r, echo=FALSE}
+countdown(
+    minutes = 20,
+    warn_when = 15,
+    update_every = 1,
+    top = 0,
+    right = 0,
+    font_size = '2em'
+)
+```
+
+# Your Turn
+
+## As a team, pick up where you left off last week and create a `choiceData` data frame in a "long" format
+
+---
+
+```{r child="topics/4.Rmd"}
+```
+
+---
+
+# .center[Estimating pilot data models]
+
+<br>
+
+.rightcol80[
+
+## 1. Open `formr4conjoint.Rproj`
+
+## 2. Open `code/modeling.R`
+
+]
+
+---
+
+class: inverse
+
+# Your Turn
+
+## As a team:
+
+1. Use your `choiceData` data frame to estimate preliminary choice models.  
+2. Interpret your model coefficients with uncertainty.
