@@ -26,6 +26,8 @@ output:
 ```{r}
 #| include: false
 
+library(here)
+
 # For this class
 milk_production  <- read_csv(here::here('data', 'milk_production.csv'))
 fed_spend_long <- read_csv(here('data', 'fed_spend_long.csv'))
@@ -36,11 +38,9 @@ lotr_words <- read_csv(here('data', 'lotr_words.csv'))
 
 ---
 
-# Pilot Analysis Report 
+# [Pilot Analysis Report](https://madd.seas.gwu.edu/2023-Fall/project/4-pilot-analysis.html)
 
-### Assignment is now [posted](https://madd.seas.gwu.edu/2022-Fall/project/4-pilot-analysis.html)
-
-### Due 11/06 (that's 10 days from now)
+### Due 11/05 (that's 10 days from now)
 
 ---
 
@@ -246,7 +246,7 @@ $$
 
 class: center
 
-## Download the [logitr-cars](https://github.com/emse-madd-gwu/logitr-cars) repo from GitHub
+## Download the [logitr-cars](https://github.com/jhelvy/logitr-cars) repo from GitHub
 
 <center>
 <img src="images/logitr-cars.png" width=900>
