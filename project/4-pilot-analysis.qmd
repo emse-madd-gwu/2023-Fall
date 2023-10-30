@@ -35,8 +35,7 @@ Your report should include three main components:
 - A detailed description of planned changes you will include in your final survey.
 
 Follow the guidelines below to prepare your analysis and report.
-
-## 1. Report Guidelines
+# 1. Report Guidelines
 
 Download and unzip [this template](../templates/pilot-analysis.zip) for your report. You should write your report in the `report.qmd` file. The template comes with some text and code explaining how to use it - you should delete this code & text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:
 
@@ -54,7 +53,7 @@ spelling::spell_check_files("report.qmd")
 
 All figures, tables, and equations should be referenced in the text.
 
-## 2. Pilot Data Analysis
+# 2. Pilot Data Analysis
 
 Before writing your report, you should first analyze your pilot data by following these steps:
 
@@ -64,7 +63,7 @@ Before writing your report, you should first analyze your pilot data by followin
 4. Open the `modeling.R` file and write code to estimate preliminary models using your cleaned choice data.
 5. Open the `power-analysis.R` file and write code to conduct a power analysis to inform the sample size requirements for your final survey.
 
-## 3. Pilot Analysis Report
+# 3. Pilot Analysis Report
 
 Your report should contain the following items listed as separate sections.
 
@@ -124,6 +123,12 @@ Based on your analyses, write a description of any changes you plan on making to
 - Did you make any changes to the product attributes and / or levels?
 - Do you expect to be able to obtain the necessary sample size for your analysis?
 - Other useful feedback did you receive from respondents / classmates that informed a design change.
+
+### Attribution
+
+Include a short description of the specific contributions of each team member for this report. If all members contributed equally, you can just put the single sentence "All members contributed equally".
+
+Team members who do not make meaningful contributions to their projects will not receive the same grade as that of their team mates. If you are having any issues or disputes among team members, please contact Professor Helveston ASAP so we can find a resolution.
 
 ### Appendix
 
