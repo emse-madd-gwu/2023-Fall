@@ -1,0 +1,172 @@
+---
+title: "Design of Experiment with Cars"
+format: html
+theme: united
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+knitr::opts_chunk$set(
+    warning = FALSE,
+    message = FALSE,
+    fig.path = "figs/",
+    fig.width = 7.252,
+    fig.height = 4,
+    comment = "#>",
+    fig.retina = 3
+)
+
+library(tidyverse)
+library(cbcTools)
+```
+
+# Full factorial design
+
+Full factorial design of experiment for 3 effects: A, B, C
+
+A: Electric? (Yes+ or No-)
+B: Warranty? (Yes+ or No-)
+C: Ford? (Yes+ or No-)
+
+```{r}
+profiles <- cbc_profiles(
+    electric = c(1, 0),
+    warranty = c(1, 0),
+    ford     = c(1, 0)
+)
+
+profiles
+```
+
+## Balanced?
+
+All levels appear an equal number of times.
+
+```{r}
+profiles %>% count(electric)
+profiles %>% count(warranty)
+profiles %>% count(ford)
+```
+
+## Orthogonal? 
+
+All pairs of levels appear together an equal number of times.
+
+```{r}
+pairs <- profiles %>% 
+    mutate(
+        electric_warranty = electric == warranty,
+        warranty_ford = warranty == ford,
+        electric_ford = electric == ford
+    )
+
+pairs %>% count(electric_warranty)
+pairs %>% count(warranty_ford)
+pairs %>% count(electric_ford)
+```
+
+
+
+# Fractional factorial design w/confounded main effects
+
+```{r}
+profiles_frac1 <- profiles[c(1,4,5,8), ]
+profiles_frac1
+```
+
+Balanced?
+
+```{r}
+profiles_frac1 %>% count(electric)
+profiles_frac1 %>% count(warranty)
+profiles_frac1 %>% count(ford)
+```
+
+Orthogonal? 
+
+```{r}
+pairs <- profiles_frac1 %>% 
+    mutate(
+        electric_warranty = electric == warranty,
+        warranty_ford = warranty == ford,
+        electric_ford = electric == ford
+    )
+
+pairs %>% count(electric_warranty)
+pairs %>% count(warranty_ford)
+pairs %>% count(electric_ford)
+```
+
+"electric" and "warranty" are confounded!
+
+
+
+# Fractional factorial design w/confounded interaction effects
+
+```{r}
+profiles_frac2 <- profiles[c(1,4,6,7), ]
+profiles_frac2
+```
+
+Balanced?
+
+```{r}
+profiles_frac2 %>% count(electric)
+profiles_frac2 %>% count(warranty)
+profiles_frac2 %>% count(ford)
+```
+
+Orthogonal? 
+
+```{r}
+pairs <- profiles_frac2 %>% 
+    mutate(
+        electric_warranty = electric == warranty,
+        warranty_ford = warranty == ford,
+        electric_ford = electric == ford
+    )
+
+pairs %>% count(electric_warranty)
+pairs %>% count(warranty_ford)
+pairs %>% count(electric_ford)
+```
+
+No main effects are confounded!
+
+Examine confounding between main and interaction effects:
+
+```{r}
+pairs <- pairs %>% 
+    mutate(
+        electric__electric_warranty = electric == electric_warranty,
+        electric__warranty_ford = electric == warranty_ford,
+        electric__electric_ford = electric == electric_ford,
+        warranty__electric_warranty = warranty == electric_warranty,
+        warranty__warranty_ford = warranty == warranty_ford,
+        warranty__electric_ford = warranty == electric_ford,
+        ford__electric_warranty = ford == electric_warranty,
+        ford__warranty_ford = ford == warranty_ford,
+        ford__electric_ford = ford == electric_ford
+    )
+
+# "electric" main effect with interactions:
+pairs %>% count(electric__electric_warranty)
+pairs %>% count(electric__warranty_ford)
+pairs %>% count(electric__electric_ford)
+
+# "warranty" main effect with interactions:
+pairs %>% count(warranty__electric_warranty)
+pairs %>% count(warranty__warranty_ford)
+pairs %>% count(warranty__electric_ford)
+
+# "ford" main effect with interactions:
+pairs %>% count(ford__electric_warranty)
+pairs %>% count(ford__warranty_ford)
+pairs %>% count(ford__electric_ford)
+```
+
+- "electric" is confounded with "warranty_ford" interaction
+- "warranty" is confounded with "electric_ford" interaction
+- "ford" is confounded with "electric_warranty" interaction
