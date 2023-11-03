@@ -35,6 +35,13 @@
     "text": "Software\nGo to the Course Software page for detailed instructions on how to install the software we’ll be using. Here’s a quick list:\n\nR (version 4.1.0 or later), which can be downloaded from The Comprehensive R Archive Network (CRAN)\nRStudio (Desktop Version), a free IDE for R, which can be downloaded from RStudio\nWe’ll be using Slack for most communication."
   },
   {
+    "objectID": "syllabus.html#textbooks",
+    "href": "syllabus.html#textbooks",
+    "title": "Syllabus",
+    "section": "Textbooks",
+    "text": "Textbooks\n\nFor learning the basics of R, I recommend referencing my book “Programming for Analytics in R”, by Professor Helveston. The book is available freely on the web at https://p4a.jhelvy.com/.\nThe theoretical underpinnings to most of the modeling we will do in this course can be found in the book “Discrete Choice Methods with Simulation” by Dr. Kenneth Train. The book is available freely on the web at https://eml.berkeley.edu/books/choice2.html."
+  },
+  {
     "objectID": "syllabus.html#participation-attendance",
     "href": "syllabus.html#participation-attendance",
     "title": "Syllabus",
@@ -221,28 +228,28 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Grolemund, Garrett. “Hands-On Programming with R” [free online], [buy on amazon]\nPeng, Roger D. “R Programming for Data Science” [online - pay what you want]\n\n\n\n\n\nGrolemund, Garrett and Wickham, Hadley. “R for Data Science” [free online], [buy on amazon]\nPeng, Roger D. “Exploratory Data Analysis with R” [online - pay what you want]\n16 HOWTO’s, by Lingyun Zhang\n\n\n\n\n\nAll cheatsheets\nData wrangling with the dplyr library\nData visualization with the ggplot2 library\nRMarkdown"
+    "text": "The theoretical underpinnings to most of the modeling we will do in this course can be found in the book “Discrete Choice Methods with Simulation” by Dr. Kenneth Train. The book is available freely on the web at https://eml.berkeley.edu/books/choice2.html."
   },
   {
     "objectID": "references.html#general-programming-in-r",
     "href": "references.html#general-programming-in-r",
     "title": "References",
-    "section": "",
-    "text": "Grolemund, Garrett. “Hands-On Programming with R” [free online], [buy on amazon]\nPeng, Roger D. “R Programming for Data Science” [online - pay what you want]"
+    "section": "General Programming in R",
+    "text": "General Programming in R\n\nGrolemund, Garrett. “Hands-On Programming with R” [free online], [buy on amazon]\nPeng, Roger D. “R Programming for Data Science” [online - pay what you want]"
   },
   {
     "objectID": "references.html#data-analysis-in-r",
     "href": "references.html#data-analysis-in-r",
     "title": "References",
-    "section": "",
-    "text": "Grolemund, Garrett and Wickham, Hadley. “R for Data Science” [free online], [buy on amazon]\nPeng, Roger D. “Exploratory Data Analysis with R” [online - pay what you want]\n16 HOWTO’s, by Lingyun Zhang"
+    "section": "Data Analysis in R",
+    "text": "Data Analysis in R\n\nGrolemund, Garrett and Wickham, Hadley. “R for Data Science” [free online], [buy on amazon]\nPeng, Roger D. “Exploratory Data Analysis with R” [online - pay what you want]\n16 HOWTO’s, by Lingyun Zhang"
   },
   {
     "objectID": "references.html#rstudio-cheatsheets",
     "href": "references.html#rstudio-cheatsheets",
     "title": "References",
-    "section": "",
-    "text": "All cheatsheets\nData wrangling with the dplyr library\nData visualization with the ggplot2 library\nRMarkdown"
+    "section": "RStudio “Cheatsheets”",
+    "text": "RStudio “Cheatsheets”\n\nAll cheatsheets\nData wrangling with the dplyr library\nData visualization with the ggplot2 library\nRMarkdown"
   },
   {
     "objectID": "references.html#principles-of-data-visualization",
