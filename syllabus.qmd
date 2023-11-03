@@ -56,6 +56,11 @@ Go to the Course [Software page](software.qmd) for detailed instructions on how 
 - RStudio (Desktop Version), a free IDE for R, which can be downloaded from [RStudio](https://rstudio.com/products/rstudio/download/)
 - We'll be using [Slack]({{< var slack >}}){target="_blank"} for most communication.
 
+## Textbooks
+
+- For learning the basics of R, I recommend referencing my book "Programming for Analytics in R", by Professor Helveston. The book is available freely on the web at [https://p4a.jhelvy.com/](https://p4a.jhelvy.com/){target="_blank"}.
+- The theoretical underpinnings to most of the modeling we will do in this course can be found in the book "Discrete Choice Methods with Simulation" by Dr. Kenneth Train. The book is available freely on the web at [https://eml.berkeley.edu/books/choice2.html](https://eml.berkeley.edu/books/choice2.html){target="_blank"}.
+
 # Assignments
 
 ## Participation & Attendance

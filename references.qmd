@@ -4,7 +4,13 @@ toc: true
 toc-location: right
 ---
 
+# Choice Modeling
+
+The theoretical underpinnings to most of the modeling we will do in this course can be found in the book "Discrete Choice Methods with Simulation" by Dr. Kenneth Train. The book is available freely on the web at [https://eml.berkeley.edu/books/choice2.html](https://eml.berkeley.edu/books/choice2.html){target="_blank"}.
+
 # Programming
+
+For learning the basics of R, I recommend referencing my book "Programming for Analytics in R", by Professor Helveston. The book is available freely on the web at [https://p4a.jhelvy.com/](https://p4a.jhelvy.com/){target="_blank"}.
 
 ## General Programming in R
 
