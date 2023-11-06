@@ -2,9 +2,9 @@ name: Render and Deploy Quarto Site
 on:
   push:
     branches: main
-  # schedule:
-    # Runs daily at midnight (EST)
-    # - cron: '0 5 * * *'
+  schedule:
+    Runs daily at midnight (EST)
+    - cron: '0 5 * * *'
 
 jobs:
   build:
