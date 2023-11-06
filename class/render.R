@@ -13,10 +13,6 @@ zip::zip(
     zipfile = paste0(lesson, ".zip"),
     files = c(
         # "data",
-        'balance-orthogonality.qmd',
-        'design-efficiency.qmd',
-        'interactions.qmd',
-        'powerAnalysis.qmd',
         'practice-solutions.qmd',
         'practice.qmd',
         paste0(lesson, ".Rproj"))
