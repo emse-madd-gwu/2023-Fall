@@ -5,4 +5,42 @@ params:
   purpose: "The purpose of this assignment is to introduce the concept of preference heterogeneity - that is, not everyone has the same preferences. We will see two ways to account for this: 1) specify preference parameters as distributions, and 2) estimate fixed parameter models on different sub-groups in your data."
 ---
 
-Coming soon!
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+# 1. Get Organized
+
+Follow these instructions:
+
+1. Download and edit [this template](`r url_template`).
+2. Unzip the template folder. **Make sure you actually unzip it**! (in Windows, right-click it and use "extract all")
+3. Open the .Rproj file to open RStudio.
+4. Inside RStudio, open the ``r hw_file`` file, take notes, and write some example code as you go through the readings / exercises below.
+
+# 2. Readings
+
+Up until this point in the class, we have only estimated relatively simple models that assume everyone in our sample has the same preferences. That is, we only estimate a "fixed parameter" model that reflects the average preferences for the whole sample. In reality, preferences are usually _heterogeneous_ (different people have different preferences).
+
+One way to account for this is to estimated a "mixed" logit model where we assume the preference parameters in our utility models follow some distribution across the sample (usually a normal distribution). Another way is to estimate a fixed parameter model on different sub-groups in our data. Each of these approaches are discussed in this week's video on heterogeneity. **Take notes** as you watch the video and answer the practice questions in the video as part of your reflection. You may submit your answers however you wish, e.g. hand-write them on paper and take a picture and / or type answers in your reflection .Rmd file.
+
+Click [here](../content/slides_heterogeneity.pdf) to download the slides in the video as a PDF.
+
+<center>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/tOGKpeZ0AhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+# 3. Reflect
+
+Reflect on what you've learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your ``r hw_file`` file, and include at least one question. The teaching team will review the questions we get and will try to answer them either in Slack or in class.
+
+If you're unsure where to start with a reflection, try filling out this template:
+
+> "I used to think ______, now I think ______ 🤔"
+
+# 4. Submit
+
+To submit your assignment, follow these instructions:
+
+1. Render your .qmd file by either clicking the "Render" button in RStudio or running the command ``r paste0('quarto::quarto_render("', hw_file, '")')`` command.
+2. Open the rendered html file and make sure it looks good! Is all the formatting as you expected?
+3. Create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard.
