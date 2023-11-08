@@ -297,9 +297,57 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Coming soon!</p>
+<blockquote class="blockquote">
+<p><strong>Due</strong>: 2023-11-14 by 11:59pm</p>
+<p><strong>Weight</strong>: This assignment is worth 1.33% of your final grade.</p>
+<p><strong>Purpose</strong>: The purpose of this assignment is to introduce the concept of preference heterogeneity - that is, not everyone has the same preferences. We will see two ways to account for this: 1) specify preference parameters as distributions, and 2) estimate fixed parameter models on different sub-groups in your data.</p>
+<p><strong>Assessment</strong>: This assignment is graded using a check system:</p>
+<ul>
+<li>✔+ (110%): Responses shows phenomenal thought and engagement with the course content. I will not assign these often.</li>
+<li>✔ (100%): Responses are thoughtful, well-written, and show engagement with the course content. This is the expected level of performance.</li>
+<li>✔− (50%): Responses are hastily composed, too short, and/or only cursorily engages with the course content. This grade signals that you need to improve next time. I will <em>hopefully</em> not assign these often.</li>
+</ul>
+<p>Notice that this is essentially a pass/fail system. I’m not grading your writing ability and I’m not counting the number of words you write - I’m looking for thoughtful engagement. One or two sentences is <strong>not enough</strong>. Write at least a paragraph and show me that you did the readings assigned.</p>
+</blockquote>
+<section id="get-organized" class="level1">
+<h1>1. Get Organized</h1>
+<p>Follow these instructions:</p>
+<ol type="1">
+<li>Download and edit <a href="https://madd.seas.gwu.edu/2023-Fall/templates/hw10.zip">this template</a>.</li>
+<li>Unzip the template folder. <strong>Make sure you actually unzip it</strong>! (in Windows, right-click it and use “extract all”)</li>
+<li>Open the .Rproj file to open RStudio.</li>
+<li>Inside RStudio, open the <code>hw10.qmd</code> file, take notes, and write some example code as you go through the readings / exercises below.</li>
+</ol>
+</section>
+<section id="readings" class="level1">
+<h1>2. Readings</h1>
+<p>Up until this point in the class, we have only estimated relatively simple models that assume everyone in our sample has the same preferences. That is, we only estimate a “fixed parameter” model that reflects the average preferences for the whole sample. In reality, preferences are usually <em>heterogeneous</em> (different people have different preferences).</p>
+<p>One way to account for this is to estimated a “mixed” logit model where we assume the preference parameters in our utility models follow some distribution across the sample (usually a normal distribution). Another way is to estimate a fixed parameter model on different sub-groups in our data. Each of these approaches are discussed in this week’s video on heterogeneity. <strong>Take notes</strong> as you watch the video and answer the practice questions in the video as part of your reflection. You may submit your answers however you wish, e.g.&nbsp;hand-write them on paper and take a picture and / or type answers in your reflection .Rmd file.</p>
+<p>Click <a href="../content/slides_heterogeneity.pdf">here</a> to download the slides in the video as a PDF.</p>
+<center>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/tOGKpeZ0AhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</center>
+</section>
+<section id="reflect" class="level1">
+<h1>3. Reflect</h1>
+<p>Reflect on what you’ve learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your <code>hw10.qmd</code> file, and include at least one question. The teaching team will review the questions we get and will try to answer them either in Slack or in class.</p>
+<p>If you’re unsure where to start with a reflection, try filling out this template:</p>
+<blockquote class="blockquote">
+<p>“I used to think ______, now I think ______ 🤔”</p>
+</blockquote>
+</section>
+<section id="submit" class="level1">
+<h1>4. Submit</h1>
+<p>To submit your assignment, follow these instructions:</p>
+<ol type="1">
+<li>Render your .qmd file by either clicking the “Render” button in RStudio or running the command <code>quarto::quarto_render("hw10.qmd")</code> command.</li>
+<li>Open the rendered html file and make sure it looks good! Is all the formatting as you expected?</li>
+<li>Create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard.</li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
