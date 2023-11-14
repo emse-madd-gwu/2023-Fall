@@ -35,7 +35,7 @@ output:
 
 --
 
-- I am planning on posting all reports (without grades) to the course site as a showcase for future students - **please DM me if you would NOT like your report posted**. ([examples](https://madd.seas.gwu.edu/showcase-2021-fall.html) from last year)
+- I am planning on posting all final analyses (without grades) to the course site as a showcase for future students - **please DM me if you would NOT like your report posted**. ([examples](https://madd.seas.gwu.edu/showcase/2022-fall.html) from last year)
 
 ---
 
@@ -60,7 +60,7 @@ countdown(
 
 ### Make sure you unzip it!
 
-### When done, submit your `quiz4.qmd` on Blackboard
+### When done, submit your `quiz5.qmd` on Blackboard
 
 ]
 
