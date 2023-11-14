@@ -4,4 +4,6 @@ params:
   number: 11
 ---
 
-Coming soon!
+This week's assignment will be a take-home. The exam will be posted in your class Box folder. Additional instructions will be posted in the course Slack.
+
+The exam will be posted on 11/30 and due 12/3 by 11:59pm sharp.
