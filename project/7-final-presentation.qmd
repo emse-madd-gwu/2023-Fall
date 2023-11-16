@@ -11,4 +11,82 @@ params:
   weight: '5%'
 ---
 
-Coming soon!
+```{r}
+#| label: setup
+
+source(here::here("_common.R"))
+
+rubric <- read_csv(here::here('rubrics', '7-final-presentation.csv'))
+maxPoints <- rubric %>%
+    filter(rating == "Excellent") %>%
+    summarise(max = sum(maxPoints)) %>%
+    pull(max)
+```
+
+```{r child = here::here("fragments", "project.qmd")}
+```
+
+
+Make a slideshow presentation of your findings in your final report. You may do one of the following: 
+
+- Create a video recording of your presentation and publish it on the web (e.g. via Youtube, Vimeo, etc.).
+- Present your presentation live in class.
+
+We will watch all the presentations together during the period scheduled for the exam (December 13, 2023).
+
+Below is a list of specific items your presentation should include.
+
+# 1. Format
+
+- Your presentation should be no longer than 10 minutes in length.
+- Each team member must present at least one slide.
+- You may use as many slides as you feel helps you communicate your ideas (but keep the 10 minute limit in mind).
+- Your title slide should include the project title, team member names, and the presentation date: December 15, 2021.
+- All slides should be numbered in the bottom-left or bottom-right corners.
+- Review the slide design guidelines discussed in [class](https://madd.seas.gwu.edu/2023-Fall/class/15-communicating-results.html) as a check list when designing your slides.
+
+# 2. Recording strategies
+
+If you choose to record your presentation, I recommend using Zoom. Have someone share their screen showing the slides and talk over the slides while recording the call.
+
+Another option is to use a screen recording program, such as Quicktime (mac only), to record a screen recording on someone talking over the slides, though this may be challenging if not all teammates can be in the same room.
+
+# 2. Content
+
+Your slides do not need to include the detailed code used to conduct your analysis - that should be accessible from your report. Rather, the purpose of your presentation is to present the "big picture" overview and results from your project. You should discuss:
+
+1. An introduction of your product / policy (similar to the introduction in your report).
+2. A brief overview of your survey:
+    - At least one slide depicting an example choice question
+    - At least one slide with some summary stats about your sample (e.g., sample size, etc.)
+3. Your main findings:
+    - Polished charts of WTP, market simulations, sensitivity analyses.
+    - Your recommendations based on your findings.
+
+# 4. Publish 
+
+If you recorded a video, publish your video recording on the web (e.g. via Youtube, Vimeo, etc.), then **send a link to the published video in a DM to Professor Helveston on slack.**
+
+Only one team member needs to publish the video.
+
+# 5. Submit
+
+Create a zip file of your slides as a pdf / pptx / qmd (whatever you used to make your slides) and submit it on the corresponding assignment submission on Blackboard. **Only one person from your team should submit.**
+
+# Grading Rubric
+
+**`r maxPoints` Total Points**
+
+```{r, echo=FALSE}
+rubric %>%
+  mutate(description = paste0("<b>", points, '</b><br>', description)) %>%
+  select(-points) %>%
+  spread(key = rating, value = description) %>%
+  select(-category) %>%
+  rename(Category = label) %>%
+  arrange(order) %>%
+  select(-order) %>%
+  select(-maxPoints) %>%
+  kable(format = 'html', escape = FALSE) %>%
+  kable_styling(bootstrap_options = "striped")
+```
