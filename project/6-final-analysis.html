@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -63,6 +97,9 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 <!-- fontawesome kit -->
 <script src="https://kit.fontawesome.com/1392a7030f.js" crossorigin="anonymous"></script>
+
+<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -275,7 +312,28 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#report-guidelines" id="toc-report-guidelines" class="nav-link active" data-scroll-target="#report-guidelines">1. Report Guidelines</a></li>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">2. Data Analysis</a></li>
+  <li><a href="#final-analysis-report" id="toc-final-analysis-report" class="nav-link" data-scroll-target="#final-analysis-report">3. Final Analysis Report</a>
+  <ul class="collapse">
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#survey-design" id="toc-survey-design" class="nav-link" data-scroll-target="#survey-design">Survey Design</a></li>
+  <li><a href="#data-analysis-1" id="toc-data-analysis-1" class="nav-link" data-scroll-target="#data-analysis-1">Data Analysis</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#final-recommendations-and-conclusions" id="toc-final-recommendations-and-conclusions" class="nav-link" data-scroll-target="#final-recommendations-and-conclusions">Final Recommendations and Conclusions</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#attribution" id="toc-attribution" class="nav-link" data-scroll-target="#attribution">Attribution</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a></li>
+  </ul></li>
+  <li><a href="#submit" id="toc-submit" class="nav-link" data-scroll-target="#submit">5. Submit</a></li>
+  <li><a href="#grading-rubric" id="toc-grading-rubric" class="nav-link" data-scroll-target="#grading-rubric">Grading Rubric</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/emse-madd-gwu/2023-Fall/edit/main/project/6-final-analysis.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/emse-madd-gwu/2023-Fall/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -297,9 +355,204 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Coming soon!</p>
+<blockquote class="blockquote">
+<p><strong>Due</strong>: Dec 10 by 11:59pm</p>
+<p><strong>Weight</strong>: This assignment is worth 15% of your final grade.</p>
+<p><strong>Assessment</strong>: Your submission will be assessed using the <a href="#grading-rubric">rubric</a> at the bottom of this page.</p>
+</blockquote>
+<p>As a team, analyze your final survey data, and write a report of your findings. Your final report should be a fully reproducible html webpage. It should include text, data, code, and plots. Your report should be written in a narrative format (i.e.&nbsp;using coherent paragraphs rather than a series of bullet points). You may use headings where appropriate to break up your report into sections. There is no length requirement - your report should be sufficiently detailed to address the requirements listed below and sufficiently concise such that it is expressed in the fewest necessary words.</p>
+<p>Your report should include three main components:</p>
+<ul>
+<li>A detailed description of your survey (e.g., how it was designed, what it contained, etc.).</li>
+<li>A detailed description of your analysis of your survey data and the results you found.</li>
+<li>A detailed description of the key insights you obtained from your experiment and your design recommendations based on those insights.</li>
+</ul>
+<p>Follow the guidelines below to prepare your analysis and report.</p>
+<section id="report-guidelines" class="level1">
+<h1>1. Report Guidelines</h1>
+<p>Download and unzip <a href="../templates/final-analysis.zip">this template</a> for your report. You should write your report in the <code>report.qmd</code> file. The template comes with some text and code explaining how to use it - you should delete this code &amp; text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:</p>
+<ul>
+<li>Write your project title in the <code>title</code> field (and provide a subtitle if you wish, or delete the <code>subtitle</code> field).</li>
+<li>In the <code>author</code> field, list the names of all teammates, e.g.&nbsp;<code>author: Luke Skywalker, Leia Organa, and Han Solo</code>.</li>
+</ul>
+<p>Your report should be written in a clear, concise, and logically-structured manner so that a reader can easily understand the ideas presented. The report should be proof-read before submission to correct any grammatical or spelling errors. Spell checking can be automated by installing the <code>spelling</code> package and running this in the R console:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>spelling<span class="sc">::</span><span class="fu">spell_check_files</span>(<span class="st">"report.qmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>All figures, tables, and equations should be referenced in the text.</p>
+</section>
+<section id="data-analysis" class="level1">
+<h1>2. Data Analysis</h1>
+<p>Before writing your report, you should first analyze your data by following these steps:</p>
+<ol type="1">
+<li><p>Download the data files from formr.org for your surveys and put them in the “data” folder in the report template.</p></li>
+<li><p>Open the <code>clean_data.R</code> file and write code to clean your data and prepare it for modeling. Your cleaned choice data should be in a “long” format similar to the <a href="https://github.com/jhelvy/formr4conjoint/blob/master/data/choiceData.csv">example choice data here</a>. Save your cleaned data file as a .csv file in the “data” folder.</p></li>
+<li><p>Open the <code>modeling.R</code> file and write code to estimate any models you will use in your analysis. At a minimum, you should estimate:</p>
+<ul>
+<li>A simple logit model that includes all of the attributes in your survey.</li>
+<li>A mixed logit model that allows at least some of those attributes to vary randomly according to assumed distributions.</li>
+<li>At least one sub-group analysis where you compare a logit model on different sub-groups in your sample.</li>
+</ul></li>
+<li><p>Open the <code>analysis.R</code> file and write code to conduct further analyses using the results from your estimated models. At a minimum, you should include:</p>
+<ul>
+<li>Estimates of consumer WTP for each attribute in your survey, along with corresponding plots of WTP. Your estimates and plots should include both the mean estimates and a 95% confidence interval. (Policy projects may omit estimates of WTP if they are not applicable and instead should report utility coefficients).</li>
+<li>At least one market simulation comparing your product against competitors along with an accompanying plot. (Policy projects should compare different policies).</li>
+<li>A sensitivity analysis showing your product’s market share sensitivity to changes in <em>price</em> as well as changes in other attributes in your survey along with accompanying plots.</li>
+</ul></li>
+</ol>
+</section>
+<section id="final-analysis-report" class="level1">
+<h1>3. Final Analysis Report</h1>
+<p>Your report should contain the following items listed as separate sections.</p>
+<blockquote class="blockquote">
+<p>NOTE: You may re-use content from earlier project assignments in this report, such as introductory paragraphs, images, etc.</p>
+</blockquote>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
+<p>A few sentences summarizing your experiment and your main findings along with design recommendations. Include:</p>
+<ol type="1">
+<li>What is the product / policy you are studying?</li>
+<li>What were the product attributes and design decisions you were interested in?</li>
+<li>What are the key insights and recommendations you are making based on those insights?</li>
+</ol>
+</section>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>Provide a brief description and background of the product / policy that motivates the study of it. Include a picture or diagram of the product. You should also discuss the key product attributes and decisions variables you chose to study in your survey. This section can be largely similar to your proposal introduction.</p>
+</section>
+<section id="survey-design" class="level3">
+<h3 class="anchored" data-anchor-id="survey-design">Survey Design</h3>
+<p>This section should discuss the design choices you made in creating your survey. Include the following:</p>
+<ul>
+<li>Describe the eligibility requirements you chose and why you chose them. These should be the question(s) you used to filter respondents in or out of your survey.</li>
+<li>What information about your respondents did you collect (e.g.&nbsp;critical information questions, demographics, etc.)?</li>
+<li>Describe any educational material presented to the respondents.</li>
+<li>Define and justify the attributes and levels chosen for your conjoint choice questions. Indicate the number of alternatives per choice question and the number of choice questions per respondent.</li>
+<li>Include table summarizing the attributes and levels you included in your survey.</li>
+<li>Describe any major changes you made between your pilot survey and final survey.</li>
+<li>Include an example figure of a random conjoint question (this can be a screen shot or you can use Rmarkdown code to generate an example).</li>
+</ul>
+<p>You should include a full copy of your survey in an appendix (see the <a href="../project/6-final-analysis.html#appendix">Appendix section below</a>)</p>
+</section>
+<section id="data-analysis-1" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis-1">Data Analysis</h3>
+<p>This section should describe the analysis you carried out using your final survey data, including the following subsections:</p>
+<section id="sample-description" class="level4">
+<h4 class="anchored" data-anchor-id="sample-description">Sample Description</h4>
+<p>Describe your respondent sample, including the total sample size, the total number of choice question responses, and summary statistics of how your sample varies across critical information questions, demographics, etc. Include a summary table showing the breakdown of different demographic questions you asked on your survey. Tables should be formatted (e.g., using <code>kable()</code>), not just print outs from code chunks.</p>
+</section>
+<section id="data-cleaning" class="level4">
+<h4 class="anchored" data-anchor-id="data-cleaning">Data Cleaning</h4>
+<p>Describe any filtering process you applied to your data. Summarize how many acceptable vs.&nbsp;rejected responses you kept in your analysis and justify how you made that determination.</p>
+</section>
+<section id="modeling" class="level4">
+<h4 class="anchored" data-anchor-id="modeling">Modeling</h4>
+<p>Write out the specific utility model you estimated for your baseline logit model (you don’t need to include descriptions of the other models as they are derivative from the baseline model). <a href="https://www.codecogs.com/latex/eqneditor.php">This online LaTeX equation editor</a> might come in handy for this (also, some example LaTeX equations are provided in the <code>practice-solutions.qmd</code> files from previous classes). Include a summary table of your utility coefficient estimates with standard errors.</p>
+</section>
+</section>
+<section id="results" class="level3">
+<h3 class="anchored" data-anchor-id="results">Results</h3>
+<p>Show your plots</p>
+<p>Insert and discuss your plot(s) of WTP for product attributes with simulated 95% confidence intervals, using a common scale for the y-axis across plots (policy projects, show plots of utility coefficients). Interpret the results and identify key attributes that drive consumer choice.</p>
+<p>Clearly define and justify your simulated market scenario(s) using a table listing the attributes of your product(s) and competitor products. Report simulated market shares with simulated 95% confidence intervals. Discuss key insights from these simulations. Discuss opportunities for increasing demand – what attributes drive market adoption, and what ranges of values for your product attributes result in more competitive outcomes?</p>
+<p>Discuss the sensitivity of market demand predictions to product attributes and include at least one “tornado” plot as well as plots of market share vs.&nbsp;price. Identify the best price point and design decisions in terms of maximizing revenue for your product and state the uncertainty of these estimates.</p>
+<p>Explain the limitations of your analysis (e.g.&nbsp;survey sample representativeness, issues outside the scope of your model that could influence your assessment and recommendations, etc.).</p>
+</section>
+<section id="final-recommendations-and-conclusions" class="level3">
+<h3 class="anchored" data-anchor-id="final-recommendations-and-conclusions">Final Recommendations and Conclusions</h3>
+<p>Describe your key insights and resulting recommendations:</p>
+<ul>
+<li>Does the product have the potential to be competitive against current competitors? At what price ranges? How confident are you? What key unknowns or uncertainties could most influence profitability? (For policy projects, discuss comparisons of policy interventions).</li>
+<li>What are your recommendations for key decisions on price and other decision variables, and how robust are these recommendations?</li>
+<li>What are the top opportunities you identified for increasing demand / market success of your product?</li>
+</ul>
+</section>
+<section id="limitations" class="level3">
+<h3 class="anchored" data-anchor-id="limitations">Limitations</h3>
+<p>Describe limitations:</p>
+<ul>
+<li>Identify what information would be most valuable to collect next in order to address limitations of the analysis and support decision-making.</li>
+<li>Describe the most important unknowns that could affect your findings.</li>
+</ul>
+</section>
+<section id="attribution" class="level3">
+<h3 class="anchored" data-anchor-id="attribution">Attribution</h3>
+<p>Include a short description in your blackboard submission of the specific contributions of each team member for this report. If all members contributed equally, you can just put the single sentence “All members contributed equally”.</p>
+<p>Team members who do not make meaningful contributions to their projects will not receive the same grade as that of their team mates. If you are having any issues or disputes among team members, please contact Professor Helveston ASAP so we can find a resolution.</p>
+</section>
+<section id="appendix" class="level3">
+<h3 class="anchored" data-anchor-id="appendix">Appendix</h3>
+<p>Your appendix should include:</p>
+<ul>
+<li>A full copy of your conjoint survey (for the conjoint choice questions, include just one example since the specific levels were different for each choice question).</li>
+<li>Any other supplementary information that could not be included into the main report.</li>
+</ul>
+</section>
+</section>
+<section id="submit" class="level1">
+<h1>5. Submit</h1>
+<p>Render your <code>report.qmd</code> file, then create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard. <strong>Only one person from your team should submit the report.</strong></p>
+</section>
+<section id="grading-rubric" class="level1">
+<h1>Grading Rubric</h1>
+<p><strong>40 Total Points</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<table class="table table-striped table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Category</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Excellent</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Good</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Needs work</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Organization &amp; Formatting</td>
+<td style="text-align: left;"><strong>5</strong><br>
+All formatting guidelines are followed.</td>
+<td style="text-align: left;"><strong>4</strong><br>
+Most formatting guidelines are followed; only one or two components from the template are missing.</td>
+<td style="text-align: left;"><strong>3</strong><br>
+Most formatting guidelines are followed; several components from the template are missing or incomplete.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Data Analysis</td>
+<td style="text-align: left;"><strong>15 / 14</strong><br>
+All analysis requirements are followed, including data cleaning, modeling, and analysis, and all modeling and analysis is correctly specified. Code runs without error and results can be fully reproduced.</td>
+<td style="text-align: left;"><strong>13 / 12 / 11</strong><br>
+Most analysis requirements are followed, including data cleaning, modeling, and analysis. There may be some small errors in modeling or interpretation, but these errors do not have a strong effect on outcomes or conclusions. Code might contain a few errors, but the results can still be reproduced with a few fixes.</td>
+<td style="text-align: left;"><strong>10 / 9 / 8 / 7 / 6 / 5</strong><br>
+Some of the analysis requirements components are incomplete or missing, including data cleaning, modeling, and analysis. Interpretation or modeling is incorrect or mis-specified, leading to errors in conclusions. Code contains multiple significant errors and results cannot be reproduced, even with efforts to correct errors.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Report Contents</td>
+<td style="text-align: left;"><strong>15 / 14</strong><br>
+All report guidelines are followed, including the introduction, descriptions of the survey and modeling / analysis, and results and recommendations / conclusions are clear and justified by results.</td>
+<td style="text-align: left;"><strong>13 / 12 / 11</strong><br>
+Most report guidelines are followed, including the introduction, descriptions of the survey and modeling / analysis; results and recommendations / conclusions are perhaps unclear or missing important details, but are still largely supported by the modeling results.</td>
+<td style="text-align: left;"><strong>10 / 9 / 8 / 7 / 6 / 5</strong><br>
+Several report guidelines are not followed, including the introduction, descriptions of the survey and modeling / analysis; results and recommendations / conclusions are unclear or missing, or are not supported by the modeling results. Some components are incomplete or missing.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Appendix</td>
+<td style="text-align: left;"><strong>5</strong><br>
+Appendix of the full survey is included.</td>
+<td style="text-align: left;"><strong>4</strong><br>
+Appendix of the full survey is included, but some parts of the survey may be missing.</td>
+<td style="text-align: left;"><strong>3</strong><br>
+No appendix of survey included</td>
+</tr>
+</tbody>
+</table>
 
 
+</div>
+</div>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -561,7 +814,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
  © 2023 John Paul Helveston <a href="LICENSE.html"><i class="fab fa-creative-commons"></i><i class="fab fa-creative-commons-by"></i><i class="fab fa-creative-commons-sa"></i></a><br><i class="far fa-calendar-alt"></i> Wednesdays | <i class="far fa-clock"></i> 6:10PM - 8:40PM EST | <a href="https://acadtech.gwu.edu/main-classroom-search/bell-hall-109"><i class="fa fa-map-marker-alt"></i> Bell Hall 109</a><br><a href="https://www.jhelvy.com"><i class="fas fa-user"></i> Dr. John Paul Helveston</a> | <a href="mailto:jph@gwu.edu"><i class="fas fa-envelope"></i> jph@gwu.edu</a> | <a href="https://github.com/emse-madd-gwu/2023-Fall"><i class="fab fa-github"></i></a>
   </li>  
 </ul>
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/emse-madd-gwu/2023-Fall/edit/main/project/6-final-analysis.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/emse-madd-gwu/2023-Fall/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
