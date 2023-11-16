@@ -40,7 +40,11 @@ Download and unzip [this template](../templates/final-survey.zip) for your surve
 - `choice_questions.csv`: The survey choice question design file.
 - `images`: A folder of images you're using in your survey.
 
-# 2. Write your survey content
+# 2. Target population
+
+Who should take your survey? When you submit your assignment on Blackboard, write down in Blackboard the eligibility requirements for who should be allowed to take your survey. Your survey should screen out people who don't qualify, but I will also use this information to try to pre-screen respondents so hopefully fewer will be screened out of your survey.
+
+# 3. Write your survey content
 
 The files included in the zip file are taken directly from the example [apples conjoint repo](https://github.com/jhelvy/formr4conjoint) on GitHub associated with the [blog post](https://www.jhelvy.com/posts/2021-09-18-choice-based-conjoint-surveys-in-r-with-formr/) on building conjoint surveys in R. **This is just placeholder content - you need to replace it with your survey content**.
 
@@ -52,7 +56,7 @@ Follow these guidelines in inserting your content:
 
 > Be sure to knit each file often - you should knit each part to html files so you can preview that everything is displaying as expected.
 
-# 3. Upload your content to formr.org
+# 4. Upload your content to formr.org
 
 Using your team google and formr accounts:
 
@@ -61,13 +65,13 @@ Using your team google and formr accounts:
 3. When you are confident that the Run is ready, turn the "volume" settings to the third setting ("People who have the link can access").
 4. Send the link to Professor Helveston in a message on slack (only one team member).
 
-# 4. Attribution
+# 5. Attribution
 
 Include a short description in your blackboard submission of the specific contributions of each team member for this report. If all members contributed equally, you can just put the single sentence "All members contributed equally".
 
 Team members who do not make meaningful contributions to their projects will not receive the same grade as that of their team mates. If you are having any issues or disputes among team members, please contact Professor Helveston ASAP so we can find a resolution.
 
-# 5. Submit
+# 6. Submit
 
 Render your `.qmd` files for each part of your survey, then create a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard. **Only one person from your team should submit the report.**
 
