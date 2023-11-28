@@ -19,9 +19,9 @@ project:
     - "!10-doe-power-analysis/"
     - "!11-wtp-simulation/"
     - "!12-heterogeneity/"
-    - "!14-class-review/"
-    - "!15-communicating-results/"
-    - "!16-final-presentations/"
+    - "!13-class-review/"
+    - "!14-story-telling/"
+    - "!15-final-presentations/"
   resources:
     - "class/"
     - "rubrics/"
