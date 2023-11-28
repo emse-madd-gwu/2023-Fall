@@ -17,4 +17,3 @@ zip::zip(
         'practice.qmd',
         paste0(lesson, ".Rproj"))
 )
-

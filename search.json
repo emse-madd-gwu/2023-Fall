@@ -448,9 +448,9 @@
     "text": "KEYBOARD SHORTCUTS FOR SLIDES:\n\nUse ← and → to navigate through the slides.\nUse f to toggle full screen.\nUse o to view an overview of all slides.\nUse h to see a list of other shortcuts.\n\n\n\n\nSLIDES\n View slides\n Download PDF\n\n\n\n\nCLASS PRACTICE\n Notes zip file"
   },
   {
-    "objectID": "class/15-communicating-results.html",
-    "href": "class/15-communicating-results.html",
-    "title": "Communicating Results",
+    "objectID": "class/14-story-telling.html",
+    "href": "class/14-story-telling.html",
+    "title": "Story Telling",
     "section": "",
     "text": "Coming soon!"
   },
@@ -497,15 +497,15 @@
     "text": "KEYBOARD SHORTCUTS FOR SLIDES:\n\nUse ← and → to navigate through the slides.\nUse f to toggle full screen.\nUse o to view an overview of all slides.\nUse h to see a list of other shortcuts.\n\n\n\n\nSLIDES\n View slides\n Download PDF\n\n\n\n\nCLASS PRACTICE\n Notes zip file\n\n\n logitr-cars"
   },
   {
-    "objectID": "class/14-class-review.html",
-    "href": "class/14-class-review.html",
-    "title": "Exam Review & Final Analysis Overview",
+    "objectID": "class/13-class-review.html",
+    "href": "class/13-class-review.html",
+    "title": "Class Review",
     "section": "",
-    "text": "Coming soon!"
+    "text": "KEYBOARD SHORTCUTS FOR SLIDES:\n\nUse ← and → to navigate through the slides.\nUse f to toggle full screen.\nUse o to view an overview of all slides.\nUse h to see a list of other shortcuts.\n\n\n\n\nSLIDES\n View slides\n Download PDF\n\n\n\n\nCLASS PRACTICE\n Notes zip file\n\n\n logitr-cars"
   },
   {
-    "objectID": "class/16-final-presentations.html",
-    "href": "class/16-final-presentations.html",
+    "objectID": "class/15-final-presentations.html",
+    "href": "class/15-final-presentations.html",
     "title": "Final Presentations",
     "section": "",
     "text": "Coming soon!"
@@ -634,7 +634,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "All assignments are due by 11:59pm on the due date.\n\n\n\n\n\nWeek\nDate\nQuiz\nClass\nWeekly HW\nFinal Projects\n\n\n\n\n1\nAug 30\n\nGetting Started\nClass orientation, intro to R, workflow, packages\nHW 1\nDue: Sep 05\n\n\n\n2\nSep 06\n\nData Wrangling\nImporting, wrangling, and summarizing data in R\nHW 2\nDue: Sep 12\n\n\n\n3\nSep 13\nQuiz 1:\nWeek 2\nQuarto & Plotting\nIntro to \"literate programming\" with Quarto and plotting with {ggplot2}\nHW 3\nDue: Sep 19\nProposal\nDue: Sep 24\n\n\n4\nSep 20\n\nIntro to formr\nDesigning and implementing surveys in formr\n\n\n\n\n5\nSep 27\n\nProject Workshop: Team Meetings & Proposal Feedback\n\nHW 4\nDue: Oct 03\nSurvey Plan\nDue: Oct 03\n\n\n6\nOct 04\n\nConjoint Questions\nGenerating conjoint questions in R, implementing in formr\nHW 5\nDue: Oct 10\nPilot Survey\nDue: Oct 17\n\n\n7\nOct 11\nQuiz 2:\nWeek 4\nUtility Models\nIntro to utility models, discrete vs. continuous parameters, parameter coding\nHW 6\nDue: Oct 17\n\n\n\n8\nOct 18\nQuiz 3:\nWeek 7\nOptimization & MLE\nOptimization, maximum likelihood estimation\nHW 7\nDue: Oct 24\n\n\n\n9\nOct 25\n\nUncertainty\nComputing uncertainty in coefficient estimates\nHW 8\nDue: Oct 31\nPilot Analysis\nDue: Nov 05\n\n\n10\nNov 01\nQuiz 4:\nWeek 8\nDOE & Power Analysis\nDesigning your survey to reduce error\nHW 9\nDue: Nov 07\n\n\n\n11\nNov 08\n\nWTP & Simulation\nComputing WTP, WTP space models, market simulations\nHW 10\nDue: Nov 14\nFinal Survey\nDue: Nov 19\n\n\n12\nNov 15\nQuiz 5:\nWeek 11\nHeterogeneity\nModeling differences in preferences across sample population\n\n\n\n\n13\nNov 22\n\nThanksgiving - no class\n\n\n\n\n\n14\nNov 29\n\nClass Review\nOverview of course concepts\nHW 11\nDue: Dec 03\nFinal Analysis\nDue: Dec 10\n\n\n15\nDec 06\n\nCommunicating Results\nGo over exam solutions and also discuss tips for giving a good presentation\n\n\n\n\n16\nDec 13\n\nFinal Presentations\nIn-class presentation showcase w/Q&A\n\nFinal Presentation\nDue: Dec 12"
+    "text": "All assignments are due by 11:59pm on the due date.\n\n\n\n\n\nWeek\nDate\nQuiz\nClass\nWeekly HW\nFinal Projects\n\n\n\n\n1\nAug 30\n\nGetting Started\nClass orientation, intro to R, workflow, packages\nHW 1\nDue: Sep 05\n\n\n\n2\nSep 06\n\nData Wrangling\nImporting, wrangling, and summarizing data in R\nHW 2\nDue: Sep 12\n\n\n\n3\nSep 13\nQuiz 1:\nWeek 2\nQuarto & Plotting\nIntro to \"literate programming\" with Quarto and plotting with {ggplot2}\nHW 3\nDue: Sep 19\nProposal\nDue: Sep 24\n\n\n4\nSep 20\n\nIntro to formr\nDesigning and implementing surveys in formr\n\n\n\n\n5\nSep 27\n\nProject Workshop: Team Meetings & Proposal Feedback\n\nHW 4\nDue: Oct 03\nSurvey Plan\nDue: Oct 03\n\n\n6\nOct 04\n\nConjoint Questions\nGenerating conjoint questions in R, implementing in formr\nHW 5\nDue: Oct 10\nPilot Survey\nDue: Oct 17\n\n\n7\nOct 11\nQuiz 2:\nWeek 4\nUtility Models\nIntro to utility models, discrete vs. continuous parameters, parameter coding\nHW 6\nDue: Oct 17\n\n\n\n8\nOct 18\nQuiz 3:\nWeek 7\nOptimization & MLE\nOptimization, maximum likelihood estimation\nHW 7\nDue: Oct 24\n\n\n\n9\nOct 25\n\nUncertainty\nComputing uncertainty in coefficient estimates\nHW 8\nDue: Oct 31\nPilot Analysis\nDue: Nov 05\n\n\n10\nNov 01\nQuiz 4:\nWeek 8\nDOE & Power Analysis\nDesigning your survey to reduce error\nHW 9\nDue: Nov 07\n\n\n\n11\nNov 08\n\nWTP & Simulation\nComputing WTP, WTP space models, market simulations\nHW 10\nDue: Nov 14\nFinal Survey\nDue: Nov 19\n\n\n12\nNov 15\nQuiz 5:\nWeek 11\nHeterogeneity\nModeling differences in preferences across sample population\n\n\n\n\n13\nNov 22\n\nThanksgiving - no class\n\n\n\n\n\n14\nNov 29\n\nClass Review\nOverview of course concepts\nHW 11\nDue: Dec 03\nFinal Analysis\nDue: Dec 10\n\n\n15\nDec 06\n\nStory Telling\nGo over exam solutions and also discuss tips for giving a good presentation\n\n\n\n\n16\nDec 13\n\nFinal Presentations\nIn-class presentation showcase w/Q&A\n\nFinal Presentation\nDue: Dec 12"
   },
   {
     "objectID": "software.html",

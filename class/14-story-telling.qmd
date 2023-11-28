@@ -1,12 +1,12 @@
 ---
-title: "Communicating Results"
+title: "Story Telling"
 toc: false
 execute:
   echo: false
   warning: false
   message: false
 params:
-  class: "15-communicating-results"
+  class: "14-story-telling"
   logitrcars: FALSE
   formr4conjoint: FALSE
 ---
