@@ -668,7 +668,7 @@ class: middle, center
 1. Get coefficients, `beta`
 2. Get covariance matrix, `covariance`  
 3. `draws <- as.data.frame(MASS::mvrnorm(10^5, beta, covariance))`
-4. `coef_ci <- maddTools::ci(draws, ci = 0.95)`
+4. `coef_ci <- logitr::ci(draws, ci = 0.95)`
 
 ---
 
@@ -848,7 +848,7 @@ head(draws_wtp)
 
 Mean WTP with confidence interval
 ```{r}
-maddTools::ci(draws_wtp)
+logitr::ci(draws_wtp)
 ```
 
 ]
