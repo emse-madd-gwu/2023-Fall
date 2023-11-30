@@ -823,7 +823,7 @@ class: middle, center
 1. Get coefficients, `beta`
 2. Get covariance matrix, `covariance`  
 3. `draws &lt;- as.data.frame(MASS::mvrnorm(10^5, beta, covariance))`
-4. `coef_ci &lt;- maddTools::ci(draws, ci = 0.95)`
+4. `coef_ci &lt;- logitr::ci(draws, ci = 0.95)`
 
 ---
 
@@ -992,13 +992,13 @@ head(draws_wtp)
 ```
 
 ```
-#&gt;              [,1]      [,2]
-#&gt; [1,]  0.136090990 -5.643898
-#&gt; [2,]  0.106433653 -5.965469
-#&gt; [3,]  0.130567775 -5.778933
-#&gt; [4,]  0.149899459 -5.656060
-#&gt; [5,]  0.147363370 -5.732116
-#&gt; [6,] -0.001868454 -5.839040
+#&gt;            [,1]      [,2]
+#&gt; [1,] 0.08156866 -5.771992
+#&gt; [2,] 0.10238910 -5.875931
+#&gt; [3,] 0.12643049 -5.841146
+#&gt; [4,] 0.10726155 -5.991838
+#&gt; [5,] 0.18738947 -5.695868
+#&gt; [6,] 0.14457267 -6.010809
 ```
 
 ]
@@ -1008,13 +1008,13 @@ head(draws_wtp)
 Mean WTP with confidence interval
 
 ```r
-maddTools::ci(draws_wtp)
+logitr::ci(draws_wtp)
 ```
 
 ```
 #&gt;         mean       lower      upper
-#&gt; 1  0.1432013  0.03541522  0.2514712
-#&gt; 2 -5.7137156 -5.97830343 -5.4620888
+#&gt; 1  0.1427314  0.03787149  0.2493893
+#&gt; 2 -5.7167653 -5.98211335 -5.4602922
 ```
 
 ]
@@ -1131,7 +1131,7 @@ class: inverse, center
 
 # .fancy[Break]
 
-<div class="countdown" id="timer_7a6a1b16" data-warn-when="30" data-update-every="1" tabindex="0" style="top:1;right:0;bottom:0;left:0;margin:5%;font-size:8em;">
+<div class="countdown" id="timer_cb279d72" data-warn-when="30" data-update-every="1" tabindex="0" style="top:1;right:0;bottom:0;left:0;margin:5%;font-size:8em;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1246,7 +1246,7 @@ class: inverse, middle
 
 class: inverse
 
-<div class="countdown" id="timer_b24304d6" data-warn-when="15" data-update-every="1" tabindex="0" style="top:0;right:0;font-size:2em;">
+<div class="countdown" id="timer_0e923349" data-warn-when="15" data-update-every="1" tabindex="0" style="top:0;right:0;font-size:2em;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
