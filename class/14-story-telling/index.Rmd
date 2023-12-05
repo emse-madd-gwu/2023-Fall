@@ -43,17 +43,17 @@ class: middle, inverse, center
 
 # Final Presentation 
 
-## - In class, 12/14 (6:00 - 7:20)
+## - In class, 12/13 (6:10pm - 8:40pm)
 
 ## - 10 minutes (strict)
 
-## - Slides due in team Box by midnight on 12/13
+## - Slides due in Blackboard by midnight on 12/12 (one team member submit)
 
 ---
 
 class: middle, center
 
-# Download [this cheetsheet](https://github.com/emse-madd-gwu/2022-Fall/raw/main/content/cheatsheet-storytelling.pdf) for today's content
+# Download [this cheetsheet](https://github.com/emse-madd-gwu/2023-Fall/raw/main/content/cheatsheet-storytelling.pdf) for today's content
 
 ---
 
@@ -414,7 +414,41 @@ class: center
 
 ---
 
-# .center[.red[_Think of fonts as pre-attentive attributes_]]
+class: inverse, center, middle
+
+# Fonts matter
+
+.leftcol[
+
+<center>
+<img src="images/fonts_matter_fast_taco.jpg" width=600>
+</center>
+
+"Fast Taco"
+
+]
+
+.rightcol[
+
+<center>
+<img src="images/fonts_matter_megaflicks.jpg" width=600>
+</center>
+
+"Mega Flicks"
+
+]
+
+---
+
+class: inverse, center, middle
+
+<center>
+<img src="images/fonts_matter.jpg" width=600>
+</center>
+
+---
+
+# .center[.red[_Fonts Matter_]]
 
 </br></br>
 
@@ -574,16 +608,6 @@ class: middle, inverse, center
 
 ## Watch [this video](https://youtu.be/w82a1FT5o88) to find out
 
-```{r, echo=FALSE}
-countdown(
-  minutes = 10,
-  warn_when = 30,
-  update_every = 15,
-  bottom = 0,
-  font_size = '2em'
-)
-```
-
 ---
 
 # How to start a speech
@@ -651,27 +675,13 @@ countdown(
 )
 ```
 
-.leftcol[
-
 Brainstorm different strategies for how to start your presentation for your projects:
 
 1. Tell a story, talk about **people** ("Imagine...").
-2. With a shocking factoid ("There are more people alive today than have ever lived...").
-3. With a question that matters to the audience ("Have you...?").
+2. With a shocking factoid.
+3. With a question that matters to the audience.
 
 Afterwards, we will go around the room and one person from each team will practice giving their start to their presentation.
-
-]
-
-.rightcol[.font80[
-
-1. **Automated Vehicles**: Oladele, Vikram, Christine, Sanskriti
-2. **Leaf Blowers**: Sameer, Priyanka, Raffa
-3. **Remote Work**: Haokai, Sravya, Malyadri Reddy, Michael
-4. **Student Housing**: Maximillian, Alejandro, Margaret, Bassant
-5. **World Cup**: Kyle, Ava, Vibhav, Prathyaj
-
-]]
 
 ---
 
@@ -680,7 +690,7 @@ Afterwards, we will go around the room and one person from each team will practi
 
 ---
 
-# .center[[Final Reports](https://madd.seas.gwu.edu/2022-Fall/project/6-final-analysis.html) (Due 12/11...you have 4 days left!)]
+# .center[[Final Analysis Reports](https://madd.seas.gwu.edu/2023-Fall/project/6-final-analysis.html) due 12/10<br>(you have 4 days left!)]
 
 --
 
@@ -699,14 +709,14 @@ Afterwards, we will go around the room and one person from each team will practi
 - ### Check for spelling errors:
 
 ```{r, eval=FALSE}
-spelling::spell_check_files("report.Rmd")
+spelling::spell_check_files("report.qmd")
 ```
 
 ---
 
-# .center[[Final Presentations](https://madd.seas.gwu.edu/2022-Fall/project/7-final-presentation.html) (Due 12/13)]
+# .center[[Final Presentations](https://madd.seas.gwu.edu/2023-Fall/project/7-final-presentation.html) due 12/12]
 
 </br>
 
-- ### We'll watch these during class period on Dec 14
+- ### We'll watch these during class period on Dec 13
 - ### 5 projects x 10 mins each
