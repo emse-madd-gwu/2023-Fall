@@ -27,9 +27,41 @@ output:
 
 class: center, middle
 
-# [title](url)
+# [Solar Charging Phone Case](url)
 
-## by student
+## by Anh Nguyen, Elizabeth Pacious, Niveadita Razdan, and Avneet Singh
+
+---
+
+class: center, middle
+
+# [ComposteRs](url)
+
+## by Eliese Ottinger, Raghav Bhan, Ashhwath Chandramohan, and Nandhini Devaraj
+
+---
+
+class: center, middle
+
+# [Cooktop Preference Analysis](url)
+
+## by Hanna Song, Paul Derisemu, Tejas Phirke, and Zain Hoda
+
+---
+
+class: center, middle
+
+# [FutStat: The Soccer Training App](url)
+
+## by Ayush Kala, Sumedh Joshi, Mansoor Ali, and Oscar Southwell
+
+---
+
+class: center, middle
+
+# [Smart Charging for PEVs](url)
+
+## by Pingfan Hu, Bharath Ravindra, Sampada Dhakal, and Vedanth Surendra Hegde
 
 ---
 
