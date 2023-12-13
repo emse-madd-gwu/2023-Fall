@@ -27,7 +27,7 @@ output:
 
 class: center, middle
 
-# [Solar Charging Phone Case](url)
+# [Solar Charging Phone Case](https://drive.google.com/file/d/1TnRcnq4f-bed-CVlEU-3bUEL8h8dLqkp/view?usp=sharing)
 
 ## by Anh Nguyen, Elizabeth Pacious, Niveadita Razdan, and Avneet Singh
 
@@ -35,7 +35,7 @@ class: center, middle
 
 class: center, middle
 
-# [ComposteRs](url)
+# [ComposteRs](https://clipchamp.com/watch/L5k1rmAtabU)
 
 ## by Eliese Ottinger, Raghav Bhan, Ashhwath Chandramohan, and Nandhini Devaraj
 
@@ -43,7 +43,7 @@ class: center, middle
 
 class: center, middle
 
-# [Cooktop Preference Analysis](url)
+# Cooktop Preference Analysis
 
 ## by Hanna Song, Paul Derisemu, Tejas Phirke, and Zain Hoda
 
@@ -51,7 +51,7 @@ class: center, middle
 
 class: center, middle
 
-# [FutStat: The Soccer Training App](url)
+# FutStat: The Soccer Training App
 
 ## by Ayush Kala, Sumedh Joshi, Mansoor Ali, and Oscar Southwell
 
@@ -59,7 +59,7 @@ class: center, middle
 
 class: center, middle
 
-# [Smart Charging for PEVs](url)
+# Smart Charging for PEVs
 
 ## by Pingfan Hu, Bharath Ravindra, Sampada Dhakal, and Vedanth Surendra Hegde
 
