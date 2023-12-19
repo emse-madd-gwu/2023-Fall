@@ -90,6 +90,9 @@ website:
       - text: References
         icon: bookmark-fill
         href: references.qmd
+      - text: Project Showcase
+        icon: bar-chart-line-fill
+        href: https://madd.seas.gwu.edu/showcase/2023-fall.html
       - text: Slack
         icon: slack
         href: https://emse-madd-f23.slack.com
